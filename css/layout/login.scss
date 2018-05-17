@@ -1,0 +1,113 @@
+@import '../variables';
+
+.login {
+	width: 100%;
+	min-height: 100vh;
+	background-image: url(../img/login-back.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+	margin: 0 !important;
+
+	&Container {
+		width: 100%;
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		padding: 4em 1em;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,030504+100&0+10,0.65+100 */
+		background: -webkit-linear-gradient(rgba(0,0,0,0) 0%, rgba(0,1,0,0) 10%, rgba(3,5,4,0.65) 100%);
+		background: -o-linear-gradient(rgba(0,0,0,0) 0%, rgba(0,1,0,0) 10%, rgba(3,5,4,0.65) 100%);
+		background: linear-gradient(rgba(0,0,0,0) 0%, rgba(0,1,0,0) 10%, rgba(3,5,4,0.65) 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6030504',GradientType=0 ); /* IE6-9 */
+		
+
+		@include for-phone-only {
+			padding: 22px 16px;
+		}
+
+		&Login {
+			max-width: 100%;
+			width: 460px;
+			text-align: center;
+
+			h1 {
+				font-size: 36px;
+				color: $verdeOscuro;
+				margin-bottom: 22px;
+			}
+			p {
+				font-size: 12px;
+				font-weight: 100;
+				color: $blanco;
+				margin-bottom: 22px;
+
+				@include for-phone-only {
+					color: $blanco;
+					font-weight: 100;
+				}
+			}
+			.form-group {
+				margin-top: 16px;
+			}
+			.form-control {
+				border-radius: 0px;
+				border: none;
+				background-color: rgba($blanco, .80);
+				height: 45px;
+				font-weight: 100;
+				width: 460px;
+				max-width: 100%;
+				color: $verdeOscuro;
+
+				&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+					color: $verdeOscuro !important;
+				}
+				&::-moz-placeholder { /* Firefox 19+ */
+					color: $verdeOscuro !important;
+				}
+				&:-ms-input-placeholder { /* IE 10+ */
+					color: $verdeOscuro !important;
+				}
+				&:-moz-placeholder { /* Firefox 18- */
+					color: $verdeOscuro !important;
+				}
+			}
+
+			.btn-sub  {
+				max-width: 100%;
+				width: 220px;
+			}
+			
+		}
+	}
+
+	&MissedPass {
+		a {
+			text-align: center;
+			color: $blanco;
+			font-weight: 100;
+		}
+		
+	}
+}
+.u-logo {
+	img {
+		width: 400px;
+		max-width: 100%;
+		position: relative;
+		display: block;
+	}
+}
+.u-form {
+	.form-control {
+		text-align: center;
+	}
+	a {
+		color: $gris;
+		font-weight: 100;
+		letter-spacing: 2px;
+	}
+}

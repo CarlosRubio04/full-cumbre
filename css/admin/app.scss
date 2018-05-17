@@ -1,0 +1,48 @@
+// Imports 
+@import '../variables';
+@import '../mixins';
+@import '../utility';
+
+// Views
+
+
+// Inicio
+@import './inicio';
+
+
+
+// Esentials
+
+body {
+	font-family: 'Roboto', sans-serif !important;
+	color: $gris;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Didact Gothic', sans-serif !important;
+	margin: 0;
+}
+
+.loader {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: $verdeOscuro;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 9999999;
+}
+#mountain {
+	.circle {
+		fill: none;
+		stroke: $blanco;
+		stroke-width: 6px;
+		animation: loader 2s ease-in-out infinite;
+	}
+}
+
+
+

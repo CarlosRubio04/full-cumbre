@@ -1,0 +1,164 @@
+@import '../variables';
+
+
+// Alistamiento Campamento
+
+.campamento-alistamiento {
+	
+}
+
+
+
+// Parte interna de Alistamiento
+.alistamiento {
+
+	.profile {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.teamProfile {
+
+		.subTitle {
+			margin-bottom: 1em;
+		}
+
+		.teamName {
+			display: flex;
+			flex-wrap: nowrap;
+			.form-control {
+				height: 50px;
+				border-radius: 0;
+				margin-top: 0;
+				border: 1px solid $verdeClaro;
+			}
+			.btn {
+				height: 50px;
+				background-color: $verdeClaro;
+				color: $blanco;
+				font-weight: 100;
+				font-size: 12px;
+				letter-spacing: 2px;
+				text-transform: uppercase;
+				border-radius: 0;
+			}
+		}
+
+		.teamList {
+			display: flex;
+			flex-wrap: wrap;
+			margin-top: 66px;
+			small {
+				font-size: 14px;
+				font-weight: 100;
+				width: 100%;
+			}
+
+			.person {
+				margin-top: 2.5em;
+				width: 48%;
+				display: flex;
+				flex-wrap: nowrap;
+				align-items: center;
+
+				.avatar {
+					margin-right: 1em;
+					margin-top: 0;
+					img {
+						border-radius: 50%;
+						border: 1px solid $verdeOscuro;
+					}
+				}
+
+				.info {
+					p {
+						margin: 0;
+					}
+					.name {
+						color: #8F9E8B;
+						font-weight: 600;
+						font-size: 14px;
+					}
+					.mail {
+						font-weight: 100;
+						font-size: 12px;
+					}
+				}
+			}
+		}
+		
+	}
+
+}
+
+
+.avatar {
+	margin-top: 26px;
+	&Items {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		margin-top: 34px;
+		button{
+			background-color: none;
+			border: 0;
+			padding: 0;
+			margin-right: 1em;
+			img {
+				border-radius: 50%;
+			}
+		}
+	}
+}
+
+.data {
+	&Group {
+		margin-top: 16px;
+		small {
+			font-size: 14px;
+			color: $verdeOscuro2;
+		}
+		p {
+			font-size: 20px;
+			padding: 8px;
+			color: $verdeOscuro;
+			border-bottom: 1px solid $verdeClaro;
+		}
+	}
+}
+
+.report {
+	margin-top: 60px;
+	.dataGroup {
+
+		small {
+			font-size: 14px;
+			color: $verdeOscuro2;
+			display: block;
+		}
+
+		.pdf {
+			display: flex;
+			flex-wrap: nowrap;
+			padding: 12px 0;
+
+			&Icon {
+				margin-right: 1em;
+			}
+
+			&Info {
+				a {
+					color: $verdeClaro;
+					font-size: 16px;
+					font-weight: 200;
+					display: block;
+				}
+				span {
+					font-size: 10px;
+					font-weight: 100;
+					letter-spacing: 1.5;
+				}
+			}
+		}
+	}
+}

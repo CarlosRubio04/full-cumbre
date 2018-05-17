@@ -1,0 +1,28 @@
+// Animacion del cargador
+
+@keyframes 	loader {
+	0% {
+		stroke-dashoffset: 460px;
+		stroke-dasharray: 600px 650px;
+	}
+	25% {
+		stroke-dashoffset: -140px;
+		stroke-dasharray: 5px 1250px;
+	}
+	50% {
+		stroke-dashoffset: 760px;
+		stroke-dasharray: 300px 950px;
+	}
+	70% {
+		stroke-dashoffset: 450px;
+		stroke-dasharray: 600px 650px;
+	}
+	90% {
+		stroke-dashoffset: 626px;
+		stroke-dasharray: 775px 340px;
+	}
+	100% {
+		stroke-dashoffset: 626px;
+		stroke-dasharray: 775px 340px;
+	}
+}

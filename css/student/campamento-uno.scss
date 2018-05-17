@@ -1,0 +1,90 @@
+@import '../variables';
+@import '../mixins';
+
+
+.courses-grid {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-top: 2em;
+
+	.course {
+		max-width: 100%;
+		width: 48%;
+		margin: 1.5em 2% 0 0;
+		position: relative;
+		border-left: 2px solid $verdeClaro;
+		background-color: $blanco;
+		@include for-phone-only {
+			width: 100%;
+			margin: 1em 0 0 0;
+		}
+
+		&-content {
+			height: 200px;
+			padding: 1.5em;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+		&-date {
+			h4 {
+				color: $verdeOscuro2;
+				font-size: 20px;
+				font-weight: 800;
+			}
+			small {
+				color: $verdeClaro;
+				font-weight: 100;
+			}
+		}
+		&-name {
+			color: $verdoso;
+			font-weight: 200;
+			font-size: 18px;
+		}
+		&-link {
+			direction: block;
+			text-align: right;
+			a {
+				color: $verdeClaro;
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+
+.side-bar-cursos {
+	min-height: calc(100vh - 65px);
+	background-color: $blanco;
+	@include prefix (box-shadow, -4px 0px 4px 0px rgba(0,0,0,0.17));
+	.title {
+		padding: 16px;
+	}
+}
+
+.courses-list {
+	display: flex;
+	flex-direction: column;
+
+	.item {
+		display: block;
+		padding: 16px;
+
+		a {
+			color: $verdoso;
+			font-size: 14px;
+			font-weight: 100;
+		}
+
+		&:nth-child(even) {
+			background-color: $blanco;
+			border-right: 4px solid $verdeOscuro2;
+		}
+		&:nth-child(odd) {
+			background-color: $blancusco;
+			border-right: 4px solid $verdeClaro;
+		}
+	}
+}

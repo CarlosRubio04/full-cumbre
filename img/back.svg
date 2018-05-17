@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="23px" viewBox="0 0 32 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Agregar-Actividad-" transform="translate(-61.000000, -128.000000)" fill="#B6B6B6" fill-rule="nonzero">
+            <path d="M82.205,128.333 C81.776,127.889 81.062,127.889 80.618,128.333 C80.189,128.762 80.189,129.476 80.618,129.904 L88.665,137.951 L62.111,137.951 C61.492,137.952 61,138.444 61,139.063 C61,139.682 61.492,140.19 62.111,140.19 L88.665,140.19 L80.618,148.222 C80.189,148.666 80.189,149.381 80.618,149.809 C81.062,150.253 81.777,150.253 82.205,149.809 L92.157,139.857 C92.601,139.428 92.601,138.714 92.157,138.286 L82.205,128.333 Z" id="Shape-Copy" transform="translate(76.745000, 139.071000) rotate(-180.000000) translate(-76.745000, -139.071000) "></path>
+        </g>
+    </g>
+</svg>

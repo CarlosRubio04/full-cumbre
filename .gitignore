@@ -1,0 +1,13 @@
+Config/**
+Entities/**
+files/**
+Libs/**
+logs/**
+Models/**
+nbproject/**
+error_log
+index.php
+index_1.php
+load.php
+src
+test.php

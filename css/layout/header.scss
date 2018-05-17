@@ -1,0 +1,235 @@
+// Imports 
+@import '../variables';
+@import '../mixins';
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	max-width: 100%;
+	width: 100%;
+	height: 65px;
+	background-color: $verdeOscuro;
+	z-index: 999;
+}
+
+.nav {
+	position: relative;
+	display: flex;
+	align-self: center;
+	height: 65px;
+	width: 100%;
+	padding: 0 0 0 64px;
+
+	@include for-phone-only {
+		padding: 0 0 0 1em;
+		justify-content: space-between;
+	}
+
+	&Logo {
+		height: 65px;
+		display: flex;
+		align-items: center;
+		img {
+			height: 32px;
+			width: auto;
+		}
+	}
+	&Items {
+		margin-left: auto;
+		@include for-phone-only {
+			margin: 0;
+		}
+		ul {
+			height: 65px;
+			line-height: 0;
+			margin-bottom: 0;
+			list-style: none;
+			display: flex;
+			align-items: center;
+			li {
+				padding: 0 1em;
+
+				@include for-phone-only {
+					display: none !important;
+				}
+
+				a {
+					color: $blanco;
+					font-size: 16px;
+					font-weight: 100;
+					@include prefix(transition, all .5s ease-in-out);
+
+					&:hover {
+						color: $verdeClaro;
+						text-decoration: none;
+					}
+				}
+			}
+			.special-item {
+				border-right: 1px solid $blanco;
+				height: 1em;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.user:hover {
+				@include prefix(transition, all .5s ease-in-out);
+				.userDrop {
+					@include prefix(transform, translateY(0));
+					@include prefix(transform, scale(1));
+					opacity: 1;
+				}
+			}
+			.user {
+				position: relative;
+				cursor: pointer;
+				img {
+					margin-left: 12px;
+				}
+
+				&Drop {
+					position: fixed;
+					top: 64px;
+					@include prefix(transform, translateY(8px));
+					@include prefix(transform, scale(0));
+					@include prefix(transform-origin, 180px 0px);
+					opacity: 0;
+					padding: .5em;
+					right: 200px;
+					flex-direction: column;
+					align-items: flex-end;
+					width: 200px;
+					background-color: $blanco;
+					height: auto;
+					@include prefix(box-shadow, 1px 1px 2px 1px rgba(0,0,0,0.33));
+					transition: transform .2s ease-in-out, opacity .3s  linear;
+
+					&:before {
+						content: "";
+						display: block;	
+						border-right: 15px solid transparent;
+						border-left: 15px solid transparent;
+						border-top: 15px solid transparent;
+						border-bottom: 15px solid $blanco;
+						position: absolute;
+						top: -30px;
+
+					}
+
+					li {
+						width: 100%;
+						height: 44px;
+						text-align: right;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						border-bottom: 1px solid $grisClaro;
+
+						a {
+							width: 100%;
+							text-align: right;
+							color: $gris;
+							display: block;
+							padding: .5em 0;
+						}
+
+						&:last-child {
+							border: 0;
+						}
+					}
+				}
+			}
+		}
+		
+		.u-notification {
+			width: 64px;
+			margin: 0;
+			text-align: center;
+			a {
+				color: $verdeClaro;
+			}
+		}
+		
+		.u-mian-menu {
+			width: 64px;
+			margin: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: $verdeNeutro;
+			height: 65px;
+			a {
+
+			}
+
+			@include for-phone-only {
+				display: flex !important;
+			}
+		}
+		.u-mian-fases {
+			width: 64px;
+			margin: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: $verdeOscuro2;
+			height: 65px;
+			a {
+
+			}
+		}
+	}
+}
+
+.menu {
+	top: 65px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	position: fixed;
+	width: 100%;
+	height: calc(100vh - 65px);
+	background-color: $blanco;
+	background-image: url(../img/nubes.png);
+	background-position: right 2%; 
+	background-repeat: no-repeat;
+	z-index: 999;
+
+	&Container {
+		width: 100%;
+		height: 100vh;
+		padding: 4em;
+		position: relative;
+
+		h4 {
+			color: $verdeOscuro;
+			font-size: 25px;
+			font-weight: 500;
+		}
+
+		ul {
+			list-style: none;
+			padding-left: 0;
+
+			li {
+				line-height: 4;
+				a {
+					color: #8F9E8B;
+					font-weight: 100;
+					font-size: 18px;
+					padding-bottom: 6px;
+					border-bottom: 1px solid transparent;
+					@include prefix(transition, all .5s ease-in);
+
+					&:hover {
+						color: $verdeClaro;
+						border-bottom: 1px solid $verdeClaro;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+}

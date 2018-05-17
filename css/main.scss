@@ -1,0 +1,29 @@
+// Archivo principal 
+
+// Imports 
+@import './variables';
+@import './mixins';
+@import './utility';
+
+
+// Estilos Estudiante
+
+@import './student/app';
+
+// Estilos Admin
+
+@import './admin/app';
+
+
+// Estilos Coach
+
+@import './coach/app';
+
+// Estilos Layout
+
+@import './layout/app';
+
+
+// Animaciones
+
+@import './animations/app';
