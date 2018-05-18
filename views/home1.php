@@ -21,7 +21,7 @@
 
 			<div class="item">
 				<div class="itemHeader">
-					<a href="?content=">Nuevo curso</a>
+					<a href="?content=addCourse">Nuevo curso</a>
 				</div>
 				<div class="itemBody">
 					<img src="img/lista-grupos.svg" alt="Lista de grupos">
