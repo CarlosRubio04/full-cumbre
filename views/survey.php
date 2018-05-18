@@ -441,10 +441,121 @@
 							<div class="title">
 								<h4>Generalidades:</h4>
 							</div>
+							
+							<div class="question-group">
+								<div class="question-header">
+									<div class="question-title big">
+										De acuerdo con esta experiencia y en relación con otras personas que deseen afianzar sus conocimientos sobre este tema:
+									</div>
+								</div>
+								<div class="question-body">
+									<div class="question-label big">
+										Recomendaría este programa
+									</div>	
+
+									<div class="question-inputs">
+										<div class="item five big">
+											<input type="radio" name="twelve" value="5">
+											<span class="checkMark"></span>
+										</div>
+									</div>
+								</div>
+								<div class="question-body">
+									<div class="question-label big">
+										Sería indiferente en recomendarlo
+									</div>	
+
+									<div class="question-inputs">
+										<div class="item five big">
+											<input type="radio" name="twelve" value="5">
+											<span class="checkMark"></span>
+										</div>
+									</div>
+								</div>
+								<div class="question-body">
+									<div class="question-label big">
+										No lo recomendaría
+									</div>	
+
+									<div class="question-inputs">
+										<div class="item five big">
+											<input type="radio" name="twelve" value="5">
+											<span class="checkMark"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="thirteen">Aspectos positivos</label>
+								<textarea name="thirteen" id="thirteen"  rows="5" class="form-control" placeholder="Aspectos positivos"></textarea>
+							</div>
+
+							<div class="form-group">
+								<label for="fourteen">Aspectos por mejorar</label>
+								<textarea name="fourteen" id="fourteen"  rows="5" class="form-control" placeholder="Aspectos por mejorar"></textarea>
+							</div>
+
+							<div class="form-group">
+								<label for="fiveteen">Otros temas temas de interés (Que le gustaría encontrar en nuestra programación)</label>
+								<textarea name="fiveteen" id="fiveteen"  rows="5" class="form-control" placeholder="Otros temas temas de interés (Que le gustaría encontrar en nuestra programación)"></textarea>
+							</div>
+
 						</div>
 					</form>
 				</div>
 			</div>
+		</div>
+
+		<div class="conventions">
+			<p>
+				Marque con una X donde corresponda:
+			</p>
+			<div class="item">
+				<div class="text five">
+					Excelente
+				</div>
+				<div class="number">
+					5
+				</div>
+			</div>
+
+			<div class="item">
+				<div class="text four">
+					Satisfactorio
+				</div>
+				<div class="number">
+					4
+				</div>
+			</div>
+
+			<div class="item">
+				<div class="text three">
+					Bueno
+				</div>
+				<div class="number">
+					3
+				</div>
+			</div>
+			
+			<div class="item">
+				<div class="text two">
+					Regular
+				</div>
+				<div class="number">
+					2
+				</div>
+			</div>
+			
+			<div class="item">
+				<div class="text one">
+					Deficiente
+				</div>
+				<div class="number">
+					1
+				</div>
+			</div>
+
 		</div>
 	</div>
 </section>
