@@ -16,10 +16,12 @@
 								<label for="resumen">Resumen</label>
 								<input type="text" name="resumen" id="resumen" value="<?php echo $summary;?>" class="form-control" placeholder="Resumen">
 							</div>
-							<div class="form-group">
+
+							<!-- <div class="form-group">
 								<label for="intro">Introducción</label>
 								<textarea name="intro" id="intro" rows="5"  class="form-control" placeholder="Introducción"><?php echo $introduction;?></textarea>
-							</div>
+							</div> -->
+
 							<h4 class="subTitle">Problematica</h4>
 							<div class="form-group">
 								<label for="definicion">Definición de problemática</label>
@@ -49,10 +51,12 @@
 								<label for="justificacion">Justificación del proyecto</label>
 								<textarea name="justificacion" id="justificacion"  rows="5" class="form-control" placeholder="Justificación del proyecto."><?php echo $justification;?></textarea>
 							</div>
-							<div class="form-group">
+
+							<!-- <div class="form-group">
 								<label for="">Descripción del proyecto</label>
 								<textarea name="descripcion" id="descripcion" rows="5" class="form-control" placeholder="Descripción del proyecto."><?php echo $description;?></textarea>
-							</div>
+							</div> -->
+
 							<div class="form-group">
 								<label for="">Objetivo general</label>
 								<textarea name="objetivo" id="objetivo" rows="5" class="form-control" placeholder="Objetivo general"><?php echo $objective;?></textarea>
@@ -74,38 +78,45 @@
 								<input type="date" name="fechaFin" id="fechaFin" value="<?php echo $endDate;?>" class="form-control">
 							</div>
 
-							<div class="form-group">
+							<!-- <div class="form-group">
 								<label for="">Metodología</label>
 								<input type="text" name="metodologia" id="metodologia" value="<?php echo $methodology;?>" class="form-control" placeholder="Metodología">
-							</div>
+							</div> -->
+
 							<div class="form-group">
 								<label for="">Resultados esperados</label>
 								<input type="text" name="resultados" id="resultados" value="<?php echo $expectedResults;?>" class="form-control" placeholder="Resultados esperados">
 							</div>
-							<div class="form-group">
+
+							<!-- <div class="form-group">
 								<label for="">Ejecución del proyecto</label>
 								<input type="text" name="ejecucion" id="ejecucion" value="<?php echo $execution;?>" class="form-control" placeholder="Ejecución del proyecto">
-							</div>
-							<div class="form-group">
+							</div> -->
+
+							<!-- <div class="form-group">
 								<label for="">Resultados</label>
 								<input type="text" name="resultados2" value="<?php echo $results;?>" id="resultados2" class="form-control" placeholder="Resultados">
-							</div>
+							</div> -->
+
 							<div class="form-group">
 								<label for="">Análisis de resultados</label>
 								<input type="text" name="analisis" value="<?php echo $analysis;?>" id="analisis" class="form-control" placeholder="Análisis de resultados">
 							</div>
-							<div class="form-group">
+
+							<!-- <div class="form-group">
 								<label for="">Productos</label>
 								<input type="text" name="productos" id="productos" value="<?php echo $products;?>" class="form-control" placeholder="Productos">
-							</div>
-							<div class="form-group">
+							</div> -->
+
+							<!-- <div class="form-group">
 								<label for="">Conclusiones</label>
 								<textarea name="concluciones" id="concluciones" rows="5" class="form-control" placeholder="Conclusiones"><?php echo $conclutions;?></textarea>
 							</div>
 							<div class="form-group">
 								<label for="">Bibliografía</label>
 								<textarea name="bibliografia" id="bibliografia" rows="5" class="form-control" placeholder="Bibliografía"><?php echo $bibliography;?></textarea>
-							</div>
+							</div> -->
+							
 							<div id="saveText"></div>
 							<div class="form-group">
 								<button class="btn-square" type="submit" onclick="autoSave(<?php echo $infoUser->getGroupId()?>);alert('Proyecto grabado correctamente');return false;" name="saveProject">SIGUIENTE</button>
