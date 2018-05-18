@@ -27,6 +27,11 @@
 						<p>Edificio Fernando Julio salon 308</p>
 					</div>
 
+					<div class="coach">
+						<h4>Coach</h4>
+						<p>Fernando Julio</p>
+					</div>
+
 					<div class="enroll">
 						<button class="btn-square">inscribirme</button>
 					</div>

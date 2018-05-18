@@ -32,6 +32,11 @@
 								<label for="lugar">Lugar</label>
 								<input type="text" name="lugar" id="lugar" class="form-control" placeholder="Ingresa el lugar donde se realizará el curso">
 							</div>
+
+							<div class="form-group">
+								<label for="coach">Coach Asignado</label>
+								<input type="text" name="coach" id="coach" class="form-control" placeholder="Seleccione el coach que dictará el curso">
+							</div>
 							
 							<div class="form-group">
 								<button class="btn-square" type="submit">Agregar Curso</button>
