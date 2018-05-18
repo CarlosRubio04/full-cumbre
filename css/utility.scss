@@ -73,6 +73,18 @@ section {
 	justify-content: center;
 	align-items: center;
 }
+.colum-30 {
+	width: 30%;
+	max-width: 30%;
+	@include for-phone-only {
+		width: 100%;
+		max-width: 100%;
+	}
+	// @include for-tablet-portrait-up {
+	// 	width: 100%;
+	// 	max-width: 100%;
+	// }
+}
 .colum-40 {
 	width: 40%;
 	max-width: 40%;
