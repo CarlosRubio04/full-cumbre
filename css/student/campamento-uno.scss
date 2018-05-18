@@ -101,3 +101,158 @@
 		margin-top: 2em;
 	}
 }
+
+
+// Survey 
+
+.question {
+	margin-top: 2em;
+	&-group {
+		position: relative;
+		margin-top: 2em;
+		margin-bottom: 2em;
+	}
+	&-header {
+		display: flex;
+		margin-bottom: 4px;
+	}
+	&-title {
+		background-color: $blanco;
+		text-transform: uppercase;
+		color: $verdeOscuro;
+		text-align: center;
+		font-size: 20px;
+		font-weight: 300;
+		width: 600px;
+		height: 63px;
+		line-height: 63px;
+		margin-right: 4px;
+	}
+	&-values {
+		display: flex;
+
+		.item {
+			background-color: $blanco;
+			width: 40px;
+			height: 63px;
+			font-size: 24px;
+			line-height: 63px;
+			font-weight: 700;
+			text-align: center;
+			margin: 0 4px;
+		}
+		.five {
+			color: $five;
+		}
+		.four {
+			color: $four;
+		}
+		.three {
+			color: $three;
+		}
+		.two {
+			color: $two;
+		}
+		.one {
+			color: $one;
+		}
+	}
+
+	&-body {
+		display: flex;
+		margin-bottom: 4px;
+	}
+	&-label {
+		background-color: $blanco;
+		color: $gris;
+		padding-left: 20px;
+		font-size: 14px;
+		font-weight: 100;
+		width: 600px;
+		height: 40px;
+		line-height: 40px;
+		margin-right: 4px;
+	}
+	&-inputs {
+		display: flex;
+
+		.item {
+			background-color: $blanco;
+			position: relative;
+			width: 40px;
+			height: 40px;
+			font-size: 24px;
+			font-weight: 700;
+			text-align: center;
+			margin: 0 4px;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			@include prefix(transition, all .4s ease-in-out);
+
+			input {
+				margin-top: 0 !important;
+				position: absolute;
+				height: 40px;
+				width: 40px;
+				top: 0;
+				left: 0;
+				opacity: 0;
+				cursor: pointer;
+				z-index: 99;
+			}
+			.checkMark {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 40px;
+				height: 40px;
+				@include prefix(transition, all .4s ease-in-out);
+				&:after {
+					content: "";
+					position: absolute;
+					display: none;
+					@include prefix(transition, all .4s ease-in-out);
+				}
+			}
+		}
+		.item:hover input ~ .checkMark {
+			background-color: $grisClaro;
+			@include prefix(transition, all .4s ease-in-out);
+		}
+		.item input:checked ~ .checkMark {
+			@include prefix(transition, all .4s ease-in-out);
+			@include prefix(box-shadow, 0px 0px 6px 1px rgba(0,0,0,0.10));
+		}
+		.item input:checked ~ .checkMark:after {
+			@include prefix(transition, all .4s ease-in-out);
+			display: block;
+		}
+		.item .checkMark:after {
+			@include prefix(transition, all .4s ease-in-out);
+			content: "X";
+			font-weight: 900;
+			font-size: 24px;
+			text-align: center;
+			width: 100%;
+			line-height: 40px;
+		}
+		.five .checkMark:after {
+			color: $five;
+		}
+		.four .checkMark:after {
+			color: $four;
+		}
+		.three .checkMark:after {
+			color: $three;
+		}
+		.two .checkMark:after {
+			color: $two;
+		}
+		.one .checkMark:after {
+			color: $one;
+		}
+
+	}
+}
