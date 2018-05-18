@@ -5,30 +5,6 @@
 				<div class="name">
 					<h1 class="title">Agregar Actividad</h1>
 				</div>
-				<div class="activityDate">
-					<div class="user" title="Responsable">
-						<div class="dropdown">
-							<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-								<?php echo $assignedHtmlSel?>
-							</button>
-							<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-								<?php echo $assignedHtml?>
-							</ul>
-						</div>
-					</div>
-					<div class="fase">
-						<div class="dropdown" title="Fase">
-							<button class="btn btn-default dropdown-toggle" type="button" id="selectFase" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-								<?php echo $phaseSel?>
-								<span class="caret"></span>
-							</button>
-							<ul class="dropdown-menu" aria-labelledby="selectFase">
-								<?php echo $phaseHtml?>
-							</ul>
-						</div>
-						<input type="hidden" name="fase" id="fase" value="<?php echo$phaseSelId?>" >
-					</div>
-				</div>
 			</div>
 			<div class="addActivityBody animated fadeInUp">
 				<div class="form-group">
@@ -44,6 +20,32 @@
 				<div class="form-group">
 					<label for="fechaFin">Fecha de finalización</label>
 					<input type="date" title="Fecha Terminación" name="fechaFin" class="form-control" value="<?php echo $endDate?>" required>
+				</div>
+
+				<div class="user form-group" title="Responsable">
+					<label for="">Responsable de la actividad</label>
+					<div class="dropdown">
+						<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							<?php echo $assignedHtmlSel?>
+						</button>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+							<?php echo $assignedHtml?>
+						</ul>
+					</div>
+				</div>
+
+				<div class="fase form-group">
+					<label for="">Seleccione la fase de desarrollo</label>
+					<div class="dropdown" title="Fase">
+						<button class="btn btn-default dropdown-toggle" type="button" id="selectFase" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							<?php echo $phaseSel?>
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" aria-labelledby="selectFase">
+							<?php echo $phaseHtml?>
+						</ul>
+					</div>
+					<input type="hidden" name="fase" id="fase" value="<?php echo$phaseSelId?>" >
 				</div>
 				<div class="form-group">
 					<label for="">

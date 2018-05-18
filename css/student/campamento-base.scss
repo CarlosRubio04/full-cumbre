@@ -22,73 +22,26 @@
  		max-width: 800px;
  		width: 800px;
  	}
- 	&Header {
- 		display: flex;
- 		justify-content: space-between;
- 		align-items: center;
-
- 		.name {
-
- 		}
- 		.activityDate {
- 			display: flex;
- 			.user, .fase  {
- 				.dropdown {
- 					width: 100%;
-
- 					.btn {
- 						border: none;
- 						width: 100%;
- 						height: 40px;
- 						color: $verdeOscuro;
- 						background-color: transparent;
- 						border-radius: 0;
- 					}
- 				}
- 			}
-
- 			.fase {
-
- 			}
- 		}
-
- 	}
  }
+.dropdown {
+	width: 100%;
+	position: relative;
 
- .dates {
- 	width: 100%;
- 	display: flex;
- 	align-items: center;
- 	justify-content: space-between;
- 	margin-top: 1em;
- 	.date {
- 		display: flex;
- 		align-items: center;
- 		justify-content: space-around;
-		label {
-			margin-right: .5em;
-		}
- 		input {
- 			border: none;
- 			box-shadow: none;
- 			height: 40px;
- 			width: 200px;
- 			background-color: transparent;
- 			border-radius: 0;
- 		}
- 		.icon {
- 			width: 40px;
- 			height: 40px;
- 			background-color: $verdeClaro;
- 			display: flex;
- 			align-items: center;
- 			justify-content: center;
- 		}
- 	}
- }
+	.btn {
+		background-color: transparent;
+		border-radius: 0;
+		border: 2px solid $verdeClaro;
+		width: 100%;
+		height: 45px;
+	}
+}
+.dropdown-menu {
+	width: 100%;
+	border-radius: 0;
+	border: 1px solid $verdeClaro;
+}
 
-
- .buton {
+.buton {
 
  	button {
  		max-width: 100%;
@@ -96,12 +49,6 @@
  	}
  }
 
- .definir-fases .alert {
-   /* padding: 0px;
-    margin-bottom: 20px;
-    border: 0px solid transparent;
-    border-radius: 0px;*/
-}
 
 .fasesContainer {
 	position: relative;
