@@ -88,3 +88,16 @@
 		}
 	}
 }
+
+.courseInfo {
+	h4 {
+		color: $verdeClaro;
+		line-height: 2;
+	}
+	p {
+		color: $verdoso;
+	}
+	div {
+		margin-top: 2em;
+	}
+}
