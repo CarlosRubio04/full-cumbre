@@ -202,6 +202,15 @@ header {
 		height: 100vh;
 		padding: 4em;
 		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+
+		.close {
+			position: absolute;
+			top: 4em;
+			right: 4em;
+		}
 
 		h4 {
 			color: $verdeOscuro;
@@ -212,9 +221,12 @@ header {
 		ul {
 			list-style: none;
 			padding-left: 0;
-
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+	
 			li {
-				line-height: 4;
+				margin-bottom: 1em;
 				a {
 					color: #8F9E8B;
 					font-weight: 100;
