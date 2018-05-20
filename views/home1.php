@@ -30,7 +30,7 @@
 
 			<div class="item">
 				<div class="itemHeader">
-					<a href="?content=">Lista de grupos</a>
+					<a href="?content=groupList">Lista de grupos</a>
 				</div>
 				<div class="itemBody">
 					<img src="img/lista-grupos.svg" alt="Lista de grupos">
