@@ -6,11 +6,16 @@
 				<div class="title">
 					<h1>Cargar archivo masivo de grupos</h1>
 				</div>
-				<h3><?php echo $message;?></h3>
+				
 				<div class="file">
 					<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates cumque eius minima recusandae fuga architecto error, rem obcaecati magnam ducimus dolorem voluptatum numquam cupiditate, consequatur, repellat quo vero praesentium a.</p>
-					<input type="file" name="fileUpload" class="form-control" placeholder="CARGAR ARCHIVO">
+					<div class="file-input">
+						<input type="file" name="fileUpload" class="form-control">
+						<span>BUSCAR ARCHIVO EN EL ORDENADOR</span>
+					</div>
 					<button type="submit" name="load" class="btn btn-sub">Cargar</button>
+					<hr/>
+					<h3 class="text-center"><?php echo $message;?></h3>
 				</div>
 
 			</div>
