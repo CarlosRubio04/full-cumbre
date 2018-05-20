@@ -132,7 +132,7 @@ section {
 
 .btn-square {
 	display: block;
-	max-width: 250px;
+	// max-width: 250px;
 	background-color: $verdeClaro;
 	color: $blanco;
 	font-weight: 200;
@@ -488,10 +488,26 @@ label {
 	border-radius: 0;
 	height: 45px;
 	margin-top: 10px;
-	color: $gris;
+	color: $verdeOscuro;
 	font-size: 14px;
-	font-weight: 100;
+	font-weight: 600;
 	box-shadow: none; 
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $gris !important;
+  font-weight: 100;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: $gris !important;
+  font-weight: 100;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: $gris !important;
+  font-weight: 100;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: $gris !important;
+  font-weight: 100;
 }
 .form-group textarea {
 	height: 100px;

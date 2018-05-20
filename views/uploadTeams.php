@@ -1,6 +1,6 @@
 <?php Common::logg("Nuevo Grupo","Visualizar información");?>
 <section class="cargar-grupos">
-	<form method="post"  enctype="multipart/form-data">|
+	<form method="post"  enctype="multipart/form-data">
 		<div class="u-color-contraste">
 			<div class="content-wrapper flex-colum flex-center">
 				<div class="title">

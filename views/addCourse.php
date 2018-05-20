@@ -1,4 +1,4 @@
-<section class="formulacion-de-proyecto">
+<section class="agregar-curso">
 	<div class="container-flex u-color-contraste">
 		<div class="item colum-80">
 			<div class="content-wrapper">
