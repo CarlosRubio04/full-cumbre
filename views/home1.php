@@ -3,7 +3,7 @@
 		<div class="content-wrapper u-color-contraste flex-row wrap">
 			<div class="item">
 				<div class="itemHeader">
-					<a href="#">Nuevo usuario</a>
+					<a href="?content=addUser">Nuevo usuario</a>
 				</div>
 				<div class="itemBody">
 					<img src="img/cursos.svg" alt="Cursos">
@@ -48,7 +48,7 @@
 
 			<div class="item">
 				<div class="itemHeader">
-					<a href="#">Lista de Cursos</a>
+					<a href="?content=coursesList">Lista de Cursos</a>
 				</div>
 				<div class="itemBody">
 					<img src="img/lista-grupos.svg" alt="Lista de grupos">
