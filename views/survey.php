@@ -6,9 +6,9 @@
 					<h1 class="animated fadeInLeft">Encuesta de percepción</h1>
 				</div>
 				<div class="formContainer animated fadeInUp">
-					<form>
+					<form method="post">
 						<div class="question">
-							
+							<div id="fullSurvey">
 							<div class="question-group">
 								
 								<div class="question-header">
@@ -500,13 +500,25 @@
 								<label for="fiveteen">Otros temas temas de interés (Que le gustaría encontrar en nuestra programación)</label>
 								<textarea name="fiveteen" id="fiveteen"  rows="5" class="form-control" placeholder="Otros temas temas de interés (Que le gustaría encontrar en nuestra programación)"></textarea>
 							</div>
+							<div class="buton">
+								<button class="btn-square" value="1" type="submit"  name="saveSurvey">Guardar</button>
+							</div>
+						</div>
+							<div class="form-group">
+								<?php echo $message?>
+							</div>
 
 						</div>
 					</form>
 				</div>
 			</div>
 		</div>
-
+		<input type="hidden" id="mess" value="<?php echo $message?>">
+<script>
+	if(document.getElementById('mess').value==="<h2>codigo de curso no valido</h2>" || document.getElementById('mess').value==="<h2>Ya llenaste esta encuensta, Gracias</h2>"){
+		document.getElementById('fullSurvey').style.visibility = "hidden"
+	}
+</script>
 		<div class="conventions">
 			<p>
 				Marque con una X donde corresponda:
@@ -559,3 +571,6 @@
 		</div>
 	</div>
 </section>
+<?php if($message!=""){
+	echo "<script>window.scrollTo(0,document.body.scrollHeight);</script>";
+}

@@ -119,7 +119,7 @@
 							
 							<div id="saveText"></div>
 							<div class="form-group">
-								<button class="btn-square" type="submit" onclick="autoSave(<?php echo $infoUser->getGroupId()?>);alert('Proyecto grabado correctamente');return false;" name="saveProject">SIGUIENTE</button>
+								<button class="btn-square" type="submit" onclick="autoSave(<?php echo $infoUser->getGroupId()?>);alert('Proyecto grabado correctamente');return false;" name="saveProject">Guardar</button>
 							</div>
 						</div>
 					</form>
@@ -145,23 +145,23 @@
 		var postData='id='+groupId;
 		postData+='&name='+document.getElementById('nombre').value;
 		postData+='&summary='+document.getElementById('resumen').value;
-		postData+='&introduction='+document.getElementById('intro').value;
+		//postData+='&introduction='+document.getElementById('intro').value;
 		postData+='&definition='+document.getElementById('definicion').value;
 		postData+='&megas='+document.getElementById('impacto').value;
 		postData+='&justification='+document.getElementById('justificacion').value;
-		postData+='&description='+document.getElementById('descripcion').value;
+		//postData+='&description='+document.getElementById('descripcion').value;
 		postData+='&objective='+document.getElementById('objetivo').value;
 		postData+='&objectiveOthers='+document.getElementById('objetivos').value;
 		postData+='&startDate='+document.getElementById('fechaIni').value;
 		postData+='&endDate='+document.getElementById('fechaFin').value;
-		postData+='&methodology='+document.getElementById('metodologia').value;
+		//postData+='&methodology='+document.getElementById('metodologia').value;
 		postData+='&expectedResults='+document.getElementById('resultados').value;
-		postData+='&execution='+document.getElementById('ejecucion').value;
-		postData+='&results='+document.getElementById('resultados2').value;
+		//postData+='&execution='+document.getElementById('ejecucion').value;
+		//postData+='&results='+document.getElementById('resultados2').value;
 		postData+='&analysis='+document.getElementById('analisis').value;
-		postData+='&products='+document.getElementById('productos').value;
-		postData+='&conclutions='+document.getElementById('concluciones').value;
-		postData+='&bibliography='+document.getElementById('bibliografia').value;
+		//postData+='&products='+document.getElementById('productos').value;
+		//postData+='&conclutions='+document.getElementById('concluciones').value;
+		//postData+='&bibliography='+document.getElementById('bibliografia').value;
 		if (window.XMLHttpRequest) {
 			// code for IE7+, Firefox, Chrome, Opera, Safari
 			xmlhttp1 = new XMLHttpRequest();

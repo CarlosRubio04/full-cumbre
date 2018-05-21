@@ -20,7 +20,7 @@
 							<small>Nombre</small>
 						</div>
 						<div class="input">
-							<p>John</p>
+							<p><?php echo $name?></p>
 						</div>
 					</div>
 
@@ -29,7 +29,7 @@
 							<small>Apellido</small>
 						</div>
 						<div class="input">
-							<p>Doe</p>
+							<p><?php echo $lastname?></p>
 						</div>
 					</div>
 
@@ -38,8 +38,15 @@
 							<small>E-mail</small>
 						</div>
 						<div class="input">
-							<p>John-doe@gmail.com</p>
+							<p><?php echo $email?></p>
 						</div>
+					</div>
+					<div class="input">
+							<h2><?php echo $status?></h2>
+						</div>
+					<div class="input">
+						<a href="?content=editUser&id=<?php echo $id?>" class="btn-square" value="1" type="submit"  name="editUser">Editar</a>
+						<a href="?content=userProfile&id=<?php echo $id?>&deactivate=1" class="btn-square" value="1" type="submit"  name="editUser">deshabilitar</a>
 					</div>
 				</div>
 
@@ -52,10 +59,7 @@
 									<img src="img/pdf.svg" alt="PDF">
 								</a>
 							</div>
-							<div class="pdfInfo">
-								<a href="#">Ver Diagnostico</a>
-								<span>0099008800.pdf</span>
-							</div>
+							<?php echo $pdfU?>
 						</div>
 					</div>
 				</div>
@@ -65,6 +69,12 @@
 		<div class="item colum-60">
 			<div class="content-wrapper">
 				<h4>ESTADITICAS DEL ESTUDIANTE</h4>
+				
+				<br>
+				<br>
+				<br>
+				<h4>Información de bitacora</h4>
+				<?php echo $usersHmtl?>
 			</div>
 		</div>
 

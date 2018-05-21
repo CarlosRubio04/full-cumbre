@@ -9,37 +9,39 @@
 					<form method="post">
 						<div class="inputs">
 							<div class="form-group">
-								<label for="nombre-curso">Nombre del curso</label>
-								<input type="text" name="nombre-curso" id="nombre-curso" class="form-control" placeholder="Ingresa el nombre del curso">
+								<label for="nombre">Nombre del curso</label>
+								<input type="text" name="nombre" id="nombre" value="<?php echo $name?>" class="form-control" placeholder="Ingresa el nombre del curso">
 							</div>
 
 							<div class="form-group">
 								<label for="descripcion">Descripción del curso</label>
-								<textarea name="descripcion" id="descripcion" cols="30" rows="10" class="form-control" placeholder="Ingresa la descripción del curso"></textarea>
+								<textarea name="descripcion" id="descripcion" cols="30" rows="10"  value="<?php echo $desc?>" class="form-control" placeholder="Ingresa la descripción del curso"></textarea>
 							</div>
 
 							<div class="form-group">
 								<label for="fecha">Fecha</label>
-								<input type="date" name="fecha" id="fecha" class="form-control">
+								<input type="date" name="fecha" id="fecha" value="<?php echo $date?>" class="form-control">
 							</div>
 
 							<div class="form-group">
 								<label for="horas">Horas</label>
-								<input type="text" name="horas" id="horas" class="form-control" placeholder="Ingresa el número de horas">
+								<input type="number" step="1" min="1" name="horas" id="horas" value="<?php echo $hours?>" class="form-control" placeholder="Ingresa el número de horas">
 							</div>
 
 							<div class="form-group">
 								<label for="lugar">Lugar</label>
-								<input type="text" name="lugar" id="lugar" class="form-control" placeholder="Ingresa el lugar donde se realizará el curso">
+								<input type="text" name="lugar" id="lugar" class="form-control" value="<?php echo $place?>" placeholder="Ingresa el lugar donde se realizará el curso">
 							</div>
 
 							<div class="form-group">
 								<label for="coach">Coach Asignado</label>
-								<input type="text" name="coach" id="coach" class="form-control" placeholder="Seleccione el coach que dictará el curso">
+								<select name="coach">
+									<?php echo $htmlCoachList?>
+								</select>
 							</div>
-							
+							<?php echo $message?>
 							<div class="form-group">
-								<button class="btn-square" type="submit">Agregar Curso</button>
+								<button class="btn-square" name="createCourse" value="1" type="submit">Agregar Curso</button>
 							</div>
 						</div>
 					</form>
@@ -48,4 +50,6 @@
 		</div>
 	</div>
 </section>
-
+<?php if($message!=""){
+	echo "<script>window.scrollTo(0,document.body.scrollHeight);</script>";
+}

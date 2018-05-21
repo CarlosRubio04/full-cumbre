@@ -3,7 +3,7 @@
 		<div class="item colum-80">
 			<div class="content-wrapper">
 				<div class="title">
-					<h1 class="animated fadeInLeft">Agregar nuevo usuario</h1>
+					<h1 class="animated fadeInLeft">Modificar usuario</h1>
 				</div>
 				<div class="formContainer animated fadeInUp">
 					<form method="post">
@@ -61,8 +61,8 @@
 							<h4><?php echo $message;?></h4>
 
 							<div class="form-group">
-								<button class="btn-square" type="submit" name="addUser" value="1">
-									Agregar Usuario
+								<button class="btn-square" type="submit" name="editUser" value="1">
+									Editar Usuario
 								</button>
 							</div>
 						</div>
@@ -74,10 +74,10 @@
 </section>
 <script>
 	function displayGroupList(obj){
-		if(obj.selectedIndex===2){
-			document.getElementById('divG').style.visibility="visible";
-		}else{
+		if(obj.selectedIndex===0){
 			document.getElementById('divG').style.visibility="hidden";
+		}else{
+			document.getElementById('divG').style.visibility="visible";
 		}
 	}
 </script>

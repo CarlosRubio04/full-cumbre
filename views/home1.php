@@ -39,7 +39,7 @@
 
 			<div class="item">
 				<div class="itemHeader">
-					<a href="#">Lista de Usuarios</a>
+					<a href="?content=userList">Lista de Usuarios</a>
 				</div>
 				<div class="itemBody">
 					<img src="img/cursos.svg" alt="Cursos">
