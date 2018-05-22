@@ -55,7 +55,7 @@
 
 						<div class="item five">
 							<div class="task">
-								<a href="#" class="task-title">Prueba Carlos</a>
+								<a href="?content=taskFolow" class="task-title">Prueba Carlos</a>
 								<div class="user-avatar">
 									<a href="#">Oscar D   <img src="http://placehold.it/30x30" alt="Avatar" class="img-circle">
 									</a>
@@ -75,7 +75,7 @@
 
 						<div class="item tow">
 							<div class="task">
-								<a href="#" class="task-title">Prueba Carlos</a>
+								<a href="?content=taskFolow" class="task-title">Prueba Carlos</a>
 								<div class="user-avatar">
 									<a href="#">Oscar D   <img src="http://placehold.it/30x30" alt="Avatar" class="img-circle">
 									</a>
@@ -95,7 +95,7 @@
 
 						<div class="item one">
 							<div class="task">
-								<a href="#" class="task-title">Prueba Carlos</a>
+								<a href="?content=taskFolow" class="task-title">Prueba Carlos</a>
 								<div class="user-avatar">
 									<a href="#">Oscar D   <img src="http://placehold.it/30x30" alt="Avatar" class="img-circle">
 									</a>
@@ -115,7 +115,7 @@
 
 						<div class="item seven">
 							<div class="task">
-								<a href="#" class="task-title">Prueba Carlos</a>
+								<a href="?content=taskFolow" class="task-title">Prueba Carlos</a>
 								<div class="user-avatar">
 									<a href="#">Oscar D   <img src="http://placehold.it/30x30" alt="Avatar" class="img-circle">
 									</a>
@@ -135,7 +135,7 @@
 
 						<div class="item ten">
 							<div class="task">
-								<a href="#" class="task-title">Prueba Carlos</a>
+								<a href="?content=taskFolow" class="task-title">Prueba Carlos</a>
 								<div class="user-avatar">
 									<a href="#">Oscar D   <img src="http://placehold.it/30x30" alt="Avatar" class="img-circle">
 									</a>
@@ -154,7 +154,7 @@
 
 						<div class="item six">
 							<div class="task">
-								<a href="#" class="task-title">Prueba Carlos</a>
+								<a href="?content=taskFolow" class="task-title">Prueba Carlos</a>
 								<div class="user-avatar">
 									<a href="#">Oscar D   <img src="http://placehold.it/30x30" alt="Avatar" class="img-circle">
 									</a>
@@ -173,7 +173,7 @@
 
 						<div class="item five">
 							<div class="task">
-								<a href="#" class="task-title">Prueba Carlos</a>
+								<a href="?content=taskFolow" class="task-title">Prueba Carlos</a>
 								<div class="user-avatar">
 									<a href="#">Oscar D   <img src="http://placehold.it/30x30" alt="Avatar" class="img-circle">
 									</a>

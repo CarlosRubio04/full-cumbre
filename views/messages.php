@@ -10,7 +10,7 @@
 					<div class="item azul">
 						<div class="message">
 							<span>Examen</span>
-							<a href="#">SUSTENTACIÓN DEL PROYECTO</a>
+							<a href="?content=taskFolow">SUSTENTACIÓN DEL PROYECTO</a>
 						</div>
 						<div class="date">
 							<div class="month">
@@ -25,7 +25,7 @@
 					<div class="item gris">
 						<div class="message">
 							<span>Actividad</span>
-							<a href="#">SUSTENTACIÓN DEL PROYECTO</a>
+							<a href="?content=taskFolow">SUSTENTACIÓN DEL PROYECTO</a>
 						</div>
 						<div class="date">
 							<div class="month">
