@@ -1,4 +1,5 @@
 @import '../variables';
+@import '../mixins';
 
 
 .mensajes {
@@ -112,3 +113,148 @@
 }
 
 
+.seguimiento-tarea {
+	.title {
+		margin-top: 1em;
+	}
+	.estados {
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
+
+		.fase {
+			background-color: $verdeClaro;
+			color: $blanco;
+			font-weight: 700;
+			text-transform: uppercase;
+			padding: .5em 2em;	
+		}
+		.estado	{
+			background-color: $two;
+			color: $blanco;
+			font-weight: 700;
+			text-transform: uppercase;
+			padding: .5em 2em;	
+		}
+	}
+
+	.dates {
+		display: flex;
+		align-items: flex-end;
+		margin-top: 2em;
+		.date {
+			small {
+				color: $verdeClaro;
+				margin-bottom: 4px;
+				display: block;
+			}	
+			div {
+				background-color: $blanco;
+				height: 40px;
+				padding: 0 2em;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-weight: 200;
+				font-size: 20px;
+			}
+		}
+		.date-icon {
+			background-color: $verdeClaro;
+			height: 40px;
+			width: 40px;
+		}
+
+	}
+}
+
+.contenedorComents {
+	position: relative;
+}
+.coments {
+	max-width: 100%;
+	height: calc(100vh - 130px);
+	position: fixed;
+	background-color: $blanco;
+	padding: 1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	@include prefix(box-shadow, -1px 0px 4px 2px rgba(0,0,0,0.10));
+
+	.title {
+		margin-top: 4px;
+		font-size: 20px;
+		padding: .8em;
+		border-bottom: 1px solid $verdeClaro;
+		margin-bottom: 1em;
+	}
+
+	&-container {
+		height: 100%;
+		max-height: 100%;
+		overflow-y: scroll;
+
+		.coment {
+			width: 90%;
+			display: flex;
+			justify-content: flex-start;
+			align-items: flex-start;
+			margin-bottom: 1em;
+			.avatar {
+				margin-top: 0;
+				margin-right: 8px;
+			}
+			.text {
+				background-color: $blanco;
+				font-size: 12px;
+				font-weight: 100;
+				border-radius: 10px;
+				padding: 1em;
+				display: flex;
+				flex-direction: column;
+				@include prefix(box-shadow, -1px 2px 2px 1px rgba(0,0,0,0.15));
+				
+				.date {
+					align-self: flex-end;
+					margin-top: 6px;
+				}
+			}
+		}
+		.coment.user-loged {
+			flex-direction: row-reverse;
+			margin-left: auto;
+			.avatar {
+				margin-top: 0;
+				margin-right: 0px;
+				margin-left: 8px;
+			}
+
+			.text {
+				background-color: $verdeClaro;
+				color: $blanco;
+			}
+		}
+	}
+	&-input {
+		display: flex;
+		align-items: center;
+		padding: .5em;
+		border-top: 1px solid $grisClaro;
+
+		.form-control {
+			border: 0;
+			box-shadow: none;
+			margin-right: 8px;
+		}
+		button {
+			background-color: transparent;
+			border: none;
+			box-shadow: none;
+			color: $verdeClaro;
+			font-weight: 100;
+			padding: 0;
+			margin: 0;
+		}
+	}
+}
