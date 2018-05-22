@@ -1,17 +1,17 @@
 <section class="definir-fases">
-	<div class="container-flex u-color-contraste">
-		<div class="item colum-80">
+	<div class="container-flex flex-center u-color-contraste">
+		<div class="item colum-60">
 			<div class="content-wrapper">
 				<div class="title">
-					<h1 class="animated fadeInLeft">Usuarios</h1>
+					<h1 class="animated fadeInLeft">Lista de usuarios</h1>
 				</div>
 				<div class="formContainer animated fadeInDown">
 					<form method="post">
 						<div class="inputs">
 							<div class="form-group container-flex">
 								<div class="input colum-80">
-									<label for="nombre">Ver Usuarios</label>
-									<input type="text" name="nombre" value="<?php echo $name?>" id="nombre" class="form-control" placeholder="Nombre">
+									<label for="nombre">Buscar usuario</label>
+									<input type="text" name="nombre" value="<?php echo $name?>" id="nombre" class="form-control" placeholder="Buscar usuario">
 								</div>
 								<div class="buton self-bottom colum-40">
 									<button class="btn-square" value="1" type="submit"  name="searchUser">Filtrar</button>

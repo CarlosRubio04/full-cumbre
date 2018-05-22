@@ -13,42 +13,42 @@
 		color: $blanco;
 	}
 }
- .formulacion-de-proyecto {
+.formulacion-de-proyecto {
 
- 	.container-flex {
- 		background-image: url(../img/nubes.png);
- 		background-position: right 2%; 
- 	} 
- }
+	.container-flex {
+		background-image: url(../img/nubes.png);
+		background-position: right 2%; 
+	} 
+}
 
- .addActivity {
- 	background-color: rgba(0,0,0,.5);
- 	z-index: 99;
- 	width: 100%;
- 	height: 100vh;
- 	overflow-y: scroll;
- 	position: fixed;
- 	top: 0;
- 	bottom: 0;
- 	left: 0;
- 	right: 0;
- 	display: flex;
- 	justify-content: center;
+.addActivity {
+	background-color: rgba(0,0,0,.5);
+	z-index: 99;
+	width: 100%;
+	height: 100vh;
+	overflow-y: scroll;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
 
- 	.content-wrapper {
- 		max-width: 800px;
- 		width: 800px;
- 		padding-bottom: 6em;
- 		margin-top: 2em
- 	}
+	.content-wrapper {
+		max-width: 800px;
+		width: 800px;
+		padding-bottom: 6em;
+		margin-top: 2em
+	}
 	.form-group {
 		margin-top: 2em;
 	}
- 	.col-md-6 {
- 		padding: 0 8px 0 0;
- 	}
+	.col-md-6 {
+		padding: 0 8px 0 0;
+	}
 
- }
+}
 .dropdown {
 	width: 100%;
 	position: relative;
@@ -69,11 +69,11 @@
 
 .buton {
 
- 	button {
- 		max-width: 100%;
- 		width: 100%;
- 	}
- }
+	button {
+		max-width: 100%;
+		width: 100%;
+	}
+}
 
 
 .fasesContainer {
@@ -94,6 +94,13 @@
 		height: 40px;
 		display: flex;
 		align-items: center;
+
+		a {
+			color: $verdeClaro;
+			font-size: 16px;
+			font-weight: 100;
+			align-items: center;
+		}
 
 	}
 }
