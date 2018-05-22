@@ -1,6 +1,18 @@
 @import '../variables';
 
+.campamento-base {
+	background-image: url(../img/camp-base.png);
+	background-size: cover;
+	background-position: center bottom;
 
+	.campamentoIntro {
+		color: $blanco;
+		@include prefix(text-shadow, 1px 1px 1px $gris);
+	}
+	.title {
+		color: $blanco;
+	}
+}
  .formulacion-de-proyecto {
 
  	.container-flex {

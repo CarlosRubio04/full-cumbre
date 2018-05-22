@@ -1,10 +1,21 @@
 @import '../variables';
+@import '../mixins';
 
 
 // Alistamiento Campamento
 
 .campamento-alistamiento {
-	
+	background-image: url(../img/alistamiento.png);
+	background-size: cover;
+	background-position: left bottom;
+
+	.campamentoIntro {
+		color: $blanco;
+		@include prefix(text-shadow, 1px 1px 1px $gris);
+	}
+	.title {
+		color: $blanco;
+	}
 }
 
 

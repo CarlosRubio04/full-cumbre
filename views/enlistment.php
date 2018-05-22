@@ -1,5 +1,5 @@
 <section class="campamento-alistamiento">
-	<div class="container-flex u-color-contraste">
+	<div class="container-flex">
 		<div class="item colum-60">
 			<div class="content-wrapper">
 				<div class="title">
