@@ -1,1 +1,112 @@
 @import '../variables';
+
+
+.mensajes {
+
+	.lastestNotificationsContainer {
+		margin-top: 4em;
+	}
+}
+
+.cronograma-fases {
+	position: relative;
+	margin-top: 4em;
+	margin-bottom: 4em;
+	width: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
+
+	&-container {
+		width: 100%;
+		max-width: 100%;
+		overflow-x: scroll;
+		display: grid;
+		grid-template-columns: repeat(11, 1fr);
+
+		.colum {
+			width: 200px;
+			margin-right: 4px;
+			display: grid;
+			grid-template-rows: repeat(11, 1fr);
+			grid-row-gap: 4px;
+
+			.one {
+				grid-row-start: 2;
+			}
+			.tow {
+				grid-row-start: 3;
+			}
+			.three {
+				grid-row-start: 4;
+			}
+			.four {
+				grid-row-start: 5;
+			}
+			.five {
+				grid-row-start: 6;
+			}
+			.six {
+				grid-row-start: 7;
+			}
+			.seven {
+				grid-row-start: 8;
+			}
+			.eight {
+				grid-row-start: 9;
+			}
+			.nine {
+				grid-row-start: 10;
+			}
+			.ten {
+				grid-row-start: 11;
+			}
+		}
+		.fases {
+			.item {
+				width: 100%;
+				padding: 1em;
+				display: block;
+				height: 80px;
+				color: $blanco;
+				font-size: 16px;
+				letter-spacing: 2px;
+				font-weight: 200;
+			}
+			.item:nth-child(even) {background: $verdeOscuro}
+			.item:nth-child(odd) {background: $verdeOscuro2}
+		}
+
+		.date {
+			background-color: $grisClaro;
+			.header {
+				background-color: $verdeClaro !important;
+				color: $blanco !important;
+			}
+			.item {
+				width: 100%;
+				padding: 1em;
+				display: block;
+				height: 80px;
+				overflow-y: hidden;
+				background-color: $blanco;
+				margin-bottom: 4px;
+
+				.task {
+					&-title {
+						color: $verdeOscuro;
+						font-weight: 300;
+						font-size: 18px;
+					}
+				}
+				.user-avatar {
+					margin-top: 4px;
+					a {
+						color: $gris;
+						font-size: 12px;
+						letter-spacing: 2px;
+					}
+				}
+			}
+		}
+	}
+}

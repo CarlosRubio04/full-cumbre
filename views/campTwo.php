@@ -18,7 +18,7 @@
 				</div>
 
 				<div class="campamentoCta">
-					<a href="?content=" class="btn-square">
+					<a href="?content=messages" class="btn-square">
 						ingresar
 					</a> 	
 				</div>

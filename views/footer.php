@@ -17,7 +17,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="?content=camp-Two">
+				<a href="?content=campTwo">
 					<img src="img/dos.svg" alt="campamento dos">
 				</a>
 			</li>
