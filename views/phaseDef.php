@@ -19,7 +19,8 @@
 									<button class="btn-square" value="1" type="submit"  name="createPhase">Crear Fase</button>
 								</div>
 							</div>
-							<h4><?php echo $message;?></h4>
+							<hr>
+							<samll><?php echo $message;?></samll>
 						</div>
 					</form>
 				</div>
@@ -27,6 +28,8 @@
 				<div class="fasesContainer">
 					<?php echo $phasesHmtl?>
 				</div>
+				<br>
+				<br>
 			</div>
 
 
@@ -37,16 +40,21 @@
 							<div class="form-group">
 								<div class="input">
 									<label for="">Agregar Actividad</label>
-									<input type="text" name="" id="" class="form-control" placeholder="Nombre de la Actividad">
+									<input type="text" name="" id="nombreTaskAux" class="form-control" placeholder="Nombre de la Actividad">
 								</div>
 								<div class="buton">
-									<button class="btn-square" value="1" onclick="openActivity()">
+									<button type="button" class="btn-square" value="1" onclick="openActivity();document.getElementById('nombreTask').value=document.getElementById('nombreTaskAux').value;">
 										Agregar Actividad
 									</button>
 								</div>
+								<hr>
+								<small id="resultTaskOk"></small>
 							</div>
 						</div>
 					</form>
+				</div>
+				<div class="fasesContainer">
+					<?php echo $tasksHmtl?>
 				</div>
 			</div>
 
@@ -58,14 +66,19 @@
 							<div class="form-group">
 								<div class="input">
 									<label for="">Definir Entregable</label>
-									<input type="text" name="" id="" class="form-control" placeholder="Definir un entregable">
+									<input type="text" name="" id="nombreProductAux" class="form-control" placeholder="Definir un entregable">
 								</div>
 								<div class="buton">
-									<button class="btn-square" value="1" onclick="openEntregable()">Agregar Entregable</button>
+									<button type="button" class="btn-square" value="1" onclick="openEntregable();document.getElementById('nombreProduct').value=document.getElementById('nombreProductAux').value;">Agregar Entregable</button>
 								</div>
+								<hr>
+								<small id="resultProductOk"></small>
 							</div>
 						</div>
 					</form>
+				</div>
+				<div class="fasesContainer">
+					<?php echo $productsHmtl?>
 				</div>
 			</div>
 
@@ -76,7 +89,7 @@
 
 
 <?php
-	require_once 'views/taskDef.php';
-	require_once 'views/entregableDef.php';
+	require_once 'Libs/LtaskDef.php';
+	require_once 'Libs/LproductDef.php';
 ?>
 

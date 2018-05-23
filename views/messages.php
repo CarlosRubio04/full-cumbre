@@ -42,7 +42,7 @@
 		<div class="item colum-40">
 			<div class="content-wrapper">
 				<div class="siguiente-campamento animated fadeIn">
-					<a href="?content=dosTasks" class="btn btn-main">
+					<a href="?content=twoTasks" class="btn btn-main">
 						Ver Cronograma
 					</a>
 				</div>

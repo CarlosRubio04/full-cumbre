@@ -41,6 +41,7 @@
 									</select>
 								</div>
 							</div>
+							
 							<div class="form-group" id="divG" <?php echo $displayG?>>
 								<label for="">Grupo</label>
 								<div class="u-selectWraper">

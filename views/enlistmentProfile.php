@@ -95,7 +95,8 @@
 							<input type="text" name="groupName" class="form-control" value="<?php echo $groupNick?>">
 							<button type="submit" class="btn" name="changeName">cambiar</button>
 					</div>
-					<h3><?php echo $message;?></h3>
+					<hr/>
+					<small><?php echo $message;?></small>
 					<div class="teamList">
 						<small>Integrantes del equipo</small>
 						<?php echo $groupHtml?>

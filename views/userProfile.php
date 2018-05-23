@@ -44,9 +44,12 @@
 					<div class="input">
 							<h2><?php echo $status?></h2>
 						</div>
-					<div class="input">
-						<a href="?content=editUser&id=<?php echo $id?>" class="btn-square" value="1" type="submit"  name="editUser">Editar</a>
-						<a href="?content=userProfile&id=<?php echo $id?>&deactivate=1" class="btn-square" value="1" type="submit"  name="editUser">deshabilitar</a>
+
+					<div class="form-group">
+						<div class="input">
+							<a href="?content=editUser&id=<?php echo $id?>" class="btn-square" value="1" type="submit"  name="editUser">Editar</a>
+							<a href="?content=userProfile&id=<?php echo $id?>&deactivate=1" class="btn-square" value="1" type="submit"  name="editUser">deshabilitar</a>
+						</div>
 					</div>
 				</div>
 
@@ -68,13 +71,13 @@
 
 		<div class="item colum-60">
 			<div class="content-wrapper">
-				<h4>ESTADITICAS DEL ESTUDIANTE</h4>
-				
-				<br>
-				<br>
-				<br>
-				<h4>Información de bitacora</h4>
-				<?php echo $usersHmtl?>
+				<div class="title">
+					<h1>Estadisticas del usuario</h1>
+				</div>
+				<hr/>
+				<div class="fasesContainer logs">
+					<?php echo $usersHmtl?>
+				</div>
 			</div>
 		</div>
 

@@ -68,3 +68,23 @@
 		}
 	}
 }
+
+.notif {
+	.fase {
+		padding: 2em;
+		a {
+			color: $verdeOscuro2;
+		}
+	}
+}
+
+
+.logs {
+	.fase {
+		background-color: $verdeOscuro2;
+		padding: 2em;
+		a {
+			color: $blanco;
+		}
+	}
+}

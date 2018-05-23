@@ -18,7 +18,7 @@ $addActivity = $('#addActivity');
 $addActivity.hide();
 
 function openActivity() {
-	event.preventDefault();
+//	event.preventDefault();
 	$addActivity.fadeIn();
 }
 function closeActivity() {
@@ -33,7 +33,7 @@ $addEntregable = $('#addEntregable');
 $addEntregable.hide();
 
 function openEntregable() {
-	event.preventDefault();
+//	event.preventDefault();
 	$addEntregable.fadeIn();
 }
 function closeEntregable() {

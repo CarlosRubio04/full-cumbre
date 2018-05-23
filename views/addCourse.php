@@ -35,9 +35,11 @@
 
 							<div class="form-group">
 								<label for="coach">Coach Asignado</label>
-								<select name="coach">
-									<?php echo $htmlCoachList?>
-								</select>
+								<div class="u-selectWraper">
+									<select name="coach" class="form-control">
+										<?php echo $htmlCoachList?>
+									</select>
+								</div>
 							</div>
 							<?php echo $message?>
 							<div class="form-group">
