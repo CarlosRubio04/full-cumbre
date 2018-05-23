@@ -1,7 +1,7 @@
 <section class="campamento-alistamiento">
 	<div class="container-flex">
 		<div class="item colum-60">
-			<div class="content-wrapper">
+			<div class="content-wrapper u-bg">
 				<div class="title">
 					<h1 class="animated fadeInLeft">Alistamiento</h1>
 				</div>
@@ -12,6 +12,7 @@
 						mejora del equipo y de sus integrantes.
 						Los invitamos a dar respuesta de manera sincera y objetiva a la misma para prepararnos a esta aventura
 					</p>
+
 					<a role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
 						Objetivos
 					</a>
@@ -22,6 +23,7 @@
 							</p>
 						</div>
 					</div>
+					
 				</div>
 
 				<div class="campamentoCta animated fadeInUp">

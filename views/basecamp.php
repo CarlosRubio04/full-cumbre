@@ -13,6 +13,17 @@
 						<br/>
 						Por ello adelante, y sigan escalando hacia la cumbre.
 					</p>
+
+					<a role="button" data-toggle="collapse" href="#objBase" aria-expanded="false" aria-controls="objBase">
+						Objetivos
+					</a>
+					<div class="collapse" id="objBase">
+						<div>
+							<p>
+								Fomentar al interior de los equipos prácticas de trabajo colaborativo, que impacten en los resultados de la organización y en las que se reflejen los valores de los individuos y la organización a fin de consolidar una cultura de excelencia en el desempeño y en la calidad humana.
+							</p>
+						</div>
+					</div>
 				</div>
 
 				<div class="campamentoCta animated fadeInUp">

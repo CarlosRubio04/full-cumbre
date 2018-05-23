@@ -1,11 +1,23 @@
 <section class="definir-fases u-color-contraste">
 	<div class="content-wrapper">
-		<div class="title">
-			<h1 class="animated fadeInLeft">Fases y Actividades del proyecto</h1>
+		<div class="container-flex">
+			<div class="item colum-80">
+				<div class="title">
+					<h1 class="animated fadeInLeft">Fases y Actividades del proyecto</h1>
+				</div>
+			</div>
+
+			<div class="item">
+				<div class="siguiente-campamento animated fadeIn">
+					<a href="?content=baseTasks" class="btn btn-main">
+						Ver cronograma
+					</a>
+				</div>
+			</div>
+			
 		</div>
+		
 		<div class="container-flex space-btw">
-
-
 			<div class="colum-30">
 				<div class="formContainer animated fadeInDown">
 					<form method="post">
@@ -89,7 +101,7 @@
 
 
 <?php
-	require_once 'Libs/LtaskDef.php';
-	require_once 'Libs/LproductDef.php';
+require_once 'Libs/LtaskDef.php';
+require_once 'Libs/LproductDef.php';
 ?>
 
