@@ -1,11 +1,11 @@
 <section class="campamento-alistamiento">
 	<div class="container-flex">
 		<div class="item colum-60">
-			<div class="content-wrapper u-bg">
+			<div class="content-wrapper ">
 				<div class="title">
 					<h1 class="animated fadeInLeft">Alistamiento</h1>
 				</div>
-				<div class="campamentoIntro animated fadeInDown">
+				<div class="campamentoIntro animated fadeInDown u-bg">
 					<p>
 						Hola Equipo, les vamos a contar que va a ocurrir en esta etapa. El alistamiento requiere que cada
 						miembro del equipo de respuesta a una encuesta que permitirá identificar las fortalezas y áreas de

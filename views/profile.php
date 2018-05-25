@@ -70,6 +70,11 @@
 							<?php echo $pdfU?>
 						</div>
 					</div>
+				</div><br>
+				<div class="campamentoCta animated fadeInUp">
+					<a href="#" class="btn-square">
+						Cambiar Contraseña
+					</a> 	
 				</div>
 			</div>
 		</div>
