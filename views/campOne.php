@@ -1,7 +1,7 @@
 <section class="campamento-uno">
 	<div class="container-flex u-color-contraste">
 		<div class="item colum-60">
-			<div class="content-wrapper">
+			<div class="content-wrapper u-bg">
 				<div class="title">
 					<h1 class="animated fadeInLeft">Campamento Uno</h1>
 				</div>
@@ -15,7 +15,30 @@
 						<br/>
 						Por ello adelante y hacia la cumbre.
 					</p>
+					<a role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+					> Ver Objetivo del Campamento Uno:
+					</a>
+					<div class="collapse" id="collapseExample">
+						<div>
+							<p>
+								Brindar las estrategias, técnicas y herramientas de Resultados y/o Relación que le permita al equipo avanzar en el proyecto y en el clima laboral al interior del equipo.
+							</p>
+						</div>
+						<div>
+							<p><span class="subtitle-objetives">Estrategias:</span>Dos Componentes: Formación y Trabajo de Campo.
+							</p>
+							<ul>
+								<li class="underline-text">Formación:</li>
+								<li>Talleres y formación indoor y out door.</li><br>
+								<li class="underline-text">	Trabajo de campo:</li>
+								<li>Equipo vivirá una experiencia de impacto social.</li>
+							</ul><br>
+							<p><span class="subtitle-objetives">Entregables:</span>
+								Formación, según la necesidad particular del equipo.
+						</div>
+					</div>	
 				</div>
+				
 
 				<div class="campamentoCta animated fadeInUp">
 					<a href="?content=coursesDis" class="btn-square">

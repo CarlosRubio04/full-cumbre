@@ -318,35 +318,50 @@ section {
 // Estilos Basicos para campamentos
 
 .campamentoIntro {
-	color: $verdoso;
+	color: $blanco;
 	font-size: 16px;
 	font-weight: 200;
 	letter-spacing: 2px;
 	margin-top: 40px;
 
-	a {
-		color: $verdeOscuro;
-		font-size: 16px;
-		font-weight: 200;
-		letter-spacing: 2px;
-		margin: 1em 0;
-		display: block;
+	a  {
+		color: $blanco !important; 
+		font-size: 16px !important;
+		font-weight: 400 !important;
+		letter-spacing: 2px !important;
+		margin: 1em 0 !important;
+		display: block !important;
+	}
+
+	.underline-text{
+		text-decoration: underline;
+		font-weight: 400;
 	}
 }
+// Estilos para subtitulo de objetivos
 
+.subtitle-objetives{
+	color: $blanco;
+	font-size: 18px;
+	font-weight: 400;
+	display: block;
+}
 
 // Activity Feed
 
 .activityFeed {
+	border-top: 1px solid $grisClaro;
 	position: relative;
+	display: flex;
 	width: 100%;
 	&Container {
 		position: relative;
-		width: 100%;
+		display: flex;
+		width: 50%;
+		margin-right: 4em;
 		.item {
 			width: 100%;
-			border-top: 1px solid $grisClaro;
-			margin-bottom: 4em;
+			margin-right: 4em;
 
 			&:last-child {
 				margin-bottom: 0;
@@ -364,6 +379,9 @@ section {
 			
 			.state.verde {
 				background-color: $verdeClaro;
+				position: absolute;
+				margin-bottom: 40px;
+				left: 0;
 			}
 			.state.rojo {
 				background-color: $rojo;
@@ -378,7 +396,7 @@ section {
 				background-color: $gris;
 			}
 			.activity {
-				margin-top: 20px;
+				margin-top: 50px;
 				width: 100%;
 				display: flex;
 				justify-content: space-between;
@@ -450,7 +468,7 @@ section {
 }
 
 .u-bg {
-	background-color: rgba($verdeOscuro, .50);
+	background-color: rgba($verdeOscuro, .70);
 }
 
 

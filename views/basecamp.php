@@ -1,7 +1,7 @@
 <section class="campamento-base">
 	<div class="container-flex">
 		<div class="item colum-60">
-			<div class="content-wrapper">
+			<div class="content-wrapper u-bg">
 				<div class="title">
 					<h1 class="animated fadeInLeft">Campamento base</h1>
 				</div>
@@ -13,14 +13,29 @@
 						<br/>
 						Por ello adelante, y sigan escalando hacia la cumbre.
 					</p>
-
-					<a role="button" data-toggle="collapse" href="#objBase" aria-expanded="false" aria-controls="objBase">
-						Objetivos
+					<a role="button" data-toggle="collapse" href="#objBase2" aria-expanded="false" aria-controls="collapseExample">
+						> Ver Descripción de Campamento Base:
 					</a>
-					<div class="collapse" id="objBase">
+					
+					<div class="collapse" id="objBase2">
 						<div>
-							<p>
-								Fomentar al interior de los equipos prácticas de trabajo colaborativo, que impacten en los resultados de la organización y en las que se reflejen los valores de los individuos y la organización a fin de consolidar una cultura de excelencia en el desempeño y en la calidad humana.
+							<p><span class="subtitle-objetives">Objetivo:</span>
+								Identificar un proyecto que impacte en la dimensión Resultados del equipo que este alienado con OBJETIVOS ESTRATÉGICOS y se desarrolle en un tiempo aproximado de 6 meses. 
+							</p>
+						</div>
+						<div>
+							<p><span class="subtitle-objetives">	Estrategias:</span></p>
+							<p>Dos Componentes: formación y acompañamiento.</p>
+							<ul>
+								<li><p><span class="subtitle-objetives" >Formación:</span> Taller de Formulación de proyectos.</p></li>
+								<li><p><span class="subtitle-objetives" >Acompañamiento:</span> Tendrá la posibilidad de tener horas de asesoría en el proyecto, con el experto temático.</p></li>
+							</ul>
+						</div>
+						<div>
+							<p><span class="subtitle-objetives">Entregable:</span>
+								<ul>
+									<li>Proyecto de trabajo.</li>
+								</ul>	 
 							</p>
 						</div>
 					</div>
