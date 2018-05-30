@@ -1,6 +1,16 @@
+<?php if(!defined('directAccess')){ header('location: ../?content=404');}?>
 <section class="dashboard inicio">
 	<div class="container-flex">
 		<div class="content-wrapper u-color-contraste flex-row wrap">
+			<div class="item">
+				<div class="itemHeader">
+					<a href="?content=uploadTeams">Nuevo grupo</a>
+				</div>
+				<div class="itemBody">
+					<img src="img/lista-grupos.svg" alt="Lista de grupos">
+				</div>
+			</div>
+			
 			<div class="item">
 				<div class="itemHeader">
 					<a href="?content=addUser">Nuevo usuario</a>
@@ -10,14 +20,7 @@
 				</div>
 			</div>
 
-			<div class="item">
-				<div class="itemHeader">
-					<a href="?content=uploadTeams">Nuevo grupo</a>
-				</div>
-				<div class="itemBody">
-					<img src="img/lista-grupos.svg" alt="Lista de grupos">
-				</div>
-			</div>
+			
 
 			<div class="item">
 				<div class="itemHeader">

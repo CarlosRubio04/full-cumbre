@@ -1,3 +1,4 @@
+<?php if(!defined('directAccess')){ header('location: ../?content=404');}?>
 <section class="cronograma-base">
 	<div class="u-color-contraste">
 		<div class="content-wrapper">

@@ -1,3 +1,4 @@
+<?php if(!defined('directAccess')){ header('location: ../?content=404');}?>
 <section class="main addActivity u-color-contraste">
 	<form method="post">
 		<div class="content-wrapper  u-color-contraste animated fadeInUp">
@@ -14,11 +15,11 @@
 					<label for="">
 						Nombre del Entregable
 					</label>
-					<input type="text" name="nombreProduct" id="nombreProduct" class="form-control" placeholder="Ingresa el nombre de la actividad" value="<?php echo $name?>" required>
+					<input type="text" name="nombre" id="nombreProduct" class="form-control" placeholder="Ingresa el nombre de la actividad" value="<?php echo $name?>" required>
 				</div>
 				<div class="form-group">
 					<label for="fechaIni">Fecha de entrega</label>
-					<input type="date" title="Fecha Entrega" name="fechaProduct" id="fechaProduct" class="form-control" value="<?php echo $startDate?>" required>
+					<input type="date" title="Fecha Entrega" name="fecha" id="fechaProduct" class="form-control" value="<?php echo $startDate?>" required>
 				</div>
 
 				<div class="user form-group" title="Responsable">

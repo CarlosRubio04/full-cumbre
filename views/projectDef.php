@@ -1,3 +1,4 @@
+<?php if(!defined('directAccess')){ header('location: ../?content=404');}?>
 <section class="formulacion-de-proyecto">
 	<div class="container-flex u-color-contraste">
 		<div class="item colum-60">
@@ -10,11 +11,11 @@
 						<div class="inputs">
 							<div class="form-group">
 								<label for="nombre">Nombre del proyecto</label>
-								<input type="text" name="nombre" id="nombre" value="<?php echo $name;?>" class="form-control" placeholder="Nombre">
+								<input type="text" name="nombre" maxlength="100" id="nombre" value="<?php echo $name;?>" class="form-control" placeholder="Nombre">
 							</div>
 							<div class="form-group">
 								<label for="resumen">Resumen</label>
-								<input type="text" name="resumen" id="resumen" value="<?php echo $summary;?>" class="form-control" placeholder="Resumen">
+								<input type="text" name="resumen" id="resumen" maxlength="960" value="<?php echo $summary;?>" class="form-control" placeholder="Resumen">
 							</div>
 
 							<!-- <div class="form-group">
@@ -25,7 +26,7 @@
 							<h4 class="subTitle">Problematica</h4>
 							<div class="form-group">
 								<label for="definicion">Definición de problemática</label>
-								<textarea name="definicion" id="definicion" rows="5" class="form-control" placeholder="Definición de problemática"><?php echo $definition;?></textarea>
+								<textarea name="definicion" id="definicion" rows="5" maxlength="400" class="form-control" placeholder="Definición de problemática"><?php echo $definition;?></textarea>
 							</div>
 							<div class="form-group">
 								<label for="">¿Qué Megas de la universidad impacta?</label>
@@ -49,7 +50,7 @@
 
 							<div class="form-group">
 								<label for="justificacion">Justificación del proyecto</label>
-								<textarea name="justificacion" id="justificacion"  rows="5" class="form-control" placeholder="Justificación del proyecto."><?php echo $justification;?></textarea>
+								<textarea name="justificacion" id="justificacion" maxlength="960" rows="5" class="form-control" placeholder="Justificación del proyecto."><?php echo $justification;?></textarea>
 							</div>
 
 							<!-- <div class="form-group">
@@ -59,11 +60,11 @@
 
 							<div class="form-group">
 								<label for="">Objetivo general</label>
-								<textarea name="objetivo" id="objetivo" rows="5" class="form-control" placeholder="Objetivo general"><?php echo $objective;?></textarea>
+								<textarea name="objetivo" id="objetivo" rows="5" maxlength="250" class="form-control" placeholder="Objetivo general"><?php echo $objective;?></textarea>
 							</div>
 							<div class="form-group">
 								<label for="">Objetivos especificos</label>
-								<textarea name="objetivos" id="objetivos" rows="5" class="form-control" placeholder="Objetivos especificos"><?php echo $objectiveOthers;?></textarea>
+								<textarea name="objetivos" id="objetivos" maxlength="250" rows="5" class="form-control" placeholder="Objetivos especificos"><?php echo $objectiveOthers;?></textarea>
 							</div>
 
 							<h4 class="subTitle">Tiempo</h4>
@@ -85,7 +86,7 @@
 
 							<div class="form-group">
 								<label for="">Resultados esperados</label>
-								<input type="text" name="resultados" id="resultados" value="<?php echo $expectedResults;?>" class="form-control" placeholder="Resultados esperados">
+								<input type="text" name="resultados" maxlength="960" id="resultados" value="<?php echo $expectedResults;?>" class="form-control" placeholder="Resultados esperados">
 							</div>
 
 							<!-- <div class="form-group">
@@ -100,7 +101,7 @@
 
 							<div class="form-group">
 								<label for="">Análisis de resultados</label>
-								<input type="text" name="analisis" value="<?php echo $analysis;?>" id="analisis" class="form-control" placeholder="Análisis de resultados">
+								<input type="text" name="analisis" maxlength="960" value="<?php echo $analysis;?>" id="analisis" class="form-control" placeholder="Análisis de resultados">
 							</div>
 
 							<!-- <div class="form-group">

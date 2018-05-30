@@ -1,9 +1,11 @@
+<?php if(!defined('directAccess')){ header('location: ../?content=404');}?>
 <header>
 	<div class="nav">
 		<div class="navLogo">
 			<a href="?content=ruta-virtual">
 				<img src="img/logo-blanco.svg" alt="CUMBRE">
 			</a>
+			<span>Dirección de Gestión Humana</span>
 		</div>
 		<div class="navItems">
 			<?php echo $menuTop?>

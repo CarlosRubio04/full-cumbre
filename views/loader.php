@@ -1,3 +1,4 @@
+<?php if(!defined('directAccess')){ header('location: ../?content=404');}?>
     <div id="loader" class="loader">
     <svg width="180px" height="200px" viewBox="0 0 512 481" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 

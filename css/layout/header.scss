@@ -31,10 +31,24 @@ header {
 		height: 65px;
 		display: flex;
 		align-items: center;
+		
+		span {
+			color: $blanco;
+			font-size: 14px;
+			font-weight: 100;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+			border-left: 1px solid $blanco;
+			padding: .3em 0 0 1em;
+		}
+		
+
 		img {
 			height: 32px;
 			width: auto;
+			margin-right: 1em;
 		}
+
 	}
 	&Items {
 		margin-left: auto;
@@ -224,7 +238,7 @@ header {
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
-	
+
 			li {
 				margin-bottom: 1em;
 				a {

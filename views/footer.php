@@ -1,3 +1,4 @@
+<?php if(!defined('directAccess')){ header('location: ../?content=404');}?>
 <footer class="footer">
 	<nav>
 		<ul>

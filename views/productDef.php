@@ -1,5 +1,6 @@
+<?php if(!defined('directAccess')){ header('location: ../?content=404');}?>
 <section class="addActivity" id="addEntregable">
-	<form method="post">
+	<form method="post" id="formTask">
 		<div class="content-wrapper  u-color-contraste animated fadeInUp">
 			<button class="close" onclick="closeEntregable()">
 				<i class="fa fa-times" aria-hidden="true"></i>
@@ -83,8 +84,7 @@
 		xmlhttp1.onreadystatechange = function() {
 			if (xmlhttp1.readyState == 4 && xmlhttp1.status == 200) {
 				if(xmlhttp1.responseText=="Entregable Creado"){
-					document.getElementById('resultProductOk').innerHTML  = xmlhttp1.responseText;
-					closeEntregable();
+					document.getElementById('formTask').submit();
 				}else{
 					document.getElementById('resultPro').innerHTML  = xmlhttp1.responseText;
 				}

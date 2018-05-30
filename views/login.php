@@ -1,3 +1,4 @@
+<?php if(!defined('directAccess')){ header('location: ../?content=404');}?>
 <section class="login">
 	<div class="loginContainer">
 		<div class="u-logo">
@@ -10,10 +11,10 @@
 			<div class="u-form">
 				<form method="post">
 					<div class="form-group">
-						<input type="text" value="oz" class="form-control" name="user" placeholder="Ingresa tu número de cedula" required>
+						<input type="text" class="form-control" name="user" placeholder="Ingresa tu número de cedula" required>
 					</div>
 					<div class="form-group">
-						<input type="password" value="123" class="form-control" name="pass" placeholder="Ingresa tu contraseña" required>
+						<input type="password" class="form-control" name="pass" placeholder="Ingresa tu contraseña" required>
 					</div>
 					<h3><?php echo $message?></h3>
 					<div class="form-group">
@@ -25,7 +26,7 @@
 			</div>
 		</div>
 		<div class="loginMissedPass">
-			<a href="#">¿Olvidaste tu contraseña?</a>
+			<a href="?content=forgot">¿Olvidaste tu contraseña?</a>
 		</div>
 	</div>
 </section>

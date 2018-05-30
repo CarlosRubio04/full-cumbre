@@ -1,6 +1,11 @@
 @import '../variables';
 @import '../mixins';
 
+.campamento-uno {
+	background-image: url(../img/camp-1.png);
+	background-size: cover;
+	background-position: center bottom;
+}
 
 .courses-grid {
 	display: flex;

@@ -50,7 +50,7 @@ function createProduct(){
 		$pInfo=$objP->get($phInfo->getProjectId());
 		unset($_SESSION['productValues']);
 		Common::logg("Creacion de Producto",$message."=> Nombre:$name,desc:$desc,Fecha:$fecha,$assignedSTR,Tareas:$tasksSTR");
-		$MSGdata=['USER'=>$_SESSION['loginNameCumbre'],'NAME'=>$name,'TASKS'=>$tasksSTR,'PROJECT'=>$pInfo->getName()];
+		$MSGdata=['USER'=>$_SESSION['loginNameCumbre'],'NAME'=>$name,'TASKS'=>$tasksSTR,'PROJECT'=>$pInfo->getName(),'ID'=>$res];
 		
 		//notify assigned users and coach
 		foreach ($assignedId as $value) {

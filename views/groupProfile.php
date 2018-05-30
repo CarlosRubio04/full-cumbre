@@ -1,3 +1,4 @@
+<?php if(!defined('directAccess')){ header('location: ../?content=404');}?>
 <section class="alistamiento group-profile u-color-contraste">
 	<div class="container-flex">
 		<div class="teamProfile item">
@@ -15,7 +16,7 @@
 						</div>
 						<div class="info">
 							<a href="?content=userProfile&id=<?php echo $coachId?>" class="name"><?php echo $coach?></a>
-							<p><a href="?content=editCoach<?php echo "&id=$id"?>">Asignar Coach</a></p>
+							<?php echo $coachAsign?>
 						</div>
 					</div>
 				</div>

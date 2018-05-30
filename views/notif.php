@@ -1,3 +1,4 @@
+<?php if(!defined('directAccess')){ header('location: ../?content=404');}?>
 <section class="definir-fases">
 	<div class="container-flex flex-center u-color-contraste">
 		<div class="item colum-60">

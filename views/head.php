@@ -1,3 +1,4 @@
+<?php if(!defined('directAccess')){ header('location: ../?content=404');}?>
 <head>
      <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">

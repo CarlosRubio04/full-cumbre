@@ -1,3 +1,4 @@
+<?php if(!defined('directAccess')){ header('location: ../?content=404');}?>
 <section class="agregar-usuario">
 	<div class="container-flex u-color-contraste">
 		<div class="item colum-80">

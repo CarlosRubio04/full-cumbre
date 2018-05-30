@@ -1,3 +1,4 @@
+<?php if(!defined('directAccess')){ header('location: ../?content=404');}?>
 <section class="alistamiento">
 	<div class="container-flex">
 		<div class="profile item colum-40 u-color-contraste">
@@ -49,6 +50,7 @@
 						<div class="input">
 							<a href="?content=editUser&id=<?php echo $id?>" class="btn-square" value="1" type="submit"  name="editUser">Editar</a>
 							<a href="?content=userProfile&id=<?php echo $id?>&deactivate=1" class="btn-square" value="1" type="submit"  name="editUser">deshabilitar</a>
+							<a href="?content=newPass&id=<?php echo $id?>" class="btn-square" value="1" type="submit"  name="editUser">Cambiar Clave</a>
 						</div>
 					</div>
 				</div>

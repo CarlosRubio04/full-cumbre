@@ -1,3 +1,4 @@
+<?php if(!defined('directAccess')){ header('location: ../?content=404');}?>
 <section class="mensajes">
 	<div class="container-flex flex-center u-color-contraste">
 		<div class="item colum-80">
@@ -7,7 +8,7 @@
 				</div>
 				
 				<div class="lastestNotificationsContainer">
-					<div class="item azul">
+					<!--<div class="item azul">
 						<div class="message">
 							<span>Examen</span>
 							<a href="?content=taskFolow">SUSTENTACIÓN DEL PROYECTO</a>
@@ -35,7 +36,7 @@
 								28
 							</div>
 						</div>
-					</div>
+					</div>-->
 				</div>
 			</div>
 		</div>

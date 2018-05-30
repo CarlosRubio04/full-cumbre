@@ -1,3 +1,4 @@
+<?php if(!defined('directAccess')){ header('location: ../?content=404');}?>
 <section class="agregar-curso">
 	<div class="container-flex u-color-contraste">
 		<div class="item colum-80">
@@ -15,7 +16,7 @@
 
 							<div class="form-group">
 								<label for="descripcion">Descripción del curso</label>
-								<textarea name="descripcion" id="descripcion" cols="30" rows="10"  value="<?php echo $desc?>" class="form-control" placeholder="Ingresa la descripción del curso"></textarea>
+								<textarea name="descripcion" id="descripcion" cols="30" rows="10" class="form-control" placeholder="Ingresa la descripción del curso"><?php echo $desc?></textarea>
 							</div>
 
 							<div class="form-group">

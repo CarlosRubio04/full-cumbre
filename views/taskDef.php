@@ -1,5 +1,6 @@
+<?php if(!defined('directAccess')){ header('location: ../?content=404');}?>
 <section class="addActivity" id="addActivity">
-	<form method="post">
+	<form method="post" id="formTask">
 		<div class="content-wrapper  u-color-contraste animated fadeInUp">
 			<button class="close" onclick="closeActivity()">
 				<i class="fa fa-times" aria-hidden="true"></i>
@@ -91,8 +92,7 @@
 		xmlhttp1.onreadystatechange = function() {
 			if (xmlhttp1.readyState == 4 && xmlhttp1.status == 200) {
 				if(xmlhttp1.responseText=="Tarea Creada"){
-					document.getElementById('resultTaskOk').innerHTML  = xmlhttp1.responseText;
-					closeActivity();
+					document.getElementById('formTask').submit();
 				}else{
 					document.getElementById('result').innerHTML  = xmlhttp1.responseText;
 				}

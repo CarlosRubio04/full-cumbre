@@ -1,3 +1,4 @@
+<?php if(!defined('directAccess')){ header('location: ../?content=404');}?>
 <form method="post">
 	<section class="alistamiento">
 		<div class="container-flex">
@@ -62,19 +63,14 @@
 					<div class="report">
 						<div class="dataGroup">
 							<small>Diagnostico personal</small>
-							<?php if($pdfG!=""){?>
 							<div class="pdf">
 								<div class="pdfIcon">
 									<a href="#">
 										<img src="img/pdf.svg" alt="PDF">
 									</a>
 								</div>
-								<div class="pdfInfo">
-									<a href="?file=<?php echo $pdfU ?>">Ver Diagnostico</a>
-								<span><?php echo $pdfU?></span>
-								</div>
+								<?php echo $pdfU?>
 							</div>
-						<?php }?>
 						</div>
 					</div>
 				</div>
@@ -105,19 +101,14 @@
 					<div class="report">
 						<div class="dataGroup">
 							<small>Diagnostico grupal </small>
-							<?php if($pdfG!=""){?>
 							<div class="pdf">
 								<div class="pdfIcon">
 									<a href="#">
 										<img src="img/pdf.svg" alt="PDF">
 									</a>
 								</div>
-								<div class="pdfInfo">
-									<a href="?file=<?php echo $pdfG?>">Ver Diagnostico</a>
-									<span><?php echo $pdfG?></span>
-								</div>
+								<?php echo $pdfG?>
 							</div>
-							<?php }?>
 						</div>
 					</div>
 				</div>

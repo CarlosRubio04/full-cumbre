@@ -1,3 +1,4 @@
+<?php if(!defined('directAccess')){ header('location: ../?content=404');}?>
 <section class="main addActivity u-color-contraste">
 	<form method="post">
 		<div class="content-wrapper">
@@ -52,12 +53,6 @@
 						Descripción de la actividad
 					</label>
 					<textarea name="tarea" rows="5" class="form-control" placeholder="Descripción" required><?php echo $task?></textarea>
-				</div>
-				<div class="form-group">
-					<label for="">
-						Entregable de la actividad
-					</label>
-					<input type="text" name="entregable" value="<?php echo $product?>" class="form-control" placeholder="Ensayo escrito" required>
 				</div>
 				<h3><?php echo $message;?></h3>
 				<div class="form-group">

@@ -1,3 +1,4 @@
+<?php if(!defined('directAccess')){ header('location: ../?content=404');}?>
 <section class="ruta u-color-contraste">
     <div class="content-wrapper">
         <div class="title">
@@ -8,5 +9,9 @@
             En esta travesía vamos a llevarlos por diferentes etapas para consolidar su gestión como equipo de alto desempeño.<br/>
             Por ello, bienvenidos y disfruten el proceso.
         </p>
+
+        <div class="logos">
+            <img src="img/logo_horizontal.png" alt="PUJ" class="img-responsive center-block">
+        </div>
     </div>
 </section>

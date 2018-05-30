@@ -1,3 +1,4 @@
+<?php if(!defined('directAccess')){ header('location: ../?content=404');}?>
 <section class="alistamiento">
 	<div class="container-flex">
 		<div class="profile item colum-40 u-color-contraste">
@@ -70,11 +71,6 @@
 							<?php echo $pdfU?>
 						</div>
 					</div>
-				</div><br>
-				<div class="campamentoCta animated fadeInUp">
-					<a href="#" class="btn-square">
-						Cambiar Contraseña
-					</a> 	
 				</div>
 			</div>
 		</div>

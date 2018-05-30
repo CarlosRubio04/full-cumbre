@@ -1,3 +1,4 @@
+<?php if(!defined('directAccess')){ header('location: ../?content=404');}?>
 <section class="dashboard">
 	<div class="container-flex">
 		<div class="item colum-40">

@@ -2,6 +2,12 @@
 @import '../mixins';
 
 
+.campamento-dos {
+	background-image: url(../img/camp-2.png);
+	background-size: cover;
+	background-position: center bottom;
+}
+
 .mensajes {
 
 	.lastestNotificationsContainer {
@@ -94,9 +100,20 @@
 
 				.task {
 					&-title {
+						display: block;
+						width: 180px;
+						white-space: nowrap; 
 						color: $verdeOscuro;
-						font-weight: 300;
-						font-size: 18px;
+						font-weight: 400;
+						overflow: hidden;
+						text-overflow: ellipsis; 
+						text-transform: capitalize;
+						font-size: 12px;
+					}
+					span {
+						font-weight: 100;
+						font-size: 10px;
+						color: $grisOscuro;
 					}
 				}
 				.user-avatar {

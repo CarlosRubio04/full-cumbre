@@ -84,466 +84,466 @@ section {
 		max-width: 100%;
 	}
 	// @include for-tablet-portrait-up {
-	// 	width: 100%;
-	// 	max-width: 100%;
-	// }
-}
-.colum-40 {
-	width: 40%;
-	max-width: 40%;
-	@include for-phone-only {
-		width: 100%;
-		max-width: 100%;
+		// 	width: 100%;
+		// 	max-width: 100%;
+		// }
 	}
-	// @include for-tablet-portrait-up {
-	// 	width: 100%;
-	// 	max-width: 100%;
-	// }
-}
-.colum-60 {
-	width: 60%;
-	max-width: 60%;
-	@include for-phone-only {
-		width: 100%;
-		max-width: 100%;
-	}
-	// @include for-tablet-portrait-up {
-	// 	width: 100%;
-	// 	max-width: 100%;
-	// }
-}
-.colum-80 {
-	width: 80%;
-	max-width: 80%;
-	@include for-phone-only {
-		width: 100%;
-		max-width: 100%;
-	}
-	// @include for-tablet-portrait-up {
-	// 	width: 100%;
-	// 	max-width: 100%;
-	// }
-}
-.self-bottom  {
-	align-self: flex-end;
-}
-
-// Estilos de links y botones
-
-.btn-square {
-	display: inline;
-	// max-width: 250px;
-	background-color: $verdeClaro;
-	color: $blanco;
-	font-weight: bold !important;
-	text-transform: uppercase;
-	text-align: center;
-	letter-spacing: 3px;
-	font-size: 14px;
-	padding: 12px 3em;
-	border: 1px solid $verdeClaro !important;
-	@include prefix(transition, all .5s ease-in-out);
-
-	&:hover {
-		background-color: $verdeOscuro2;
-		color: $verdeClaro;
-		text-decoration: none;
-		font-weight: bold !important;
-	}
-	@include for-phone-only {
-		max-width: 100%;
-	}
-}
-
-.btn-sub {
-	background-color: $verdeNeutro;
-	color: $blanco !important;
-	width: 100%;
-	height: 50px;
-	line-height: 40px;
-	font-size: 18px;
-	border-radius: 0;
-	font-weight: bold !important;
-}
-
-.btn-main {
-	background-color: $verdeClaro;
-	display: block;
-	color: $verdeOscuro2;
-	border: 2px solid $verdeOscuro2;
-	border-radius: 20px;
-	text-transform: capitalize;
-	font-weight: bold !important;
-	letter-spacing: 3px;
-	max-width: 250px;
-	padding: 12px 3em;
-	@include prefix(transition, all .5s ease-in-out);
-
-	&:hover {
-		background-color: $blanco;
-		color: $verdeOscuro2;
-		font-weight: bold !important;
-	}
-	@include for-phone-only {
-		max-width: 100%;
-	}
-}
-
-
-
-
-// Stilos de componentes de forma
-
-
-.content-wrapper {
-	padding: 40px 64px;
-	min-height: calc(100vh - 65px);
-	position: relative;
-	width: 100%;
-
-	@include for-phone-only {
-		padding: 1em;
-		min-height: auto;
-		height: auto;
-	}
-	// @include for-tablet-portrait-up {
-	// 	padding: 1em;
-	// 	min-height: auto;
-	// 	height: auto;
-	// }
-}
-
-.siguiente-campamento {
-	margin-bottom: 2em;
-	a {
-		margin-left: auto;
-
+	.colum-40 {
+		width: 40%;
+		max-width: 40%;
 		@include for-phone-only {
-			margin: 0;
 			width: 100%;
+			max-width: 100%;
 		}
-	}
-}
-.campamentoCta {
-	margin-top: 2em;
-}
-.data-group {
-	margin-top: 12px;
-	.label {
-		text-align: left;
-		padding: 0;
-		small {
-			color: $verdeOscuro2;
-			font-size: 12px;
-			font-weight: 400;
+		// @include for-tablet-portrait-up {
+			// 	width: 100%;
+			// 	max-width: 100%;
+			// }
 		}
-	}
-	.input {
-		padding: .5em 0 .2em 0;
-		border-bottom: 1px solid $verdeClaro;
-		p {
-			color: $verdeOscuro;
-			font-size: 20px;
-			letter-spacing: 2px;
-		}
-	}	
-}
-
-// ultimas Notificaciones
-
-.lastestNotifications {
-	width: 100%;
-	&Container {
-		width: 100%;
-		position: relative;
-		.item {
-			margin-top: 12px;
-			width: 100%;
-			display: flex;
-			justify-content: space-between;
-			background-color: $blanco;
-
-
-			.message {
-				padding: 12px;
-
-				span {
-					color: $verdeClaro;
-					font-weight: 300;
-					font-size: 12px;
-				}
-				a {
-					display: block;
-					color: $gris;
-					font-size: 14px;
-					font-weight: 300;
-					letter-spacing: 2px;
-					margin-top: .5em;
-				}
-			}
-			.date {
-				.month {
-					font-size: 18px;
-					font-weight: 100;
-					color: $gris;
-					border-left: 1px solid $verdeClaro;
-					border-bottom: 1px solid $verdeClaro;
-					padding: 4px 8px;
-				}
-				.day {
-					font-size: 30px;
-					font-weight: 800;
-					color: $gris;
-					text-align: center;
-				}
-			}
-		}
-
-		.item.rojo {
-			border-bottom: 4px solid $rojo;
-		}
-		.item.amarillo {
-			border-bottom: 4px solid $amarillo;
-		}
-		.item.azul {
-			border-bottom: 4px solid $azulClaro;
-		}
-		.item.gris {
-			border-bottom: 4px solid $gris;
-		}
-		.item.verde {
-			border-bottom: 4px solid $verdeClaro;
-		}
-	}
-}
-
-// Estilos Basicos para campamentos
-
-.campamentoIntro {
-	color: $blanco;
-	font-size: 16px;
-	font-weight: 200;
-	letter-spacing: 2px;
-	margin-top: 40px;
-
-	a  {
-		color: $blanco !important; 
-		font-size: 16px !important;
-		font-weight: 400 !important;
-		letter-spacing: 2px !important;
-		margin: 1em 0 !important;
-		display: block !important;
-	}
-
-	.underline-text{
-		text-decoration: underline;
-		font-weight: 400;
-	}
-}
-// Estilos para subtitulo de objetivos
-
-.subtitle-objetives{
-	color: $blanco;
-	font-size: 18px;
-	font-weight: 400;
-	display: block;
-}
-
-// Activity Feed
-
-.activityFeed {
-	border-top: 1px solid $grisClaro;
-	position: relative;
-	display: flex;
-	width: 100%;
-	&Container {
-		position: relative;
-		display: flex;
-		width: 50%;
-		margin-right: 4em;
-		.item {
-			width: 100%;
-			margin-right: 4em;
-
-			&:last-child {
-				margin-bottom: 0;
-			}
-			.state {
-				width: 150px;
-				padding: .5em;
-				color: $blanco;
-				font-size: 14px;
-				font-weight: 700;
-				text-transform: uppercase;
-				text-align: center;
-				margin-left: auto;
-			}
-			
-			.state.verde {
-				background-color: $verdeClaro;
-				position: absolute;
-				margin-bottom: 40px;
-				left: 0;
-			}
-			.state.rojo {
-				background-color: $rojo;
-			}
-			.state.amarillo {
-				background-color: $amarillo;
-			}
-			.state.azul {
-				background-color: $azulClaro;
-			}
-			.state.gris {
-				background-color: $gris;
-			}
-			.activity {
-				margin-top: 50px;
+		.colum-60 {
+			width: 60%;
+			max-width: 60%;
+			@include for-phone-only {
 				width: 100%;
-				display: flex;
-				justify-content: space-between;
-
-				.date {
-					.month {
-						font-size: 20px;
-						font-weight: 100;
-						color: $gris;
-						border-left: 1px solid $verdeClaro;
-						border-bottom: 1px solid $verdeClaro;
-						padding: 4px 16px;
-					}
-					.day {
-						font-size: 30px;
-						font-weight: 800;
-						color: $gris;
-						text-align: center;
-					}
+				max-width: 100%;
+			}
+			// @include for-tablet-portrait-up {
+				// 	width: 100%;
+				// 	max-width: 100%;
+				// }
+			}
+			.colum-80 {
+				width: 80%;
+				max-width: 80%;
+				@include for-phone-only {
+					width: 100%;
+					max-width: 100%;
+				}
+				// @include for-tablet-portrait-up {
+					// 	width: 100%;
+					// 	max-width: 100%;
+					// }
+				}
+				.self-bottom  {
+					align-self: flex-end;
 				}
 
-				.data {
-					span {
+				// Estilos de links y botones
+
+				.btn-square {
+					display: inline;
+					// max-width: 250px;
+					background-color: $verdeClaro;
+					color: $blanco;
+					font-weight: 600;
+					text-transform: uppercase;
+					text-align: center;
+					letter-spacing: 2px;
+					font-size: 14px;
+					padding: 12px 3em;
+					border: 1px solid $verdeClaro !important;
+					@include prefix(transition, all .5s ease-in-out);
+
+					&:hover {
+						background-color: $verdeOscuro2;
 						color: $verdeClaro;
-						font-size: 26px;
-						letter-spacing: 2px;
-						font-weight: 300;
-						margin-bottom: 20px;
+						text-decoration: none;
 					}
-					p {
-						color: $verdeOscuro2;
-						font-size: 20px;
-						letter-spacing: 1px;
-						font-weight: 300;
-						margin-bottom: 10px;
-					}
-					small {
-						color: $verdeOscuro2;
-						font-weight: 400;
-						font-size: 12px;
-						letter-spacing: 1px;
-						display: block;
-					}
-					a {
-						color: $gris;
-						font-weight: 400;
-						font-size: 14px;
-						letter-spacing: 1px;
+					@include for-phone-only {
+						max-width: 100%;
 					}
 				}
-			}
 
-			.cta {
-				margin-top: 40px;
-				position: relative;
-				display: block;
-			}
+				.btn-sub {
+					background-color: $verdeNeutro;
+					color: $blanco !important;
+					width: 100%;
+					height: 50px;
+					line-height: 40px;
+					font-size: 18px;
+					border-radius: 0;
+					font-weight: 700;
+				}
 
-		}
-	}
-}
+				.btn-main {
+					background-color: $verdeClaro;
+					display: block;
+					color: $verdeOscuro2;
+					border: 2px solid $verdeOscuro2;
+					border-radius: 20px;
+					text-transform: uppercase;
+					font-weight: 600;
+					letter-spacing: 3px;
+					max-width: 250px;
+					padding: 12px 3em;
+					@include prefix(transition, all .5s ease-in-out);
 
-
-
-// Color clases
-
-.u-color-contraste {
-	background-color: $blancusco;
-}
-
-.u-bg {
-	background-color: rgba($verdeOscuro, .70);
-}
-
-
-// Estilos de Texto
-
-.title {
-	font-size: 48px;
-	color: $verdeOscuro;
-
-	@include for-phone-only {
-		font-size: 24px;
-	}
-
-}
-
-.subTitle {
-	font-size: 20px;
-	color: $verdeOscuro;
-	letter-spacing: 2px;
-	@include for-phone-only {
-		font-size: 18px;
-	}
-}
+					&:hover {
+						background-color: $blanco;
+						color: $verdeOscuro2;
+					}
+					@include for-phone-only {
+						max-width: 100%;
+					}
+				}
 
 
-//  Forms Styles
 
-label {
-	color: $verdeOscuro2 !important;
-	font-size: 14px;
-	font-weight: 400;
-}
-.form-group {
-	margin-top: 60px;
-}
-.form-group input, .form-group textarea {
-	background-color: transparent;
-	border: 1px solid $verdeClaro;
-	border-radius: 0;
-	height: 45px;
-	margin-top: 10px;
-	color: $verdeOscuro;
-	font-size: 14px;
-	font-weight: 600;
-	box-shadow: none; 
-}
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: $gris !important;
-  font-weight: 100;
-}
-::-moz-placeholder { /* Firefox 19+ */
-  color: $gris !important;
-  font-weight: 100;
-}
-:-ms-input-placeholder { /* IE 10+ */
-  color: $gris !important;
-  font-weight: 100;
-}
-:-moz-placeholder { /* Firefox 18- */
-  color: $gris !important;
-  font-weight: 100;
-}
-.form-group textarea {
-	height: 100px;
-	padding-top: 2em;
-}
-.form-group select {
-	border: 0;
-	box-shadow: none;
-	background-color: transparent;
-	height: 45px;
-}
-.u-selectWraper {
-	margin-top: 10px;
-	border: 1px solid $verdeClaro;
-}
+
+				// Stilos de componentes de forma
+
+
+				.content-wrapper {
+					padding: 40px 64px;
+					min-height: calc(100vh - 65px);
+					position: relative;
+					width: 100%;
+
+					@include for-phone-only {
+						padding: 1em;
+						min-height: auto;
+						height: auto;
+					}
+					// @include for-tablet-portrait-up {
+						// 	padding: 1em;
+						// 	min-height: auto;
+						// 	height: auto;
+						// }
+					}
+
+					.siguiente-campamento {
+						margin-bottom: 2em;
+						a {
+							margin-left: auto;
+
+							@include for-phone-only {
+								margin: 0;
+								width: 100%;
+							}
+						}
+					}
+					.campamentoCta {
+						margin-top: 2em;
+					}
+					.data-group {
+						margin-top: 12px;
+						.label {
+							text-align: left;
+							padding: 0;
+							small {
+								color: $verdeOscuro2;
+								font-size: 12px;
+								font-weight: 400;
+							}
+						}
+						.input {
+							padding: .5em 0 .2em 0;
+							border-bottom: 1px solid $verdeClaro;
+							p {
+								color: $verdeOscuro;
+								font-size: 20px;
+								letter-spacing: 2px;
+							}
+						}	
+					}
+
+					// ultimas Notificaciones
+
+					.lastestNotifications {
+						width: 100%;
+						&Container {
+							width: 100%;
+							position: relative;
+							.item {
+								margin-top: 12px;
+								width: 100%;
+								display: flex;
+								justify-content: space-between;
+								background-color: $blanco;
+
+
+								.message {
+									padding: 12px;
+
+									span {
+										color: $verdeClaro;
+										font-weight: 300;
+										font-size: 12px;
+									}
+									a {
+										display: block;
+										color: $gris;
+										font-size: 14px;
+										font-weight: 300;
+										letter-spacing: 2px;
+										margin-top: .5em;
+									}
+								}
+								.date {
+									.month {
+										font-size: 18px;
+										font-weight: 100;
+										color: $gris;
+										border-left: 1px solid $verdeClaro;
+										border-bottom: 1px solid $verdeClaro;
+										padding: 4px 8px;
+									}
+									.day {
+										font-size: 30px;
+										font-weight: 800;
+										color: $gris;
+										text-align: center;
+									}
+								}
+							}
+
+							.item.rojo {
+								border-bottom: 4px solid $rojo;
+							}
+							.item.amarillo {
+								border-bottom: 4px solid $amarillo;
+							}
+							.item.azul {
+								border-bottom: 4px solid $azulClaro;
+							}
+							.item.gris {
+								border-bottom: 4px solid $gris;
+							}
+							.item.verde {
+								border-bottom: 4px solid $verdeClaro;
+							}
+						}
+					}
+
+					// Estilos Basicos para campamentos
+					.content-text {
+						padding: 1em;
+						/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#68c951+0,00361b+26,00361b+65,68c951+100&0+0,0.39+17,0.39+77,0+100 */
+						background: -moz-linear-gradient(top, rgba(104,201,81,0) 0%, rgba(36,105,46,0.39) 17%, rgba(0,54,27,0.39) 26%, rgba(0,54,27,0.39) 65%, rgba(36,104,46,0.39) 77%, rgba(104,201,81,0) 100%); /* FF3.6-15 */
+						background: -webkit-linear-gradient(top, rgba(104,201,81,0) 0%,rgba(36,105,46,0.39) 17%,rgba(0,54,27,0.39) 26%,rgba(0,54,27,0.39) 65%,rgba(36,104,46,0.39) 77%,rgba(104,201,81,0) 100%); /* Chrome10-25,Safari5.1-6 */
+						background: linear-gradient(to bottom, rgba(104,201,81,0) 0%,rgba(36,105,46,0.39) 17%,rgba(0,54,27,0.39) 26%,rgba(0,54,27,0.39) 65%,rgba(36,104,46,0.39) 77%,rgba(104,201,81,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0068c951', endColorstr='#0068c951',GradientType=0 ); /* IE6-9 */
+
+					}
+					.campamentoIntro {
+						font-size: 16px;
+						font-weight: 200;
+						letter-spacing: 2px;
+						margin-top: 40px;
+						color: $blanco;
+
+						a {
+							color: $blanco;
+							font-size: 16px;
+							font-weight: 600;
+							letter-spacing: 2px;
+							text-transform: uppercase;
+							margin: 1em 0;
+							display: block;
+						}
+					}
+
+
+					// Activity Feed
+
+					.activityFeed {
+						position: relative;
+						width: 100%;
+						&Fase {
+							position: relative;
+							width: 100%;
+							.state {
+								width: 150px;
+								padding: .5em;
+								color: $blanco;
+								font-size: 14px;
+								font-weight: 700;
+								text-transform: uppercase;
+								text-align: center;
+								margin-left: auto;
+							}
+
+							.state.verde {
+								background-color: $verdeClaro;
+							}
+							.state.rojo {
+								background-color: $rojo;
+							}
+							.state.amarillo {
+								background-color: $amarillo;
+							}
+							.state.azul {
+								background-color: $azulClaro;
+							}
+							.state.gris {
+								background-color: $gris;
+							}
+
+							&Container {
+								border-top: 1px solid $grisClaro;
+								display: flex;
+								flex-wrap: wrap;
+
+								.item {
+									width: 30%;
+									margin-bottom: 2em;
+									margin-right: 1.5em;
+									height: 200px;
+
+									/*&:last-child {
+										margin-bottom: 0;
+									}*/
+
+									.activity {
+										margin-top: 20px;
+										width: 100%;
+										display: flex;
+										justify-content: space-between;
+
+										.date {
+											.month {
+												font-size: 14px;
+												font-weight: 100;
+												color: $gris;
+												border-left: 1px solid $verdeClaro;
+												border-bottom: 1px solid $verdeClaro;
+												padding: 4px 8px;
+											}
+											.day {
+												font-size: 20px;
+												font-weight: 800;
+												color: $gris;
+												text-align: center;
+											}
+										}
+
+										.data {
+											span {
+												color: $verdeClaro;
+												font-size: 16px;
+												letter-spacing: 2px;
+												font-weight: 300;
+												margin-bottom: 20px;
+											}
+											p {
+												color: $verdeOscuro2;
+												font-size: 18px;
+												letter-spacing: 1px;
+												font-weight: 300;
+												margin-bottom: 10px;
+											}
+											small {
+												color: $verdeOscuro2;
+												font-weight: 400;
+												font-size: 10px;
+												letter-spacing: 1px;
+												display: block;
+											}
+											a {
+												color: $gris;
+												font-weight: 400;
+												font-size: 10px;
+												letter-spacing: 1px;
+											}
+										}
+									}
+
+									.cta {
+										margin-top: 16px;
+										position: relative;
+										display: block;
+									}
+
+								}
+							}
+
+
+						}
+					}
+
+
+
+					// Color clases
+
+					.u-color-contraste {
+						background-color: $blancusco;
+					}
+
+					.u-bg {
+						background-color: rgba($verdeOscuro, .50);
+					}
+
+
+					// Estilos de Texto
+
+					.title {
+						font-size: 48px;
+						color: $verdeOscuro;
+
+						@include for-phone-only {
+							font-size: 24px;
+						}
+
+					}
+
+					.subTitle {
+						font-size: 20px;
+						color: $verdeOscuro;
+						letter-spacing: 2px;
+						@include for-phone-only {
+							font-size: 18px;
+						}
+					}
+
+
+					//  Forms Styles
+
+					label {
+						color: $verdeOscuro2 !important;
+						font-size: 14px;
+						font-weight: 400;
+					}
+					.form-group {
+						margin-top: 60px;
+					}
+					.form-group input, .form-group textarea {
+						background-color: transparent;
+						border: 1px solid $verdeClaro;
+						border-radius: 0;
+						height: 45px;
+						margin-top: 10px;
+						color: $verdeOscuro;
+						font-size: 14px;
+						font-weight: 600;
+						box-shadow: none; 
+					}
+					::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+						color: $gris !important;
+						font-weight: 100;
+					}
+					::-moz-placeholder { /* Firefox 19+ */
+						color: $gris !important;
+						font-weight: 100;
+					}
+					:-ms-input-placeholder { /* IE 10+ */
+						color: $gris !important;
+						font-weight: 100;
+					}
+					:-moz-placeholder { /* Firefox 18- */
+						color: $gris !important;
+						font-weight: 100;
+					}
+					.form-group textarea {
+						height: 100px;
+						padding-top: 2em;
+					}
+					.form-group select {
+						border: 0;
+						box-shadow: none;
+						background-color: transparent;
+						height: 45px;
+					}
+					.u-selectWraper {
+						margin-top: 10px;
+						border: 1px solid $verdeClaro;
+					}

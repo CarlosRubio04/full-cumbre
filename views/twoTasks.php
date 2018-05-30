@@ -1,3 +1,4 @@
+<?php if(!defined('directAccess')){ header('location: ../?content=404');}?>
 <section class="cronograma-dos">
 	<div class="u-color-contraste">
 		<div class="content-wrapper">
@@ -13,180 +14,24 @@
 						<div class="item header">
 							Fases del Proyecto
 						</div>
-						<div class="item one">
-							Fase X
-						</div>
-						<div class="item tow">
-							Fase X
-						</div>
-						<div class="item three">
-							Fase X
-						</div>
-						<div class="item four">
-							Fase X
-						</div>
-						<div class="item five">
-							Fase X
-						</div>
-						<div class="item six">
-							Fase X
-						</div>
-						<div class="item seven">
-							Fase X
-						</div>
-						<div class="item eight">
-							Fase X
-						</div>
-						<div class="item nine">
-							Fase X
-						</div>
-						<div class="item ten">
-							Fase X
-						</div>
+						<?php echo $phases?>
 					</div>
-
-
-					<div class="colum date">
-
-						<div class="item header">
-							<p>Month</p>
-							<p>Day</p>
-						</div>
-
-						<div class="item five">
-							<div class="task">
-								<a href="?content=taskFolow" class="task-title">Prueba Carlos</a>
-								<div class="user-avatar">
-									<a href="#">Oscar D   <img src="http://placehold.it/30x30" alt="Avatar" class="img-circle">
-									</a>
-								</div>
-							</div>
-						</div>
-
-					</div>
-
-
-					<div class="colum date">
-
-						<div class="item header">
-							<p>Month</p>
-							<p>Day</p>
-						</div>
-
-						<div class="item tow">
-							<div class="task">
-								<a href="?content=taskFolow" class="task-title">Prueba Carlos</a>
-								<div class="user-avatar">
-									<a href="#">Oscar D   <img src="http://placehold.it/30x30" alt="Avatar" class="img-circle">
-									</a>
-								</div>
-							</div>
-						</div>
-
-					</div>
-
-
-					<div class="colum date">
-
-						<div class="item header">
-							<p>Month</p>
-							<p>Day</p>
-						</div>
-
-						<div class="item one">
-							<div class="task">
-								<a href="?content=taskFolow" class="task-title">Prueba Carlos</a>
-								<div class="user-avatar">
-									<a href="#">Oscar D   <img src="http://placehold.it/30x30" alt="Avatar" class="img-circle">
-									</a>
-								</div>
-							</div>
-						</div>
-
-					</div>
-
-
-					<div class="colum date">
-
-						<div class="item header">
-							<p>Month</p>
-							<p>Day</p>
-						</div>
-
-						<div class="item seven">
-							<div class="task">
-								<a href="?content=taskFolow" class="task-title">Prueba Carlos</a>
-								<div class="user-avatar">
-									<a href="#">Oscar D   <img src="http://placehold.it/30x30" alt="Avatar" class="img-circle">
-									</a>
-								</div>
-							</div>
-						</div>
-
-					</div>
-
-
-					<div class="colum date">
-
-						<div class="item header">
-							<p>Month</p>
-							<p>Day</p>
-						</div>
-
-						<div class="item ten">
-							<div class="task">
-								<a href="?content=taskFolow" class="task-title">Prueba Carlos</a>
-								<div class="user-avatar">
-									<a href="#">Oscar D   <img src="http://placehold.it/30x30" alt="Avatar" class="img-circle">
-									</a>
-								</div>
-							</div>
-						</div>
-
-					</div>
-
-					<div class="colum date">
-
-						<div class="item header">
-							<p>Month</p>
-							<p>Day</p>
-						</div>
-
-						<div class="item six">
-							<div class="task">
-								<a href="?content=taskFolow" class="task-title">Prueba Carlos</a>
-								<div class="user-avatar">
-									<a href="#">Oscar D   <img src="http://placehold.it/30x30" alt="Avatar" class="img-circle">
-									</a>
-								</div>
-							</div>
-						</div>
-
-					</div>
-
-					<div class="colum date">
-
-						<div class="item header">
-							<p>Month</p>
-							<p>Day</p>
-						</div>
-
-						<div class="item five">
-							<div class="task">
-								<a href="?content=taskFolow" class="task-title">Prueba Carlos</a>
-								<div class="user-avatar">
-									<a href="#">Oscar D   <img src="http://placehold.it/30x30" alt="Avatar" class="img-circle">
-									</a>
-								</div>
-							</div>
-						</div>
-
-					</div>
-
+					<?php echo $tasksHmtl?>
 				</div>
 			</div>
-
-
 		</div>
 	</div>
 </section>
+
+
+<!-- 
+
+	<div class="item '.$nn[$c].'">
+		<div class="task">
+			<a href="?content=taskFolow&id='.$taskI->getId().'" class="task-title">'.$taskI->getName().'</a>
+			<span>Entregables: <span>'.$products.'<div class="user-avatar">
+				<p> '.$assignedS.'  </p>
+			</div>
+		</div>
+	</div>
+ -->

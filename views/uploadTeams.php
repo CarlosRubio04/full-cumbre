@@ -1,4 +1,4 @@
-<?php Common::logg("Nuevo Grupo","Visualizar información");?>
+<?php if(!defined('directAccess')){ header('location: ../?content=404');}?>
 <section class="cargar-grupos">
 	<form method="post"  enctype="multipart/form-data">
 		<div class="u-color-contraste">

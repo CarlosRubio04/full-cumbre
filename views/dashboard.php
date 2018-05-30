@@ -1,7 +1,8 @@
+<?php if(!defined('directAccess')){ header('location: ../?content=404');}?>
 <section class="dashboard">
 	<div class="container-flex">
-		<div class="item colum-40">
-			<div class="content-wrapper u-color-contraste flex-colum space-btw">
+		<div class="item colum-40 u-color-contraste">
+			<div class="content-wrapper flex-colum space-btw">
 				<div class="profileData">
 					<div class="title">
 						<h1>Mi Perfil</h1>
@@ -62,10 +63,250 @@
 			<div class="content-wrapper flex-colum">
 
 				<div class="activityFeed">
-					<div class="activityFeedContainer">
+
+					<?php //require_once 'Libs/LtaskView.php';?>
+
+					<!-- Contenedor para un estado -->
+					<div class="activityFeedFase">
+						<div class="state amarillo">
+							En Desarrollo
+						</div>
+						<!-- Contendor para las tareas de esa estado -->
+
+						<div class="activityFeedFaseContainer">
+							
+							<!-- Item -->
+							<div class="item flex-colum space-btw">
+								<div class="activity">
+									<div class="data">
+										<span>Actividad</span>
+										<p>Nombre de la Actividad</p>
+										<small>Responsable</small>
+										<a href="#">Pepito</a>
+									</div>
+									<div class="date">
+										<div class="month">
+											Mayo
+										</div>
+										<div class="day">
+											25
+										</div>
+									</div>
+								</div>
+								<div class="cta">
+									<a href="?content=#" class="btn-square">
+										Ver más
+									</a>
+								</div>
+							</div>
+							<!-- Item -->
+
+							<!-- Item -->
+							<div class="item flex-colum space-btw">
+								<div class="activity">
+									<div class="data">
+										<span>Actividad</span>
+										<p>Nombre de la Actividad</p>
+										<small>Responsable</small>
+										<a href="#">Pepito</a>
+									</div>
+									<div class="date">
+										<div class="month">
+											Mayo
+										</div>
+										<div class="day">
+											25
+										</div>
+									</div>
+								</div>
+								<div class="cta">
+									<a href="?content=#" class="btn-square">
+										Ver más
+									</a>
+								</div>
+							</div>
+							<!-- Item -->
+
+							<!-- Item -->
+							<div class="item flex-colum space-btw">
+								<div class="activity">
+									<div class="data">
+										<span>Actividad</span>
+										<p>Nombre de la Actividad</p>
+										<small>Responsable</small>
+										<a href="#">Pepito</a>
+									</div>
+									<div class="date">
+										<div class="month">
+											Mayo
+										</div>
+										<div class="day">
+											25
+										</div>
+									</div>
+								</div>
+								<div class="cta">
+									<a href="?content=#" class="btn-square">
+										Ver más
+									</a>
+								</div>
+							</div>
+							<!-- Item -->
+
+							<!-- Item -->
+							<div class="item flex-colum space-btw">
+								<div class="activity">
+									<div class="data">
+										<span>Actividad</span>
+										<p>Nombre de la Actividad</p>
+										<small>Responsable</small>
+										<a href="#">Pepito</a>
+									</div>
+									<div class="date">
+										<div class="month">
+											Mayo
+										</div>
+										<div class="day">
+											25
+										</div>
+									</div>
+								</div>
+								<div class="cta">
+									<a href="?content=#" class="btn-square">
+										Ver más
+									</a>
+								</div>
+							</div>
+							<!-- Item -->
+
+						</div>
 						
-						<?php require_once 'Libs/LtaskView.php';?>
+						<!-- Contendor para las tareas de esa estado -->
+
 					</div>
+					<!-- Contenedor para Una fase -->
+
+
+					<!-- Contenedor para un estado -->
+					<div class="activityFeedFase">
+						<div class="state verde">
+							En Desarrollo
+						</div>
+						<!-- Contendor para las tareas de esa estado -->
+
+						<div class="activityFeedFaseContainer">
+							
+							<!-- Item -->
+							<div class="item flex-colum space-btw">
+								<div class="activity">
+									<div class="data">
+										<span>Actividad</span>
+										<p>Nombre de la Actividad</p>
+										<small>Responsable</small>
+										<a href="#">Pepito</a>
+									</div>
+									<div class="date">
+										<div class="month">
+											Mayo
+										</div>
+										<div class="day">
+											25
+										</div>
+									</div>
+								</div>
+								<div class="cta">
+									<a href="?content=#" class="btn-square">
+										Ver más
+									</a>
+								</div>
+							</div>
+							<!-- Item -->
+
+							<!-- Item -->
+							<div class="item flex-colum space-btw">
+								<div class="activity">
+									<div class="data">
+										<span>Actividad</span>
+										<p>Nombre de la Actividad</p>
+										<small>Responsable</small>
+										<a href="#">Pepito</a>
+									</div>
+									<div class="date">
+										<div class="month">
+											Mayo
+										</div>
+										<div class="day">
+											25
+										</div>
+									</div>
+								</div>
+								<div class="cta">
+									<a href="?content=#" class="btn-square">
+										Ver más
+									</a>
+								</div>
+							</div>
+							<!-- Item -->
+
+							<!-- Item -->
+							<div class="item flex-colum space-btw">
+								<div class="activity">
+									<div class="data">
+										<span>Actividad</span>
+										<p>Nombre de la Actividad</p>
+										<small>Responsable</small>
+										<a href="#">Pepito</a>
+									</div>
+									<div class="date">
+										<div class="month">
+											Mayo
+										</div>
+										<div class="day">
+											25
+										</div>
+									</div>
+								</div>
+								<div class="cta">
+									<a href="?content=#" class="btn-square">
+										Ver más
+									</a>
+								</div>
+							</div>
+							<!-- Item -->
+
+							<!-- Item -->
+							<div class="item flex-colum space-btw">
+								<div class="activity">
+									<div class="data">
+										<span>Actividad</span>
+										<p>Nombre de la Actividad</p>
+										<small>Responsable</small>
+										<a href="#">Pepito</a>
+									</div>
+									<div class="date">
+										<div class="month">
+											Mayo
+										</div>
+										<div class="day">
+											25
+										</div>
+									</div>
+								</div>
+								<div class="cta">
+									<a href="?content=#" class="btn-square">
+										Ver más
+									</a>
+								</div>
+							</div>
+							<!-- Item -->
+
+						</div>
+						
+						<!-- Contendor para las tareas de esa estado -->
+
+					</div>
+					<!-- Contenedor para Una fase -->
+
 				</div>
 
 			</div>

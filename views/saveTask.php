@@ -31,7 +31,7 @@ function createTask(){
 		return $message;
 	}
 	$objTask=new TaskModel();
-	$objTask->createTask($message,new Task(null,$name,$task,$startDate,$endDate,$status,$assignedIdS,$phaseId));
+	$res=$objTask->createTask($message,new Task(null,$name,$task,$startDate,$endDate,$status,$assignedIdS,$phaseId));
 	
 	if($message=="Tarea Creada"){
 		unset($_SESSION['taskValues']);
@@ -41,7 +41,7 @@ function createTask(){
 		Common::logg("Creacion de Tarea",$message."=> Nombre:$name,Tarea:$task,Inicio:$startDate,Fin:$endDate,$assignedSTR,Fase:".$phInfo->getName());
 		$objP=new ProjectModel();
 		$pInfo=$objP->get($phInfo->getProjectId());
-		$MSGdata=['USER'=>$_SESSION['loginNameCumbre'],'TASK'=>$name,'PHASE'=>$phInfo->getName(),'PROJECT'=>$pInfo->getName()];
+		$MSGdata=['USER'=>$_SESSION['loginNameCumbre'],'TASK'=>$name,'PHASE'=>$phInfo->getName(),'PROJECT'=>$pInfo->getName(),'ID'=>$res];
 		
 		//notify assigned users and coach
 		$objGroup=new GroupModel();
