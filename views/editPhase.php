@@ -4,6 +4,9 @@
 		<div class="item colum-60">
 			<div class="content-wrapper">
 				<div class="title">
+					<a href="?content=phaseDef" class="btn btn-back">
+						<i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+					</a>
 					<h1 class="animated fadeInLeft">Editar Fase</h1>
 				</div>
 
@@ -17,9 +20,6 @@
 								</div>
 								<div class="buton">
 									<button class="btn-square" value="1" type="submit"  name="editPhase">Modificar</button>
-								</div><br>
-								<div class="buton">
-									<a href="?content=phaseDef" class="btn-square">Regresar</a>
 								</div>
 							</div>
 							<h4><?php echo $message;?></h4>

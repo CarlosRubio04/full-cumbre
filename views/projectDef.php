@@ -4,6 +4,9 @@
 		<div class="item colum-60">
 			<div class="content-wrapper">
 				<div class="title">
+					<a href="?content=basecamp" class="btn btn-back">
+						<i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+					</a>
 					<h1 class="animated fadeInLeft">Definición del Proyecto</h1>
 				</div>
 				<div class="formContainer animated fadeInUp">

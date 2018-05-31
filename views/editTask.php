@@ -3,8 +3,11 @@
 	<form method="post">
 		<div class="content-wrapper">
 			<div class="addActivityHeader animated fadeInDown">
-				<div class="name">
-					<h1 class="title">Editar Actividad</h1>
+				<div class="name title">
+					<a href="?content=<?php echo $return?>" class="btn btn-back">
+						<i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+					</a>
+					<h1>Editar Actividad</h1>
 				</div>
 			</div>
 			<div class="addActivityBody animated fadeInUp">
@@ -57,9 +60,6 @@
 				<h3><?php echo $message;?></h3>
 				<div class="form-group">
 					<button type="submit" name="editTask" value="1" class="btn btn-sub">Editar</button>
-				</div>
-				<div class="buton">
-					<a href="?content=<?php echo $return?>" class="btn-square">Regresar</a>
 				</div>
 			</div>
 		</div>

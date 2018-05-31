@@ -3,6 +3,7 @@
 	<div class="loginContainer">
 		<div class="u-logo">
 			<img src="img/logo.png" alt="CUMBRE" class="img-responsive">
+			<p>DIRECCIÓN DE GESTIÓN HUMANA</p>
 		</div>
 		<div class="loginContainerLogin">
 			<h1>LOGIN</h1>
@@ -24,9 +25,12 @@
 					</div>
 				</form>
 			</div>
+			<div class="loginMissedPass">
+				<a href="?content=forgot">¿Olvidaste tu contraseña?</a>
+			</div>
 		</div>
-		<div class="loginMissedPass">
-			<a href="?content=forgot">¿Olvidaste tu contraseña?</a>
+		<div class="logos">
+			<img src="img/logo_horizontal.png" alt="PUJ" class="img-responsive center-block">
 		</div>
 	</div>
 </section>

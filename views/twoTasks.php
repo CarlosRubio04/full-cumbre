@@ -3,6 +3,9 @@
 	<div class="u-color-contraste">
 		<div class="content-wrapper">
 			<div class="title">
+				<a href="?content=campTwo" class="btn btn-back">
+					<i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+				</a>
 				<h1>Cronograma de actividades</h1>
 			</div>
 			

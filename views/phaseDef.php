@@ -4,17 +4,13 @@
 		<div class="container-flex">
 			<div class="item colum-80">
 				<div class="title">
+					<a href="?content=projectDef" class="btn btn-back">
+						<i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+					</a>
 					<h1 class="animated fadeInLeft">Fases y Actividades del proyecto</h1>
 				</div>
 			</div>
 
-			<div class="item">
-				<div class="siguiente-campamento animated fadeIn">
-					<a href="?content=projectDef" class="btn btn-main">
-						Campamento Base
-					</a>
-				</div>
-			</div>
 			<div class="item">
 				<div class="siguiente-campamento animated fadeIn">
 					<a href="?content=baseTasks" class="btn btn-main">
@@ -22,7 +18,6 @@
 					</a>
 				</div>
 			</div>
-			
 		</div>
 		
 		<div class="container-flex space-btw">

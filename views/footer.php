@@ -29,4 +29,7 @@
 			</li>
 		</ul>
 	</nav>
+	<div class="logos">
+		<img src="img/logo_horizontal.png" alt="PUJ" class="img-responsive center-block">
+	</div>
 </footer>
