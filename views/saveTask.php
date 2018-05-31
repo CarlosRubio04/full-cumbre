@@ -20,9 +20,9 @@ function createTask(){
 	}
 	$assignedSTR=rtrim($assignedSTR,",");
 	$_SESSION['taskValues']['responsable']=$assignedId;
-	$assignedIdS= implode("|", $assignedId);
+	$assignedIdS= "|".implode("|", $assignedId)."|";
 	if(filter_input(INPUT_POST, "assignedGroup",FILTER_SANITIZE_STRING)!==NULL){
-		$assignedIdS="Group";
+		$assignedIdS="|Group|";
 	}
 	$phaseId= filter_input(INPUT_POST,"fase",FILTER_SANITIZE_STRING);
 	if(empty($name) ||empty($task) ||empty($startDate) ||empty($endDate) ||empty($status) ||empty($assignedIdS) ||empty($phaseId)){

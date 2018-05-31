@@ -1,6 +1,6 @@
 <?php if(!defined('directAccess')){ header('location: ../?content=404');}?>
 <section class="addActivity" id="addActivity">
-	<form method="post" id="formTask">
+	<form method="post" id="formTask" onsubmit="saveTask();">
 		<div class="content-wrapper  u-color-contraste animated fadeInUp">
 			<button class="close" onclick="closeActivity()">
 				<i class="fa fa-times" aria-hidden="true"></i>
@@ -13,21 +13,21 @@
 			<div class="addActivityBody">
 				<div class="form-group">
 					<label for="">
-						Nombre de la Actividad
+						Nombre de la Actividad *
 					</label>
 					<input type="text" name="nombreTask" id="nombreTask" class="form-control" placeholder="Ingresa el nombre de la actividad" value="<?php echo $name?>" required>
 				</div>
 				<div class="form-group col-md-6">
-					<label for="fechaIniTask">Fecha de inicio</label>
+					<label for="fechaIniTask">Fecha de inicio *</label>
 					<input type="date" title="Fecha Inicio" name="fechaIniTask" id="fechaIniTask" class="form-control" value="<?php echo $startDate?>" required>
 				</div>
 				<div class="form-group col-md-6">
-					<label for="fechaFinTask">Fecha de finalización</label>
+					<label for="fechaFinTask">Fecha de finalización *</label>
 					<input type="date" title="Fecha Terminación" name="fechaFinTask" id="fechaFinTask" class="form-control" value="<?php echo $endDate?>" required>
 				</div>
 
 				<div class="user form-group col-md-6" title="Responsable">
-					<label for="">Responsable de la actividad</label>
+					<label for="">Responsable de la actividad *</label>
 					<div class="dropdown">
 						<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 							<?php echo $assignedHtmlSel?>
@@ -39,7 +39,7 @@
 				</div>
 
 				<div class="fase form-group col-md-6">
-					<label for="">Seleccione la fase de desarrollo</label>
+					<label for="">Seleccione la fase de desarrollo *</label>
 					<div class="dropdown" title="Fase">
 						<button class="btn btn-default dropdown-toggle" type="button" id="selectFase" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 							<?php echo $phaseSel?>
@@ -53,7 +53,7 @@
 				</div>
 				<div class="form-group">
 					<label for="">
-						Descripción de la actividad
+						Descripción de la actividad *
 					</label>
 					<textarea name="tareaTask" id="tareaTask" rows="5" class="form-control" placeholder="Descripción" required><?php echo $task?></textarea>
 				</div>
@@ -81,6 +81,37 @@
 		dataPost+="&fechaIni="+document.getElementById('fechaIniTask').value;
 		dataPost+="&fechaFin="+document.getElementById('fechaFinTask').value;
 		dataPost+="&tarea="+document.getElementById('tareaTask').value;
+		
+		var regex = /^[a-zA-Z0-9._%:()+-;, áéíóúÁÉÍÓÚ]+$/;
+		if (document.getElementById('nombreTask').value!=='' && !regex.test(document.getElementById('nombreTask').value)) {
+			alert("Caracter no valido en campo nombre");
+			return false;
+		}
+		if (document.getElementById('tareaTask').value!=='' && !regex.test(document.getElementById('tareaTask').value)) {
+			alert("Caracter no valido en campo tarea");
+			return false;
+		}
+		if(new Date(document.getElementById('fechaFinTask').value)<new Date(document.getElementById('fechaIniTask').value)){
+			alert("Fecha Final debe ser antes de fecha Inicial");
+			return false;
+		}
+		if(document.getElementById('fechaFinTask').value==='' || document.getElementById('fechaFinTask').value==='1970-01-01'){
+			alert("Fecha Final no es un valor valido");
+			return false;
+		}
+		if(document.getElementById('fechaIniTask').value==='' || document.getElementById('fechaIniTask').value==='1970-01-01'){
+			alert("Fecha Inicial no es un valor valido");
+			return false;
+		}
+		
+		if(document.getElementById('nombreTask').value===''){
+			alert("debes ingresar el nombre de la tarea");
+			return false;
+		}
+		if(document.getElementById('tareaTask').value===''){
+			alert("debes ingresar la descripcion de la tarea");
+			return false;
+		}
 		
 		if (window.XMLHttpRequest) {
 			// code for IE7+, Firefox, Chrome, Opera, Safari

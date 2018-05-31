@@ -10,12 +10,12 @@
 					<form method="post">
 						<div class="inputs">
 							<div class="form-group">
-								<label for="nombre">Nombre del proyecto</label>
+								<label for="nombre">Nombre del proyecto *</label>
 								<input type="text" name="nombre" maxlength="100" id="nombre" value="<?php echo $name;?>" class="form-control" placeholder="Nombre">
 							</div>
 							<div class="form-group">
 								<label for="resumen">Resumen</label>
-								<input type="text" name="resumen" id="resumen" maxlength="960" value="<?php echo $summary;?>" class="form-control" placeholder="Resumen">
+								<textarea name="resumen" id="resumen" rows="5" maxlength="960" class="form-control" placeholder="Resumen"><?php echo $summary;?></textarea>
 							</div>
 
 							<!-- <div class="form-group">
@@ -29,7 +29,7 @@
 								<textarea name="definicion" id="definicion" rows="5" maxlength="400" class="form-control" placeholder="Definición de problemática"><?php echo $definition;?></textarea>
 							</div>
 							<div class="form-group">
-								<label for="">¿Qué Megas de la universidad impacta?</label>
+								<label for="">objetivos estratégicos que impactan la organización</label>
 								<div class="u-selectWraper">
 									<select name="impacto" id="impacto" class="form-control">
 										<option value="Reconciliación del país" <?php echo $sel1;?>>
@@ -70,12 +70,12 @@
 							<h4 class="subTitle">Tiempo</h4>
 
 							<div class="form-group">
-								<label for="">Fecha de inicio</label>
+								<label for="">Fecha de inicio *</label>
 								<input type="date" name="fechaIni" id="fechaIni" value="<?php echo $startDate;?>" class="form-control">
 							</div>
 
 							<div class="form-group">
-								<label for="">Fecha de finalización</label>
+								<label for="">Fecha de finalización *</label>
 								<input type="date" name="fechaFin" id="fechaFin" value="<?php echo $endDate;?>" class="form-control">
 							</div>
 
@@ -120,7 +120,7 @@
 							
 							<div id="saveText"></div>
 							<div class="form-group">
-								<button class="btn-square" type="submit" onclick="autoSave(<?php echo $infoUser->getGroupId()?>);alert('Proyecto grabado correctamente');return false;" name="saveProject">Guardar</button>
+								<button class="btn-square" type="submit" onclick="autoSave(<?php echo $infoUser->getGroupId()?>,1);return false;" name="saveProject">Guardar</button>
 							</div>
 						</div>
 					</form>
@@ -141,7 +141,7 @@
 	</div>
 </section>
 <script>
-	function autoSave(groupId){
+	function autoSave(groupId,manual){
 		//document.getElementById('saveText').innerHTML  ='';
 		var postData='id='+groupId;
 		postData+='&name='+document.getElementById('nombre').value;
@@ -163,6 +163,87 @@
 		//postData+='&products='+document.getElementById('productos').value;
 		//postData+='&conclutions='+document.getElementById('concluciones').value;
 		//postData+='&bibliography='+document.getElementById('bibliografia').value;
+		var regex = /^[a-zA-Z0-9._%:()+-;, áéíóúÁÉÍÓÚ]+$/;
+		if (document.getElementById('nombre').value!=='' && !regex.test(document.getElementById('nombre').value)) {
+			if(manual===1){
+				alert("Caracter no valido en campo nombre");
+			}
+			return false;
+		}
+		if (document.getElementById('resumen').value!=='' && !regex.test(document.getElementById('resumen').value)) {
+			if(manual===1){
+				alert("Caracter no valido en campo resumen");
+			}
+			return false;
+		}
+		if (document.getElementById('definicion').value!=='' && !regex.test(document.getElementById('definicion').value)) {
+			if(manual===1){
+				alert("Caracter no valido en campo definicion");
+			}
+			return false;
+		}
+		if (document.getElementById('impacto').value!=='' && !regex.test(document.getElementById('impacto').value)) {
+			if(manual===1){
+				alert("Caracter no valido en campo impacto");
+			}
+			return false;
+		}
+		if (document.getElementById('justificacion').value!=='' && !regex.test(document.getElementById('justificacion').value)) {
+			if(manual===1){
+				alert("Caracter no valido en campo justificacion");
+			}
+			return false;
+		}
+		if (document.getElementById('objetivo').value!=='' && !regex.test(document.getElementById('objetivo').value)) {
+			if(manual===1){
+				alert("Caracter no valido en campo objetivo");
+			}
+			return false;
+		}
+		if (document.getElementById('objetivos').value!=='' && !regex.test(document.getElementById('objetivos').value)) {
+			if(manual===1){
+				alert("Caracter no valido en campo objetivos");
+			}
+			return false;
+		}
+		if (document.getElementById('resultados').value!=='' && !regex.test(document.getElementById('resultados').value)) {
+			if(manual===1){
+				alert("Caracter no valido en campo resultados");
+			}
+			return false;
+		}
+		if (document.getElementById('analisis').value!=='' && !regex.test(document.getElementById('analisis').value)) {
+			if(manual===1){
+				alert("Caracter no valido en campo analisis");
+			}
+			return false;
+		}
+		
+		
+		if(new Date(document.getElementById('fechaFin').value)<new Date(document.getElementById('fechaIni').value)){
+			if(manual===1){
+				alert("Fecha Final debe ser antes de fecha Inicial");
+			}
+			return false;
+		}
+		if(document.getElementById('fechaFin').value==='' || document.getElementById('fechaFin').value==='1970-01-01'){
+			if(manual===1){
+				alert("Fecha Final no es un valor valido");
+			}
+			return false;
+		}
+		if(document.getElementById('fechaIni').value==='' || document.getElementById('fechaIni').value==='1970-01-01'){
+			if(manual===1){
+				alert("Fecha Inicial no es un valor valido");
+			}
+			return false;
+		}
+		if(document.getElementById('nombre').value===''){
+			if(manual===1){
+				alert("debes ingresar el nombre del proyecto");
+			}
+			return false;
+		}
 		if (window.XMLHttpRequest) {
 			// code for IE7+, Firefox, Chrome, Opera, Safari
 			xmlhttp1 = new XMLHttpRequest();
@@ -172,6 +253,9 @@
 		}
 		xmlhttp1.onreadystatechange = function() {
 			if (xmlhttp1.readyState === 4 && xmlhttp1.status === 200) {
+				if(manual===1){
+					alert("Proyecto guardado correctamente");
+				}
 				var d = new Date();
 				document.getElementById('saveText').innerHTML  = "Autoguardado a las "+d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
 			}
@@ -181,6 +265,6 @@
 		xmlhttp1.send(postData);
 		return false;
 	}
-	setInterval(function () {autoSave(<?php echo $infoUser->getGroupId();?>)}, 60000);
+	setInterval(function () {autoSave(<?php echo $infoUser->getGroupId();?>,0)}, 60000);
 </script>
 

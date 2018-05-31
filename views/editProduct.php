@@ -56,6 +56,9 @@
 				<div class="form-group">
 					<button type="submit" name="editProduct" value="1" class="btn btn-sub">Modificar</button>
 				</div>
+				<div class="buton">
+					<a href="?content=<?php echo $return?>" class="btn-square">Regresar</a>
+				</div>
 			</div>
 		</div>
 	</form>

@@ -10,6 +10,13 @@
 
 			<div class="item">
 				<div class="siguiente-campamento animated fadeIn">
+					<a href="?content=projectDef" class="btn btn-main">
+						Campamento Base
+					</a>
+				</div>
+			</div>
+			<div class="item">
+				<div class="siguiente-campamento animated fadeIn">
 					<a href="?content=baseTasks" class="btn btn-main">
 						Ver cronograma
 					</a>
@@ -26,7 +33,7 @@
 							<div class="form-group">
 								<div class="input">
 									<label for="nombre">Crear nueva fase</label>
-									<input type="text" name="nombre" id="nombre" class="form-control" placeholder="Nombre de la Fase">
+									<input type="text" pattern="[a-zA-Z0-9._%:()+-;, ]+$" required title="Caracteres validos (a-zA-Z0-9._%:()+-;, áéíóúÁÉÍÓÚ)" name="nombre" id="nombre" class="form-control" placeholder="Nombre de la Fase">
 								</div>
 								<div class="buton">
 									<button class="btn-square" value="1" type="submit"  name="createPhase">Crear Fase</button>
@@ -48,12 +55,11 @@
 
 			<div class="colum-30">
 				<div class="formContainer animated fadeInDown">
-					<form method="post">
 						<div class="inputs">
 							<div class="form-group">
 								<div class="input">
 									<label for="">Agregar Actividad</label>
-									<input type="text" name="" id="nombreTaskAux" class="form-control" placeholder="Nombre de la Actividad">
+									<input type="text" pattern="[a-zA-Z0-9._%:()+-;, ]+$" title="Caracteres validos (a-zA-Z0-9._%:()+-;, áéíóúÁÉÍÓÚ)" name="" id="nombreTaskAux" class="form-control" placeholder="Nombre de la Actividad">
 								</div>
 								<div class="buton">
 									<button type="button" class="btn-square" value="1" onclick="openActivity();document.getElementById('nombreTask').value=document.getElementById('nombreTaskAux').value;">
@@ -64,7 +70,6 @@
 								<small id="resultTaskOk"></small>
 							</div>
 						</div>
-					</form>
 				</div>
 				<div class="fasesContainer">
 					<?php echo $tasksHmtl?>
@@ -74,12 +79,11 @@
 
 			<div class="colum-30">
 				<div class="formContainer animated fadeInDown">
-					<form method="post">
 						<div class="inputs">
 							<div class="form-group">
 								<div class="input">
 									<label for="">Definir Entregable</label>
-									<input type="text" name="" id="nombreProductAux" class="form-control" placeholder="Definir un entregable">
+									<input type="text" title="Caracteres validos (a-zA-Z0-9._%:()+-;, áéíóúÁÉÍÓÚ)" name="" id="nombreProductAux" class="form-control" placeholder="Definir un entregable">
 								</div>
 								<div class="buton">
 									<button type="button" class="btn-square" value="1" onclick="openEntregable();document.getElementById('nombreProduct').value=document.getElementById('nombreProductAux').value;">Agregar Entregable</button>
@@ -88,7 +92,6 @@
 								<small id="resultProductOk"></small>
 							</div>
 						</div>
-					</form>
 				</div>
 				<div class="fasesContainer">
 					<?php echo $productsHmtl?>

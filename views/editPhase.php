@@ -17,6 +17,9 @@
 								</div>
 								<div class="buton">
 									<button class="btn-square" value="1" type="submit"  name="editPhase">Modificar</button>
+								</div><br>
+								<div class="buton">
+									<a href="?content=phaseDef" class="btn-square">Regresar</a>
 								</div>
 							</div>
 							<h4><?php echo $message;?></h4>

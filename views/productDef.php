@@ -13,17 +13,17 @@
 			<div class="addActivityBody">
 				<div class="form-group">
 					<label for="">
-						Nombre del Entregable
+						Nombre del Entregable *
 					</label>
 					<input type="text" name="nombreProduct" id="nombreProduct" class="form-control" placeholder="Ingresa el nombre de la actividad" value="<?php echo $name?>" required>
 				</div>
 				<div class="form-group">
-					<label for="fechaIni">Fecha de entrega</label>
+					<label for="fechaIni">Fecha de entrega *</label>
 					<input type="date" title="Fecha Entrega" name="fechaProduct" id="fechaProduct" class="form-control" value="<?php echo $startDate?>" required>
 				</div>
 
-				<div class="user form-group" title="Responsable">
-					<label for="">Tareas</label>
+				<div class="user form-group" title="tareas">
+					<label for="">Tareas *</label>
 					<div class="dropdown">
 						<button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 							<?php echo $taskHtmlSel?>
@@ -35,7 +35,7 @@
 				</div>
 				
 				<div class="user form-group" title="Responsable">
-					<label for="">Responsable</label>
+					<label for="">Responsable *</label>
 					<div class="dropdown">
 						<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 							<?php echo $assignedHtmlSel?>
@@ -48,7 +48,7 @@
 
 				<div class="form-group">
 					<label for="">
-						Descripción del entregable
+						Descripción del entregable *
 					</label>
 					<textarea name="desc" id="desc" rows="5" class="form-control" placeholder="Descripción" required><?php echo $descProduct?></textarea>
 				</div>
@@ -73,6 +73,30 @@
 		dataPost+="desc="+document.getElementById('desc').value;
 		dataPost+="&nombre="+document.getElementById('nombreProduct').value;
 		dataPost+="&fecha="+document.getElementById('fechaProduct').value;
+		
+		var regex = /^[a-zA-Z0-9._%:()+-;, áéíóúÁÉÍÓÚ]+$/;
+		if (document.getElementById('nombreProduct').value!=='' && !regex.test(document.getElementById('nombreProduct').value)) {
+			alert("Caracter no valido en campo nombre");
+			return false;
+		}
+		if (document.getElementById('desc').value!=='' && !regex.test(document.getElementById('desc').value)) {
+			alert("Caracter no valido en campo Descripcion");
+			return false;
+		}
+
+		if(document.getElementById('fechaProduct').value==='' || document.getElementById('fechaProduct').value==='1970-01-01'){
+			alert("Fecha no es un valor valido");
+			return false;
+		}
+		
+		if(document.getElementById('nombreProduct').value===''){
+			alert("debes ingresar el nombre del entregable");
+			return false;
+		}
+		if(document.getElementById('desc').value===''){
+			alert("debes ingresar la descripcion del entregable");
+			return false;
+		}
 		
 		if (window.XMLHttpRequest) {
 			// code for IE7+, Firefox, Chrome, Opera, Safari

@@ -62,14 +62,7 @@
 				<div class="report">
 					<div class="dataGroup">
 						<small>Diagnostico personal</small>
-						<div class="pdf">
-							<div class="pdfIcon">
-								<a href="#">
-									<img src="img/pdf.svg" alt="PDF">
-								</a>
-							</div>
 							<?php echo $pdfU?>
-						</div>
 					</div>
 				</div>
 			</div>
@@ -89,14 +82,7 @@
 				<div class="report">
 					<div class="dataGroup">
 						<small>Diagnostico grupal </small>
-						<div class="pdf">
-							<div class="pdfIcon">
-								<a href="#">
-									<img src="img/pdf.svg" alt="PDF">
-								</a>
-							</div>
 							<?php echo $pdfG?>
-						</div>
 					</div>
 				</div>
 			</div>
