@@ -68,7 +68,7 @@
 			</div>
 		</div>
 
-		<div class="teamProfile item colum-60">
+		<div class="teamProfile item colum-60 u-mount-back">
 			<div class="content-wrapper">
 				<h4 class="subTitle">
 					Brand Media Team

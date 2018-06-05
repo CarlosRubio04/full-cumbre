@@ -1,6 +1,6 @@
 <?php if(!defined('directAccess')){ header('location: ../?content=404');}?>
 <section class="agregar-curso">
-	<div class="container-flex u-color-contraste">
+	<div class="container-flex u-color-contraste u-mount-back">
 		<div class="item colum-80">
 			<div class="content-wrapper">
 				<div class="title">

@@ -1,10 +1,7 @@
 <?php if(!defined('directAccess')){ header('location: ../?content=404');}?>
-<section class="main addActivity u-color-contraste">
+<section class="main addActivity u-color-contraste u-mount-back">
 	<form method="post">
-		<div class="content-wrapper  u-color-contraste animated fadeInUp">
-			<button class="close" onclick="closeEntregable()">
-				<i class="fa fa-times" aria-hidden="true"></i>
-			</button>
+		<div class="content-wrapper animated fadeInUp">
 			<div class="addActivityHeader">
 				<div class="name title">
 					<a href="?content=<?php echo $return?>" class="btn btn-back">

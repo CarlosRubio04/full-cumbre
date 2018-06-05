@@ -1,5 +1,5 @@
 <?php if(!defined('directAccess')){ header('location: ../?content=404');}?>
-<section class="definir-fases u-color-contraste">
+<section class="definir-fases u-color-contraste u-mount-back">
 	<div class="container-flex">
 		
 

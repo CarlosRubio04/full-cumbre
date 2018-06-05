@@ -62,7 +62,7 @@
 				</div>
 			</div>
 
-			<div class="teamProfile item colum-60">
+			<div class="teamProfile item colum-60 u-mount-back">
 				<div class="content-wrapper animated fadeInUp">
 					<div class="siguiente-campamento">
 						<a href="?content=basecamp" class="btn btn-main">

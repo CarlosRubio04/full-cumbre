@@ -1,6 +1,6 @@
 <?php if(!defined('directAccess')){ header('location: ../?content=404');}?>
 <section class="cronograma-dos">
-	<div class="u-color-contraste">
+	<div class="u-color-contraste u-mount-back">
 		<div class="content-wrapper">
 			<div class="title">
 				<a href="?content=campTwo" class="btn btn-back">

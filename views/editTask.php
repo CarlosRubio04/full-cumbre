@@ -1,5 +1,5 @@
 <?php if(!defined('directAccess')){ header('location: ../?content=404');}?>
-<section class="main addActivity u-color-contraste">
+<section class="main addActivity u-color-contraste u-mount-back">
 	<form method="post">
 		<div class="content-wrapper">
 			<div class="addActivityHeader animated fadeInDown">
