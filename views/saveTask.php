@@ -9,7 +9,6 @@ function createTask(){
 	$task=filter_input(INPUT_POST, "tarea",FILTER_SANITIZE_STRING);
 	$startDate=filter_input(INPUT_POST, "fechaIni",FILTER_SANITIZE_STRING);
 	$endDate=filter_input(INPUT_POST, "fechaFin",FILTER_SANITIZE_STRING);
-	$status="En Desarrollo";
 	$assignedId=[];
 	$assignedSTR="";
 	foreach (filter_input_array(INPUT_POST) as $key => $value) {
@@ -22,16 +21,18 @@ function createTask(){
 	$_SESSION['taskValues']['responsable']=$assignedId;
 	$assignedIdS= "|".implode("|", $assignedId)."|";
 	if(filter_input(INPUT_POST, "assignedGroup",FILTER_SANITIZE_STRING)!==NULL){
-		$assignedIdS="|Group|";
+		$objU=new UserModel();
+		$userI=$objU->get($_SESSION['loginIdCumbre']);
+		$assignedIdS="|Group|".$userI->getGroupId()."|";
 	}
 	$phaseId= filter_input(INPUT_POST,"fase",FILTER_SANITIZE_STRING);
-	if(empty($name) ||empty($task) ||empty($startDate) ||empty($endDate) ||empty($status) ||empty($assignedIdS) ||empty($phaseId)){
+	if(empty($name) ||empty($task) ||empty($startDate) ||empty($endDate) ||empty($assignedIdS) || $assignedIdS=='||' ||empty($phaseId)){
 		$message="Datos de tarea no validos, debe llenar todos los campos";
 		Common::logg("Creación de Tarea",$message);
 		return $message;
 	}
 	$objTask=new TaskModel();
-	$res=$objTask->createTask($message,new Task(null,$name,$task,$startDate,$endDate,$status,$assignedIdS,$phaseId));
+	$res=$objTask->createTask($message,new Task(null,$name,$task,$startDate,$endDate,$assignedIdS,$phaseId));
 	
 	if($message=="Tarea Creada"){
 		unset($_SESSION['taskValues']);

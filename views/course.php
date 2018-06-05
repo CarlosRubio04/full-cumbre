@@ -4,6 +4,9 @@
 		<div class="item colum-60">
 			<div class="content-wrapper">
 				<div class="title">
+					<a href="?content=<?php echo $return?>" class="btn btn-back">
+						<i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+					</a>
 					<h1 class="animated fadeInLeft"><?php echo $name?></h1>
 				</div>
 				<form method="post">

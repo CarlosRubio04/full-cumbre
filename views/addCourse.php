@@ -21,7 +21,7 @@
 
 							<div class="form-group">
 								<label for="fecha">Fecha</label>
-								<input type="date" name="fecha" id="fecha" value="<?php echo $date?>" class="form-control">
+								<input type="datetime" name="fecha" id="fecha" value="<?php echo $date?>" class="form-control">
 							</div>
 
 							<div class="form-group">

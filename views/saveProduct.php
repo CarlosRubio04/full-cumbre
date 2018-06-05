@@ -24,12 +24,14 @@ function createProduct(){
 	$tasksSTR=rtrim($tasksSTR,",");
 	$_SESSION['productValues']['responsable']=$assignedId;
 	$_SESSION['productValues']['tasks']=$tasksId;
-	$assignedIdS= implode("|", $assignedId);
+	$assignedIdS= "|".implode("|", $assignedId)."|";
 	$tasksS= implode("|", $tasksId);
 	if(filter_input(INPUT_POST, "assignedGroup",FILTER_SANITIZE_STRING)!==NULL){
-		$assignedIdS="Group";
+		$objU=new UserModel();
+		$userI=$objU->get($_SESSION['loginIdCumbre']);
+		$assignedIdS="|Group|".$userI->getGroupId()."|";
 	}
-	if(empty($name) ||empty($desc) ||empty($fecha) ||empty($assignedIdS) ||empty($tasksS)){
+	if(empty($name) ||empty($desc) ||empty($fecha) ||empty($assignedIdS)|| $assignedIdS=='||' ||empty($tasksS)){
 		$message="Datos de entregable no validos, debe llenar todos los campos";
 		Common::logg("Creación de Entregable",$message);
 		return $message;

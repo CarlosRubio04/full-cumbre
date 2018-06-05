@@ -14,11 +14,11 @@
 						<div class="inputs">
 							<div class="form-group">
 								<label for="nombre">Nombre del proyecto *</label>
-								<input type="text" name="nombre" maxlength="100" id="nombre" value="<?php echo $name;?>" class="form-control" placeholder="Nombre">
+								<input type="text" name="nombre" <?php echo $enable?> maxlength="100" id="nombre" value="<?php echo $name;?>" class="form-control" placeholder="Nombre">
 							</div>
 							<div class="form-group">
 								<label for="resumen">Resumen</label>
-								<textarea name="resumen" id="resumen" rows="5" maxlength="960" class="form-control" placeholder="Resumen"><?php echo $summary;?></textarea>
+								<textarea name="resumen" id="resumen" <?php echo $enable?> rows="5" maxlength="960" class="form-control" placeholder="Resumen"><?php echo $summary;?></textarea>
 							</div>
 
 							<!-- <div class="form-group">
@@ -29,12 +29,12 @@
 							<h4 class="subTitle">Problematica</h4>
 							<div class="form-group">
 								<label for="definicion">Definición de problemática</label>
-								<textarea name="definicion" id="definicion" rows="5" maxlength="400" class="form-control" placeholder="Definición de problemática"><?php echo $definition;?></textarea>
+								<textarea name="definicion" <?php echo $enable?> id="definicion" rows="5" maxlength="400" class="form-control" placeholder="Definición de problemática"><?php echo $definition;?></textarea>
 							</div>
 							<div class="form-group">
 								<label for="">objetivos estratégicos que impactan la organización</label>
 								<div class="u-selectWraper">
-									<select name="impacto" id="impacto" class="form-control">
+									<select name="impacto" <?php echo $enable?> id="impacto" class="form-control">
 										<option value="Reconciliación del país" <?php echo $sel1;?>>
 											Reconciliación del país
 										</option>
@@ -53,7 +53,7 @@
 
 							<div class="form-group">
 								<label for="justificacion">Justificación del proyecto</label>
-								<textarea name="justificacion" id="justificacion" maxlength="960" rows="5" class="form-control" placeholder="Justificación del proyecto."><?php echo $justification;?></textarea>
+								<textarea name="justificacion" <?php echo $enable?> id="justificacion" maxlength="960" rows="5" class="form-control" placeholder="Justificación del proyecto."><?php echo $justification;?></textarea>
 							</div>
 
 							<!-- <div class="form-group">
@@ -63,23 +63,23 @@
 
 							<div class="form-group">
 								<label for="">Objetivo general</label>
-								<textarea name="objetivo" id="objetivo" rows="5" maxlength="250" class="form-control" placeholder="Objetivo general"><?php echo $objective;?></textarea>
+								<textarea name="objetivo" <?php echo $enable?> id="objetivo" rows="5" maxlength="250" class="form-control" placeholder="Objetivo general"><?php echo $objective;?></textarea>
 							</div>
 							<div class="form-group">
 								<label for="">Objetivos especificos</label>
-								<textarea name="objetivos" id="objetivos" maxlength="250" rows="5" class="form-control" placeholder="Objetivos especificos"><?php echo $objectiveOthers;?></textarea>
+								<textarea name="objetivos" <?php echo $enable?> id="objetivos" maxlength="250" rows="5" class="form-control" placeholder="Objetivos especificos"><?php echo $objectiveOthers;?></textarea>
 							</div>
 
 							<h4 class="subTitle">Tiempo</h4>
 
 							<div class="form-group">
 								<label for="">Fecha de inicio *</label>
-								<input type="date" name="fechaIni" id="fechaIni" value="<?php echo $startDate;?>" class="form-control">
+								<input type="date" <?php echo $enable?> name="fechaIni" id="fechaIni" value="<?php echo $startDate;?>" class="form-control">
 							</div>
 
 							<div class="form-group">
 								<label for="">Fecha de finalización *</label>
-								<input type="date" name="fechaFin" id="fechaFin" value="<?php echo $endDate;?>" class="form-control">
+								<input type="date" <?php echo $enable?> name="fechaFin" id="fechaFin" value="<?php echo $endDate;?>" class="form-control">
 							</div>
 
 							<!-- <div class="form-group">
@@ -89,7 +89,7 @@
 
 							<div class="form-group">
 								<label for="">Resultados esperados</label>
-								<input type="text" name="resultados" maxlength="960" id="resultados" value="<?php echo $expectedResults;?>" class="form-control" placeholder="Resultados esperados">
+								<input type="text" <?php echo $enable?> name="resultados" maxlength="960" id="resultados" value="<?php echo $expectedResults;?>" class="form-control" placeholder="Resultados esperados">
 							</div>
 
 							<!-- <div class="form-group">
@@ -104,7 +104,7 @@
 
 							<div class="form-group">
 								<label for="">Análisis de resultados</label>
-								<input type="text" name="analisis" maxlength="960" value="<?php echo $analysis;?>" id="analisis" class="form-control" placeholder="Análisis de resultados">
+								<input type="text" <?php echo $enable?> name="analisis" maxlength="960" value="<?php echo $analysis;?>" id="analisis" class="form-control" placeholder="Análisis de resultados">
 							</div>
 
 							<!-- <div class="form-group">
@@ -123,7 +123,10 @@
 							
 							<div id="saveText"></div>
 							<div class="form-group">
-								<button class="btn-square" type="submit" onclick="autoSave(<?php echo $infoUser->getGroupId()?>,1);return false;" name="saveProject">Guardar</button>
+								<button class="btn-square" type="submit" onclick="autoSave(<?php echo $infoUser->getGroupId()?>,1);return false;" name="saveProject" id="saveProject" value="<?php echo $btnText?>"> <?php echo $btnText?></button>
+							</div>
+							<div >
+								<?php echo $htmlMsgP?>
 							</div>
 						</div>
 					</form>
@@ -145,6 +148,22 @@
 </section>
 <script>
 	function autoSave(groupId,manual){
+		if(document.getElementById('saveProject').value==="Modificar Proyecto"){
+			document.getElementById('saveProject').innerHTML='Guardar';
+			document.getElementById('saveProject').value='Guardar';
+			document.getElementById('nombre').readOnly=false;
+			document.getElementById('resumen').readOnly=false;
+			document.getElementById('definicion').readOnly=false;
+			document.getElementById('impacto').readOnly=false;
+			document.getElementById('justificacion').readOnly=false;
+			document.getElementById('objetivo').readOnly=false;
+			document.getElementById('objetivos').readOnly=false;
+			document.getElementById('fechaIni').readOnly=false;
+			document.getElementById('fechaFin').readOnly=false;
+			document.getElementById('resultados').readOnly=false;
+			document.getElementById('analisis').readOnly=false;
+			return false;
+		}
 		//document.getElementById('saveText').innerHTML  ='';
 		var postData='id='+groupId;
 		postData+='&name='+document.getElementById('nombre').value;
@@ -258,9 +277,10 @@
 			if (xmlhttp1.readyState === 4 && xmlhttp1.status === 200) {
 				if(manual===1){
 					alert("Proyecto guardado correctamente");
+				}else if(xmlhttp1.responseText==='datos guardados'){
+					var d = new Date();
+					document.getElementById('saveText').innerHTML  = "Autoguardado a las "+(d.getHours()<10?'0':'')+ d.getHours()+":"+(d.getMinutes()<10?'0':'')+d.getMinutes()+":"+(d.getSeconds()<10?'0':'')+d.getSeconds();
 				}
-				var d = new Date();
-				document.getElementById('saveText').innerHTML  = "Autoguardado a las "+d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
 			}
 		};
 		xmlhttp1.open("POST","?content=autosave",true);

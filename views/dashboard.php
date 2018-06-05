@@ -15,9 +15,10 @@
 				</p>
 				<div class="activityFeed">
 					<div class="activityFeedContainer">
-						<?php echo $htmlPendiente;
-						 echo $htmlIntermedio;
-						 echo $htmlDesarrollo;?>
+						<?php echo $html3;
+						 echo $html2;
+						 echo $html0;
+						 echo $html1;?>
 					</div>
 				</div>
 
