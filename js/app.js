@@ -52,4 +52,6 @@ function loaded() {
 $(document).ready(function() {
 	// Fade Loading
 	setTimeout(loaded, 1);
+	// Tool tips
+	$('[data-toggle="tooltip"]').tooltip();
 });

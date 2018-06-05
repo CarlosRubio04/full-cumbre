@@ -4,7 +4,7 @@
 		<div class="profile item colum-40 u-color-contraste">
 			<div class="content-wrapper">
 				<h1 class="title">
-					Perfil de Usuario
+					Perfil de Usuario 
 				</h1>
 				<div class="avatar">
 					<div class="avatarItems">
@@ -20,8 +20,11 @@
 						<div class="label">
 							<small>Nombre</small>
 						</div>
-						<div class="input">
+						<div class="input input-flex">
 							<p><?php echo $name?></p>
+							<a href="?content=editUser&id=<?php echo $id?>" class="btn-edit" value="1" type="submit"  name="editUser" data-toggle="tooltip" data-placement="right" title="Editar">
+								<i class="fa fa-pencil" aria-hidden="true"></i>
+							</a>
 						</div>
 					</div>
 
@@ -29,8 +32,11 @@
 						<div class="label">
 							<small>Apellido</small>
 						</div>
-						<div class="input">
+						<div class="input input-flex">
 							<p><?php echo $lastname?></p>
+							<a href="?content=editUser&id=<?php echo $id?>" class="btn-edit" value="1" type="submit"  name="editUser" data-toggle="tooltip" data-placement="right" title="Editar">
+								<i class="fa fa-pencil" aria-hidden="true"></i>
+							</a>
 						</div>
 					</div>
 
@@ -38,20 +44,23 @@
 						<div class="label">
 							<small>E-mail</small>
 						</div>
-						<div class="input">
+						<div class="input input-flex">
 							<p><?php echo $email?></p>
+							<a href="?content=editUser&id=<?php echo $id?>" class="btn-edit" value="1" type="submit"  name="editUser" data-toggle="tooltip" data-placement="right" title="Editar">
+								<i class="fa fa-pencil" aria-hidden="true"></i>
+							</a>
 						</div>
 					</div>
 					<div class="input">
-							<h2><?php echo $status?></h2>
-						</div>
+						<h2><?php echo $status?></h2>
+					</div>
 
 					<div class="form-group">
-						<div class="input">
-							<a href="?content=editUser&id=<?php echo $id?>" class="btn-square" value="1" type="submit"  name="editUser">Editar</a>
-							<a href="?content=userProfile&id=<?php echo $id?>&deactivate=1" class="btn-square" value="1" type="submit"  name="editUser">deshabilitar</a>
-							<a href="?content=newPass&id=<?php echo $id?>" class="btn-square" value="1" type="submit"  name="editUser">Cambiar Clave</a>
-						</div>
+						<a href="?content=newPass&id=<?php echo $id?>" class="btn-square" value="1" type="submit"  name="editUser">Cambiar Clave</a>
+
+						<a href="?content=userProfile&id=<?php echo $id?>&deactivate=1" class="btn-square" value="1" type="submit"  name="editUser" data-toggle="tooltip" data-placement="bottom" title="Desactivar Usuario">
+							<i class="fa fa-ban" aria-hidden="true"></i>
+						</a>
 					</div>
 				</div>
 

@@ -65,6 +65,38 @@
 	width: 100%;
 	border-radius: 0;
 	border: 1px solid $verdeClaro;
+	max-height: 200px;
+	overflow-y: scroll;
+
+	li {
+		display: block;
+		width: 100%;
+		
+		a {
+			display: block;
+			width: 100%;
+			padding: 0;
+			position: relative;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			width: 100%;
+			padding: 0 2em;
+			height: 40px;
+			
+			input {
+				height: 40px;
+				width: 100%;
+				position: absolute;
+				top: 0;
+				left: .5em;
+				margin: 0;
+			}
+			.avatar {
+				margin-top: 0 !important;
+			}
+		}	
+	}
 }
 
 .buton {

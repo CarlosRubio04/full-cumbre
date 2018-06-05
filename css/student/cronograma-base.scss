@@ -1,4 +1,5 @@
 @import '../variables';
+@import '../mixins';
 
 
 
@@ -60,14 +61,27 @@
 				.task {
 					padding: .8em;
 					border-bottom: 4px solid $grisClaro;
+					font-size: 10px;
+					font-weight: 400;
 
 					&-title {
-						color: $verdeOscuro;
-						font-size: 20px;
+						color: $verdeOscuro2 !important;
+						font-size: 18px !important;
+						&:hover {
+							color: $verdeClaro !important;
+						}
 					}
 					p {
 						font-size: 12px;
 						font-weight: 300;
+					}
+
+					a {
+						color: $verdeClaro;
+						font-size: 10px;
+						&:hover {
+							color: $verdeOscuro2;
+						}
 					}
 
 					&:nth-child(odd) {
