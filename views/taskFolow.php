@@ -17,38 +17,28 @@
 						<h1><?php echo $name?></h1>
 					</div>
 
-
-					<div class="dates">
 						<div class="date">
-							<small>Fecha de inicio</small>
-							<div><?php echo $startDate1?></div>
+							<small>Fecha</small>
+							<div><?php echo $date1?></div>
 						</div>
-						<div class="date-icon">
-
-						</div>
-						<div class="date">
-							<small>Fecha de fin</small>
-							<div><?php echo $endDate1?></div>
-						</div>
-					</div>
 
 
 					<div class="form-group">
 						<label for="">
-							Descripción de la actividad
+							Descripción del Entregable
 						</label>
 						<textarea name="tarea" rows="5" class="form-control" placeholder="Descripción" readonly><?php echo $task?></textarea>
 					</div>
 
 					<div class="form-group">
 						<label for="">
-							Entregables Asignados
+							Actividades Asignadas
 						</label><br>
-						<?php echo $productsList?>
+						<?php echo $taskList?>
 					</div>
 					<div class="form-group">
 						<label for="">
-							Entregables Guardados:
+							Archivos Guardados:
 						</label>
 						<?php echo $filesHtml?>
 					</div>
