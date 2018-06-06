@@ -62,7 +62,7 @@
 				<div class="report">
 					<div class="dataGroup">
 						<small>Diagnostico personal</small>
-							<?php echo $pdfU?>
+						<?php echo $pdfU?>
 					</div>
 				</div>
 			</div>
@@ -82,9 +82,10 @@
 				<div class="report">
 					<div class="dataGroup">
 						<small>Diagnostico grupal </small>
-							<?php echo $pdfG?>
+						<?php echo $pdfG?>
 					</div>
 				</div>
+
 			</div>
 		</div>
 	</div>
