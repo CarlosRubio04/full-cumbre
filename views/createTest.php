@@ -27,7 +27,7 @@
 								
 								<div class="question-body mt8">
 									<div class="question-label big">
-										<input type="text" class="form-control" name="" placeholder="Primera Opsión">
+										<input type="text" class="form-control" name="" placeholder="Primera Opción">
 									</div>	
 
 									<div class="question-inputs">
@@ -40,7 +40,7 @@
 
 								<div class="question-body mt8">
 									<div class="question-label big">
-										<input type="text" class="form-control" name="" placeholder="Segunda Opsión">
+										<input type="text" class="form-control" name="" placeholder="Segunda Opción">
 									</div>	
 
 									<div class="question-inputs">
@@ -53,7 +53,7 @@
 
 								<div class="question-body mt8">
 									<div class="question-label big">
-										<input type="text" class="form-control" name="" placeholder="Tercera Opsión">
+										<input type="text" class="form-control" name="" placeholder="Tercera Opción">
 									</div>	
 
 									<div class="question-inputs">
@@ -66,7 +66,7 @@
 
 								<div class="question-body mt8">
 									<div class="question-label big">
-										<input type="text" class="form-control" name="" placeholder="Cuarta Opsión">
+										<input type="text" class="form-control" name="" placeholder="Cuarta Opción">
 									</div>	
 
 									<div class="question-inputs">
@@ -87,7 +87,7 @@
 								
 								<div class="question-body mt8">
 									<div class="question-label big">
-										<input type="text" class="form-control" name="" placeholder="Primera Opsión">
+										<input type="text" class="form-control" name="" placeholder="Primera Opción">
 									</div>	
 
 									<div class="question-inputs">
@@ -100,7 +100,7 @@
 
 								<div class="question-body mt8">
 									<div class="question-label big">
-										<input type="text" class="form-control" name="" placeholder="Segunda Opsión">
+										<input type="text" class="form-control" name="" placeholder="Segunda Opción">
 									</div>	
 
 									<div class="question-inputs">
@@ -113,7 +113,7 @@
 
 								<div class="question-body mt8">
 									<div class="question-label big">
-										<input type="text" class="form-control" name="" placeholder="Tercera Opsión">
+										<input type="text" class="form-control" name="" placeholder="Tercera Opción">
 									</div>	
 
 									<div class="question-inputs">
@@ -126,7 +126,7 @@
 
 								<div class="question-body mt8">
 									<div class="question-label big">
-										<input type="text" class="form-control" name="" placeholder="Cuarta Opsión">
+										<input type="text" class="form-control" name="" placeholder="Cuarta Opción">
 									</div>	
 
 									<div class="question-inputs">
