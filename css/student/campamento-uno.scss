@@ -189,6 +189,13 @@
 		height: 40px;
 		line-height: 40px;
 		margin-right: 4px;
+
+		.form-control {
+			height: 40px !important;
+			margin: 0 !important;
+			border: 0 !important;
+			
+		}
 	}
 	.question-label.big {
 		width: 100%;

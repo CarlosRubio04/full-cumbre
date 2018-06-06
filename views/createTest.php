@@ -9,16 +9,152 @@
 						<i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
 					</a>
 					<h1 class="animated fadeInLeft">
-						Prueba de conocimiento
+						Cuestionario del conocimiento
 					</h1>
 				</div>
+				<hr>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit et, fuga sed temporibus, commodi nostrum mollitia deleniti sit non eveniet nihil necessitatibus, hic aperiam magni iusto quis excepturi provident beatae?
+				</p>
 				<div class="formContainer animated fadeInUp">
 					<form method="post">
 						<div class="inputs">
+							<!-- Agregar Pregunta -->
 							<div class="form-group">
-								<label for="">Enunciado</label>
+								<label for="">Agregar  pregunta</label>
 								<textarea name="" id="" class="form-control" cols="30" rows="10" placeholder="Enunciado de la pregunta"></textarea>
+								
+								
+								<div class="question-body mt8">
+									<div class="question-label big">
+										<input type="text" class="form-control" name="" placeholder="Primera Opsión">
+									</div>	
+
+									<div class="question-inputs">
+										<div class="item five big">
+											<input type="radio" name="twelve" value="5">
+											<span class="checkMark"></span>
+										</div>
+									</div>
+								</div>
+
+								<div class="question-body mt8">
+									<div class="question-label big">
+										<input type="text" class="form-control" name="" placeholder="Segunda Opsión">
+									</div>	
+
+									<div class="question-inputs">
+										<div class="item five big">
+											<input type="radio" name="twelve" value="5">
+											<span class="checkMark"></span>
+										</div>
+									</div>
+								</div>
+
+								<div class="question-body mt8">
+									<div class="question-label big">
+										<input type="text" class="form-control" name="" placeholder="Tercera Opsión">
+									</div>	
+
+									<div class="question-inputs">
+										<div class="item five big">
+											<input type="radio" name="twelve" value="5">
+											<span class="checkMark"></span>
+										</div>
+									</div>
+								</div>
+
+								<div class="question-body mt8">
+									<div class="question-label big">
+										<input type="text" class="form-control" name="" placeholder="Cuarta Opsión">
+									</div>	
+
+									<div class="question-inputs">
+										<div class="item five big">
+											<input type="radio" name="twelve" value="5">
+											<span class="checkMark"></span>
+										</div>
+									</div>
+								</div>
 							</div>
+							<!-- // Agregar Pregunta -->
+
+							<!-- Agregar Pregunta -->
+							<div class="form-group">
+								<label for="">Agregar  pregunta</label>
+								<textarea name="" id="" class="form-control" cols="30" rows="10" placeholder="Enunciado de la pregunta"></textarea>
+								
+								
+								<div class="question-body mt8">
+									<div class="question-label big">
+										<input type="text" class="form-control" name="" placeholder="Primera Opsión">
+									</div>	
+
+									<div class="question-inputs">
+										<div class="item five big">
+											<input type="radio" name="twelve" value="5">
+											<span class="checkMark"></span>
+										</div>
+									</div>
+								</div>
+
+								<div class="question-body mt8">
+									<div class="question-label big">
+										<input type="text" class="form-control" name="" placeholder="Segunda Opsión">
+									</div>	
+
+									<div class="question-inputs">
+										<div class="item five big">
+											<input type="radio" name="twelve" value="5">
+											<span class="checkMark"></span>
+										</div>
+									</div>
+								</div>
+
+								<div class="question-body mt8">
+									<div class="question-label big">
+										<input type="text" class="form-control" name="" placeholder="Tercera Opsión">
+									</div>	
+
+									<div class="question-inputs">
+										<div class="item five big">
+											<input type="radio" name="twelve" value="5">
+											<span class="checkMark"></span>
+										</div>
+									</div>
+								</div>
+
+								<div class="question-body mt8">
+									<div class="question-label big">
+										<input type="text" class="form-control" name="" placeholder="Cuarta Opsión">
+									</div>	
+
+									<div class="question-inputs">
+										<div class="item five big">
+											<input type="radio" name="twelve" value="5">
+											<span class="checkMark"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- // Agregar Pregunta -->
+
+							<!-- Boton Agregar Pregunta -->
+							<div class="form-group">
+								<button class="btn-square">
+									Agregar pregunta <i class="fa fa-plus" aria-hidden="true"></i>
+								</button>
+							</div>
+							<!-- //Boton Agregar Pregunta -->
+
+							<!-- Boton Guardar Cuestionario -->
+							<div class="form-group">
+								<button class="btn-square">
+									Guardar Cuestionario <i class="fa fa-floppy-o" aria-hidden="true"></i>
+								</button>
+							</div>
+							<!-- //Boton Guardar Cuestionario -->
+
 						</div>
 					</form>
 				</div>
