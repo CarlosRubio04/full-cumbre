@@ -17,7 +17,6 @@
 					<div class="activityFeedContainer">
 						<?php echo $html3;
 						 echo $html2;
-						 echo $html0;
 						 echo $html1;?>
 					</div>
 				</div>

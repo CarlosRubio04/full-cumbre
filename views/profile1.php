@@ -11,7 +11,7 @@
 					<!-- Datos del usuario -->
 					<div class="data-user">
 						<div class="avatar">
-							<img src="http://placehold.it/30x30" alt="Avatar" class="img-circle">
+							<?php echo $profileImg ?>
 						</div>
 
 						<div class="data-group">
@@ -57,18 +57,6 @@
 
 				</div>
 				
-			</div>
-		</div>
-		<div class="item colum-80">
-			<div class="content-wrapper flex-colum">
-
-				<div class="activityFeed">
-					<div class="activityFeedContainer">
-						
-						<?php require_once 'Libs/LtaskView.php';?>
-					</div>
-				</div>
-
 			</div>
 		</div>
 	</div>

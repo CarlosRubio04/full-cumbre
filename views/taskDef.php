@@ -72,7 +72,7 @@
 		var dataPost="createTask=1&";
 		var all = document.getElementsByTagName("input");
 		for (var i=0, max=all.length; i < max; i++) {
-			if(all[i].type==='checkbox' && all[i].checked){
+			if(all[i].type==='checkbox' && all[i].checked && all[i].name.substr(0,8)==='assigned'  && all[i].name.substr(0,13)!=='assignedTaskP'){
 				dataPost+=all[i].name+"="+all[i].value+"&";
 			}
 		}
@@ -133,5 +133,26 @@
 		xmlhttp1.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 		xmlhttp1.send(dataPost);
 		return false;
+	}
+	
+	function updateSel(){
+		var all = document.getElementsByTagName("input");
+		var sel='Ninguno seleccionado   <span class="avatar"><div class="circle3030">--</div></span>';
+		var cc=0;
+		for (var i=0, max=all.length; i < max; i++) {
+			if(all[i].type==='checkbox' && all[i].checked && all[i].name.substr(0,8)==='assigned' && all[i].name.substr(0,13)!=='assignedTaskP'){
+				cc++;
+				if(all[i].value==='Group'){
+					sel='Todo el Grupo<span class="avatar"><div class="circle3030">GP</div></span>';
+					break;
+				}else if (cc>1){
+					sel='Varios Usuarios   <span class="avatar"><div class="circle3030">VU</div></span>';
+				}else{
+					var name=document.getElementById('assignedTaskL'+all[i].value).innerHTML;
+					sel=name+'   <span class="avatar"><div class="circle3030">US</div></span>';
+				}
+			}
+		}
+		document.getElementById('dropdownMenu1').innerHTML=sel;
 	}
 </script>

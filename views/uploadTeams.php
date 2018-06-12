@@ -17,6 +17,9 @@
 					<hr/>
 					<h3 class="text-center"><?php echo $message;?></h3>
 				</div>
+				<div class="form-group">
+					<a href="files/templateLoad.xlsx" class="btn btn-sub">Ver Archivo de muestra</a>
+				</div>
 
 			</div>
 		</div>

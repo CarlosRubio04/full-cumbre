@@ -43,6 +43,13 @@ if(isset($_SESSION['projectINFO']) && !empty($_SESSION['projectINFO']) && $_SESS
 	$objP->create($projectInfo);
 	$_SESSION['projectINFO']=$projectInfo;
 	echo "datos guardados";
+	//add record to score table
+	$objG=new GroupModel();
+	$users=$objG->getUsers($id);
+	$objSc=new ScoreModel();
+	foreach ($users as $value) {
+		$objSc->create(new Score(null,'Campamento Base',1,5,'project',$id,$value->getUserId()));
+	}
 	
 	Common::logg("Definición del Proyecto","Proyecto Creado:".$projectInfo->projectInfo());
 	$message="Proyecto creado";

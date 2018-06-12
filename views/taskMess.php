@@ -16,11 +16,12 @@ foreach ($messages as $value) {
 	$date=explode(" ",$value->getDate());
 	$userI=$obju->get($value->getUserId());
 	$type='coment animated fadeIn';
-	if($userI->GetId()!=$_SESSION['loginRoleCumbre']){
+	if($userI->GetRoleId()!=$_SESSION['loginRoleCumbre']){
 		$type='coment user-loged animated fadeIn';
 	}
+	$profileImg= Common::getPicture($value->getUserId());
 	$comments.='
-		<div class="'.$type.'"><div class="avatar"><img src="http://placehold.it/30x30" alt="Avatar" class="img-circle"></div>
+		<div class="'.$type.'"><div class="avatar">'.$profileImg.'</div>
 			<div class="text">'.$userI->getName().": ".$value->getMsg().'<div class="date">
 					<small>'.$date[0].'</small> | <small>'.$date[1].'</small>
 				</div>

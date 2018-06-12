@@ -276,7 +276,19 @@
 		xmlhttp1.onreadystatechange = function() {
 			if (xmlhttp1.readyState === 4 && xmlhttp1.status === 200) {
 				if(manual===1){
-					alert("Proyecto guardado correctamente");
+					document.getElementById('saveProject').innerHTML='Modificar Proyecto';
+					document.getElementById('saveProject').value='Modificar Proyecto';
+					document.getElementById('nombre').readOnly=true;
+					document.getElementById('resumen').readOnly=true;
+					document.getElementById('definicion').readOnly=true;
+					document.getElementById('impacto').readOnly=true;
+					document.getElementById('justificacion').readOnly=true;
+					document.getElementById('objetivo').readOnly=true;
+					document.getElementById('objetivos').readOnly=true;
+					document.getElementById('fechaIni').readOnly=true;
+					document.getElementById('fechaFin').readOnly=true;
+					document.getElementById('resultados').readOnly=true;
+					document.getElementById('analisis').readOnly=true;
 				}else if(xmlhttp1.responseText==='datos guardados'){
 					var d = new Date();
 					document.getElementById('saveText').innerHTML  = "Autoguardado a las "+(d.getHours()<10?'0':'')+ d.getHours()+":"+(d.getMinutes()<10?'0':'')+d.getMinutes()+":"+(d.getSeconds()<10?'0':'')+d.getSeconds();

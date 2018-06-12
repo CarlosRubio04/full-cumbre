@@ -11,7 +11,7 @@
 					<!-- Datos del usuario -->
 					<div class="data-user">
 						<div class="avatar">
-							<img src="http://placehold.it/30x30" alt="Avatar" class="img-circle">
+							<?php echo $profileImg ?>
 						</div>
 
 						<div class="data-group">

@@ -20,15 +20,24 @@
 							</div>
 
 							<div class="form-group">
-								<label for="fecha">Fecha</label>
-								<input type="datetime" name="fecha" id="fecha" value="<?php echo $date?>" class="form-control">
+								<label for="fecha">Fecha Inicio</label>
+								<input type="date" name="fechaIni" id="fechaIni" value="<?php echo $dateStart?>" class="form-control">
+							</div>
+							<div class="form-group">
+								<label for="fecha">Fecha Finalización</label>
+								<input type="date" name="fechaFin" id="fechaFin" value="<?php echo $dateEnd?>" class="form-control">
 							</div>
 
 							<div class="form-group">
-								<label for="horas">Horas</label>
-								<input type="number" step="1" min="1" name="horas" id="horas" value="<?php echo $hours?>" class="form-control" placeholder="Ingresa el número de horas">
+								<label for="horas">Sesiones</label>
+								<input type="number" step="1" min="1" name="sessions" id="sessions" value="<?php echo $sessions?>" class="form-control" placeholder="Ingresa el número de sesiones">
 							</div>
 
+							<div class="form-group">
+								<label for="descripcion">Horario</label>
+								<textarea name="horario" id="horario" cols="30" rows="10" class="form-control" placeholder="Información del horario"><?php echo $schedule?></textarea>
+							</div>
+							
 							<div class="form-group">
 								<label for="lugar">Lugar</label>
 								<input type="text" name="lugar" id="lugar" class="form-control" value="<?php echo $place?>" placeholder="Ingresa el lugar donde se realizará el curso">

@@ -14,6 +14,16 @@
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit et, fuga sed temporibus, commodi nostrum mollitia deleniti sit non eveniet nihil necessitatibus, hic aperiam magni iusto quis excepturi provident beatae?. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus ipsa sint quibusdam tenetur, quidem voluptates neque minima deserunt facere. Aut eius, fugiat dolores repellendus fugit itaque quidem, mollitia cum perferendis.
 				</p>
+				Metros por usuario
+				<?php echo $tabla?>
+				<br>
+				<br>
+				Metros por grupo
+				<?php echo $tablaG?>
+				<br>
+				<br>
+				Metros Usuario por Campamento
+				<?php echo $tablaUC?>
 
 
 				<div class="row">

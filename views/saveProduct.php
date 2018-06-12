@@ -12,13 +12,18 @@ function createProduct(){
 	$tasksId=[];
 	$assignedSTR=$tasksSTR="";
 	foreach (filter_input_array(INPUT_POST) as $key => $value) {
-		if(substr($key,0,12)=="assignedTask"){
-			$assignedId[]=substr($key,12);
+		if(substr($key,0,13)=="assignedTaskP"){
+			$assignedId[]=substr($key,13);
 			$assignedSTR.="$value,";
 		}elseif(substr($key,0,8)=="listTask"){
 			$tasksId[]=substr($key,8);
 			$tasksSTR.="$value,";
 		}
+	}
+	if(count($assignedId)<4 && filter_input(INPUT_POST, 'assignedTaskPGroup',FILTER_SANITIZE_STRING)!='Group'){
+		$message="Un entregable debe tener por lo menos 4 partisipantes asignados";
+		Common::logg("Creación de Entregable",$message);
+		return $message;
 	}
 	$assignedSTR=rtrim($assignedSTR,",");
 	$tasksSTR=rtrim($tasksSTR,",");
@@ -32,7 +37,7 @@ function createProduct(){
 		$assignedIdS="|Group|".$userI->getGroupId()."|";
 	}
 	if(empty($name) ||empty($desc) ||empty($fecha) ||empty($assignedIdS)|| $assignedIdS=='||' ||empty($tasksS)){
-		$message="Datos de entregable no validos, debe llenar todos los campos";
+		$message="Datos de entregable no validos, debe llenar todos los campos $tasksS";
 		Common::logg("Creación de Entregable",$message);
 		return $message;
 	}
@@ -50,6 +55,21 @@ function createProduct(){
 		$phInfo=$objPh->get($tInfo->getPhaseId());
 		$objP=new ProjectModel();
 		$pInfo=$objP->get($phInfo->getProjectId());
+		
+		//add record to score table
+		$objSc=new ScoreModel();
+		$infoSc=$objSc->searchByCampTask($phInfo->getProjectId(), 'Campamento Base',2);
+		if(empty($infoSc)){
+			$objG=new GroupModel();
+			$users=$objG->getUsers($phInfo->getProjectId());
+			foreach ($users as $value) {
+				$objSc->create(new Score(null,'Campamento Base',2,5,'product',$res,$value->getId()));
+			}
+		}
+		
+		//add record to score table with zero grade for camp two
+		$objSc->productsGrade(0,$res);
+		
 		unset($_SESSION['productValues']);
 		Common::logg("Creacion de Producto",$message."=> Nombre:$name,desc:$desc,Fecha:$fecha,$assignedSTR,Tareas:$tasksSTR");
 		$MSGdata=['USER'=>$_SESSION['loginNameCumbre'],'NAME'=>$name,'TASKS'=>$tasksSTR,'PROJECT'=>$pInfo->getName(),'ID'=>$res];

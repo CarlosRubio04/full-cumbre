@@ -37,10 +37,10 @@
 				<div class="user form-group" title="Responsable">
 					<label for="">Responsable *</label>
 					<div class="dropdown">
-						<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+						<button class="btn dropdown-toggle" type="button" id="dropdownMenu1P" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 							<?php echo $assignedHtmlSel?>
 						</button>
-						<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenu1P">
 							<?php echo $assignedHtml?>
 						</ul>
 					</div>
@@ -66,7 +66,7 @@
 		var dataPost="createPro=1&";
 		var all = document.getElementsByTagName("input");
 		for (var i=0, max=all.length; i < max; i++) {
-			if(all[i].type==='checkbox' && all[i].checked){
+			if(all[i].type==='checkbox' && all[i].checked && (all[i].name.substr(0,13)==='assignedTaskP' || all[i].name.substr(0,8)==='listTask')){
 				dataPost+=all[i].name+"="+all[i].value+"&";
 			}
 		}
@@ -118,5 +118,42 @@
 		xmlhttp1.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 		xmlhttp1.send(dataPost);
 		return false;
+	}
+	
+	function updateSel1(){
+		var all = document.getElementsByTagName("input");
+		var sel='Ninguno seleccionado   <span class="avatar"><div class="circle3030">--</div></span>';
+		var cc=0;
+		for (var i=0, max=all.length; i < max; i++) {
+			if(all[i].type==='checkbox' && all[i].checked && all[i].name.substr(0,13)==='assignedTaskP'){
+				cc++;
+				if(all[i].value==='Group'){
+					sel='Todo el Grupo<span class="avatar"><div class="circle3030">GP</div></span>';
+					break;
+				}else if (cc>1){
+					sel='Varios Usuarios   <span class="avatar"><div class="circle3030">VU</div></span>';
+				}else{
+					var name=document.getElementById('assignedTaskPL'+all[i].value).innerHTML;
+					sel=name+'   <span class="avatar"><div class="circle3030">US</div></span>';
+				}
+			}
+		}
+		document.getElementById('dropdownMenu1P').innerHTML=sel;
+	}
+	function updateSelT(){
+		var all = document.getElementsByTagName("input");
+		var sel='Ninguno seleccionado';
+		var cc=0;
+		for (var i=0, max=all.length; i < max; i++) {
+			if(all[i].type==='checkbox' && all[i].checked && all[i].name.substr(0,8)==='listTask'){
+				cc++;
+				if (cc>1){
+					sel='Varias Tareas';
+				}else{
+					sel=document.getElementById('listTaskL'+all[i].value).innerHTML;
+				}
+			}
+		}
+		document.getElementById('dropdownMenu2').innerHTML=sel;
 	}
 </script>

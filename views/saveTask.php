@@ -9,6 +9,7 @@ function createTask(){
 	$task=filter_input(INPUT_POST, "tarea",FILTER_SANITIZE_STRING);
 	$startDate=filter_input(INPUT_POST, "fechaIni",FILTER_SANITIZE_STRING);
 	$endDate=filter_input(INPUT_POST, "fechaFin",FILTER_SANITIZE_STRING);
+	$phaseId= filter_input(INPUT_POST,"fase",FILTER_SANITIZE_STRING);
 	$assignedId=[];
 	$assignedSTR="";
 	foreach (filter_input_array(INPUT_POST) as $key => $value) {
@@ -25,13 +26,19 @@ function createTask(){
 		$userI=$objU->get($_SESSION['loginIdCumbre']);
 		$assignedIdS="|Group|".$userI->getGroupId()."|";
 	}
-	$phaseId= filter_input(INPUT_POST,"fase",FILTER_SANITIZE_STRING);
 	if(empty($name) ||empty($task) ||empty($startDate) ||empty($endDate) ||empty($assignedIdS) || $assignedIdS=='||' ||empty($phaseId)){
 		$message="Datos de tarea no validos, debe llenar todos los campos";
 		Common::logg("Creación de Tarea",$message);
 		return $message;
 	}
 	$objTask=new TaskModel();
+	$numTask=$objTask->searchFromPhase($phaseId);
+	if(count($numTask)>=5){
+		$message="No se puede crear la tarea, Maximo 5 tareas por fase";
+		Common::logg("Creación de Tarea",$message);
+		return $message;
+	}
+	
 	$res=$objTask->createTask($message,new Task(null,$name,$task,$startDate,$endDate,$assignedIdS,$phaseId));
 	
 	if($message=="Tarea Creada"){

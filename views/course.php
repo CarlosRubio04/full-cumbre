@@ -18,12 +18,20 @@
 							</p>
 						</div>
 						<div class="date">
-							<h4>Fecha</h4>
-							<p><?php echo $date?></p>
+							<h4>Fecha Inicio</h4>
+							<p><?php echo $dateStart?></p>
+						</div>
+						<div class="date">
+							<h4>Fecha Finalización</h4>
+							<p><?php echo $dateEnd?></p>
 						</div>
 						<div class="hours">
-							<h4>Número de horas</h4>
-							<p><?php echo $hours?></p>
+							<h4>Número de Sesiones</h4>
+							<p><?php echo $sessions?></p>
+						</div>
+						<div class="place">
+							<h4>Horario</h4>
+							<p><?php echo $schedule?></p>
 						</div>
 						<div class="place">
 							<h4>Lugar</h4>

@@ -9,7 +9,7 @@
 				<div class="avatar">
 					<div class="avatarItems">
 						<button>
-							<img src="http://placehold.it/40x40" alt="Avatar">
+							<?php echo $profileImg ?>
 						</button>
 					</div>
 				</div>
@@ -51,6 +51,43 @@
 							</a>
 						</div>
 					</div>
+					
+					<div class="data-group">
+						<div class="label">
+							<small>Documento</small>
+						</div>
+						<div class="input input-flex">
+							<p><?php echo $idType." ".$idnum?></p>
+							<a href="?content=editUser&id=<?php echo $id?>" class="btn-edit" value="1" type="submit"  name="editUser" data-toggle="tooltip" data-placement="right" title="Editar">
+								<i class="fa fa-pencil" aria-hidden="true"></i>
+							</a>
+						</div>
+					</div>
+					
+					<div class="data-group">
+						<div class="label">
+							<small>nombre de usuario</small>
+						</div>
+						<div class="input input-flex">
+							<p><?php echo $username?></p>
+							<a href="?content=editUser&id=<?php echo $id?>" class="btn-edit" value="1" type="submit"  name="editUser" data-toggle="tooltip" data-placement="right" title="Editar">
+								<i class="fa fa-pencil" aria-hidden="true"></i>
+							</a>
+						</div>
+					</div>
+					
+					<div class="data-group">
+						<div class="label">
+							<small>Role</small>
+						</div>
+						<div class="input input-flex">
+							<p><?php echo $role?></p>
+							<a href="?content=editUser&id=<?php echo $id?>" class="btn-edit" value="1" type="submit"  name="editUser" data-toggle="tooltip" data-placement="right" title="Editar">
+								<i class="fa fa-pencil" aria-hidden="true"></i>
+							</a>
+						</div>
+					</div>
+					
 					<div class="input">
 						<h2><?php echo $status?></h2>
 					</div>
@@ -61,20 +98,6 @@
 						<a href="?content=userProfile&id=<?php echo $id?>&deactivate=1" class="btn-square" value="1" type="submit"  name="editUser" data-toggle="tooltip" data-placement="bottom" title="Desactivar Usuario">
 							<i class="fa fa-ban" aria-hidden="true"></i>
 						</a>
-					</div>
-				</div>
-
-				<div class="report">
-					<div class="dataGroup">
-						<small>Diagnostico personal</small>
-						<div class="pdf">
-							<div class="pdfIcon">
-								<a href="#">
-									<img src="img/pdf.svg" alt="PDF">
-								</a>
-							</div>
-							<?php echo $pdfU?>
-						</div>
 					</div>
 				</div>
 			</div>
