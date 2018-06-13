@@ -122,19 +122,19 @@
 	
 	function updateSel1(){
 		var all = document.getElementsByTagName("input");
-		var sel='Ninguno seleccionado   <span class="avatar"><div class="circle3030">--</div></span>';
+		var sel='Ninguno seleccionado';
 		var cc=0;
 		for (var i=0, max=all.length; i < max; i++) {
 			if(all[i].type==='checkbox' && all[i].checked && all[i].name.substr(0,13)==='assignedTaskP'){
 				cc++;
 				if(all[i].value==='Group'){
-					sel='Todo el Grupo<span class="avatar"><div class="circle3030">GP</div></span>';
+					sel='Todo el Grupo';
 					break;
 				}else if (cc>1){
-					sel='Varios Usuarios   <span class="avatar"><div class="circle3030">VU</div></span>';
+					sel='Varios Usuarios';
 				}else{
 					var name=document.getElementById('assignedTaskPL'+all[i].value).innerHTML;
-					sel=name+'   <span class="avatar"><div class="circle3030">US</div></span>';
+					sel=name;
 				}
 			}
 		}

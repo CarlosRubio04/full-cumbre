@@ -64,6 +64,18 @@
 				height: 180px;
 				width: 100%;
 				opacity: 0;
+				@include prefix(transition, all .4s ease-in-out);
+
+				&:focus {
+					opacity: 1;
+					border: 0;
+					box-shadow: none;
+				}
+				&:active {
+					opacity: 1;
+					border: 0;
+					box-shadow: none;
+				}
 			}
 		}
 	}

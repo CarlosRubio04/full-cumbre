@@ -54,4 +54,8 @@ $(document).ready(function() {
 	setTimeout(loaded, 1);
 	// Tool tips
 	$('[data-toggle="tooltip"]').tooltip();
+	// Date picker
+	$('.datepicker').datetimepicker({
+		format: 'YYYY/MM/DD'
+	});
 });

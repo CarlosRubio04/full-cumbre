@@ -16,15 +16,15 @@
 				</p>
 				Metros por usuario
 				<?php echo $tabla?>
-				<br>
-				<br>
-				Metros por grupo
-				<?php echo $tablaG?>
+
 				<br>
 				<br>
 				Metros Usuario por Campamento
 				<?php echo $tablaUC?>
-
+				<br>
+				<br>
+				Metros por grupo
+				<?php echo $tablaG?>
 
 				<div class="row">
 					<div class="col-md-6">

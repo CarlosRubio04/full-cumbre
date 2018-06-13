@@ -19,11 +19,13 @@
 				</div>
 				<div class="form-group col-md-6">
 					<label for="fechaIniTask">Fecha de inicio *</label>
-					<input type="date" title="Fecha Inicio" name="fechaIniTask" id="fechaIniTask" class="form-control" value="<?php echo $startDate?>" required>
+					<!-- <input type="date" title="Fecha Inicio" name="fechaIniTask" id="fechaIniTask" class="form-control" value="<?php echo $startDate?>" required> -->
+					 <input placeholder="Seleccione" title="Fecha Inicio" name="fechaIniTask" type="text" id="fechaIniTask" class="form-control datepicker" value="<?php echo $startDate?>" required>
 				</div>
 				<div class="form-group col-md-6">
 					<label for="fechaFinTask">Fecha de finalización *</label>
-					<input type="date" title="Fecha Terminación" name="fechaFinTask" id="fechaFinTask" class="form-control" value="<?php echo $endDate?>" required>
+					<!-- <input type="date" title="Fecha Terminación" name="fechaFinTask" id="fechaFinTask" class="form-control" value="<?php echo $endDate?>" required> -->
+					<input placeholder="Seleccione" title="Fecha Terminación" name="fechaFinTask" type="text" id="fechaFinTask" class="form-control datepicker" value="<?php echo $endDate?>" required>
 				</div>
 
 				<div class="user form-group col-md-6" title="Responsable">
@@ -67,6 +69,7 @@
 </section>
 
 <script>
+	
 	function saveTask(){
 		document.getElementById('result').innerHTML  = "";
 		var dataPost="createTask=1&";

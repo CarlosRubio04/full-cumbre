@@ -21,7 +21,7 @@ function createProduct(){
 		}
 	}
 	if(count($assignedId)<4 && filter_input(INPUT_POST, 'assignedTaskPGroup',FILTER_SANITIZE_STRING)!='Group'){
-		$message="Un entregable debe tener por lo menos 4 partisipantes asignados";
+		$message="Un entregable debe tener por lo menos 4 participantes asignados";
 		Common::logg("Creación de Entregable",$message);
 		return $message;
 	}
@@ -58,13 +58,21 @@ function createProduct(){
 		
 		//add record to score table
 		$objSc=new ScoreModel();
-		$infoSc=$objSc->searchByCampTask($phInfo->getProjectId(), 'Campamento Base',2);
-		if(empty($infoSc)){
+		if($assignedId[0]=='Group'){
+			//if assigned to group add record to each student
 			$objG=new GroupModel();
-			$users=$objG->getUsers($phInfo->getProjectId());
-			foreach ($users as $value) {
-				$objSc->create(new Score(null,'Campamento Base',2,5,'product',$res,$value->getId()));
+			$usersL=$objG->getUsers($phInfo->getProjectId());
+			$users=[];
+			foreach ($usersL as $value) {
+				$users[]=$value->getId();
 			}
+		}else{
+			// add record just to assigned users
+			$users=$assignedId;
+		}
+		
+		foreach ($users as $value) {
+			$objSc->create(new Score(null,'Campamento Base',2,5,'product',$res,$value));
 		}
 		
 		//add record to score table with zero grade for camp two

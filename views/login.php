@@ -7,8 +7,6 @@
 		</div>
 		<div class="loginContainerLogin">
 			<h1>LOGIN</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ex, perferendis fugiat reprehenderit accusantium quia repellat cupiditate dolorum</p>
-
 			<div class="u-form">
 				<form method="post">
 					<div class="form-group">

@@ -8,7 +8,9 @@
 				</div>
 				
 				<div class="file">
-					<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates cumque eius minima recusandae fuga architecto error, rem obcaecati magnam ducimus dolorem voluptatum numquam cupiditate, consequatur, repellat quo vero praesentium a.</p>
+					<p class="text-center">
+						Si no tienes el archivo base para cargar usuarios pedes descargarlo aquí <br/><a href="files/templateLoad.xlsx" class="link">Descargar Archivo</a>
+					</p>
 					<div class="file-input">
 						<input type="file" name="fileUpload" class="form-control">
 						<span>BUSCAR ARCHIVO EN EL ORDENADOR</span>
@@ -17,10 +19,6 @@
 					<hr/>
 					<h3 class="text-center"><?php echo $message;?></h3>
 				</div>
-				<div class="form-group">
-					<a href="files/templateLoad.xlsx" class="btn btn-sub">Ver Archivo de muestra</a>
-				</div>
-
 			</div>
 		</div>
 	</form>

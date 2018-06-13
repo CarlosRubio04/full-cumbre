@@ -9,7 +9,7 @@
 						<i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
 					</a>
 					<h1 class="animated fadeInDown">
-						Nombre del grupo
+						Sesión 1
 					</h1>
 				</div>
 				<hr>

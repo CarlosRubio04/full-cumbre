@@ -29,6 +29,9 @@
       <!-- NProgress -->
       <link href="css/vendors/nprogress.css" rel="stylesheet">
 
+      <!-- Data picker -->
+      <link href="css/vendors/bootstrap-datetimepicker.css" rel="stylesheet">
+
       <!-- Custom Theme Style 
       <link href="css/vendors/custom.css" rel="stylesheet"> -->
 
