@@ -409,6 +409,7 @@ section {
 						&Fase {
 							position: relative;
 							width: 100%;
+							margin-bottom: 1em;
 							.state {
 								width: 150px;
 								padding: .5em;
@@ -427,6 +428,7 @@ section {
 							}
 							.state.amarillo {
 								background-color: $amarillo;
+								color: $verdeOscuro;
 							}
 							.state.azul {
 								background-color: $azulClaro;

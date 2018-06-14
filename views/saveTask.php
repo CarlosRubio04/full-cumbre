@@ -27,14 +27,14 @@ function createTask(){
 		$assignedIdS="|Group|".$userI->getGroupId()."|";
 	}
 	if(empty($name) ||empty($task) ||empty($startDate) ||empty($endDate) ||empty($assignedIdS) || $assignedIdS=='||' ||empty($phaseId)){
-		$message="Datos de tarea no validos, debe llenar todos los campos";
+		$message="Datos de actividad no validos, debe llenar todos los campos";
 		Common::logg("Creación de Tarea",$message);
 		return $message;
 	}
 	$objTask=new TaskModel();
 	$numTask=$objTask->searchFromPhase($phaseId);
 	if(count($numTask)>=5){
-		$message="No se puede crear la tarea, Maximo 5 tareas por fase";
+		$message="No se puede crear la actividad, Maximo 5 actividad por fase";
 		Common::logg("Creación de Tarea",$message);
 		return $message;
 	}

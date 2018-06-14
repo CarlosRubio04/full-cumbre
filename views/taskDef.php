@@ -91,7 +91,7 @@
 			return false;
 		}
 		if (document.getElementById('tareaTask').value!=='' && !regex.test(document.getElementById('tareaTask').value)) {
-			alert("Caracter no valido en campo tarea");
+			alert("Caracter no valido en campo actividad");
 			return false;
 		}
 		if(new Date(document.getElementById('fechaFinTask').value)<new Date(document.getElementById('fechaIniTask').value)){
@@ -108,11 +108,11 @@
 		}
 		
 		if(document.getElementById('nombreTask').value===''){
-			alert("debes ingresar el nombre de la tarea");
+			alert("debes ingresar el nombre de la actividad");
 			return false;
 		}
 		if(document.getElementById('tareaTask').value===''){
-			alert("debes ingresar la descripcion de la tarea");
+			alert("debes ingresar la descripcion de la actividad");
 			return false;
 		}
 		
@@ -140,19 +140,19 @@
 	
 	function updateSel(){
 		var all = document.getElementsByTagName("input");
-		var sel='Ninguno seleccionado   <span class="avatar"><div class="circle3030">--</div></span>';
+		var sel='Ninguno seleccionado';
 		var cc=0;
 		for (var i=0, max=all.length; i < max; i++) {
 			if(all[i].type==='checkbox' && all[i].checked && all[i].name.substr(0,8)==='assigned' && all[i].name.substr(0,13)!=='assignedTaskP'){
 				cc++;
 				if(all[i].value==='Group'){
-					sel='Todo el Grupo<span class="avatar"><div class="circle3030">GP</div></span>';
+					sel='Todo el Grupo';
 					break;
 				}else if (cc>1){
-					sel='Varios Usuarios   <span class="avatar"><div class="circle3030">VU</div></span>';
+					sel='Varios Usuarios';
 				}else{
 					var name=document.getElementById('assignedTaskL'+all[i].value).innerHTML;
-					sel=name+'   <span class="avatar"><div class="circle3030">US</div></span>';
+					sel=name;
 				}
 			}
 		}

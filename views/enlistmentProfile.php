@@ -7,29 +7,6 @@
 					<h1 class="title">
 						Alistamiento
 					</h1>
-					<div class="avatar">
-						<h2 class="subTitle">
-							Selecciona tu avatar
-						</h2>
-						<div class="avatarItems">
-							<button>
-								<img src="http://placehold.it/40x40" alt="Avatar">
-							</button>
-							<button>
-								<img src="http://placehold.it/40x40" alt="Avatar">
-							</button>
-							<button>
-								<img src="http://placehold.it/40x40" alt="Avatar">
-							</button>
-							<button>
-								<img src="http://placehold.it/40x40" alt="Avatar">
-							</button>
-							<button>
-								<img src="http://placehold.it/40x40" alt="Avatar">
-							</button>
-						</div>
-					</div>
-
 					<!-- Datos del usuario -->
 					<div class="data-user">
 						<div class="data-group">
@@ -58,6 +35,13 @@
 								<p><?php echo $userInfo->getEmail()?></p>
 							</div>
 						</div>
+						
+						<div class="report">
+					<div class="dataGroup">
+						<small>Diagnostico personal</small>
+						<?php echo $pdfU?>
+					</div>
+				</div>
 					</div>
 				</div>
 			</div>
@@ -86,6 +70,13 @@
 					<div class="teamList">
 						<small>Integrantes del equipo</small>
 						<?php echo $groupHtml?>
+					</div>
+					
+					<div class="report">
+						<div class="dataGroup">
+							<small>Diagnostico grupal </small>
+							<?php echo $pdfG?>
+						</div>
 					</div>
 				</div>
 			</div>

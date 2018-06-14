@@ -31,7 +31,7 @@ function createProduct(){
 	$_SESSION['productValues']['tasks']=$tasksId;
 	$assignedIdS= "|".implode("|", $assignedId)."|";
 	$tasksS= implode("|", $tasksId);
-	if(filter_input(INPUT_POST, "assignedGroup",FILTER_SANITIZE_STRING)!==NULL){
+	if(filter_input(INPUT_POST, "assignedTaskPGroup",FILTER_SANITIZE_STRING)!==NULL){
 		$objU=new UserModel();
 		$userI=$objU->get($_SESSION['loginIdCumbre']);
 		$assignedIdS="|Group|".$userI->getGroupId()."|";

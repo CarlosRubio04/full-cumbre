@@ -15,7 +15,7 @@
 							<img src="http://placehold.it/50x50" alt="Avatar">
 						</div>
 						<div class="info">
-							<a href="?content=userProfile&id=<?php echo $coachId?>" class="name"><?php echo $coach?></a>
+							<a href="<?php echo $coachId?>" class="name"><?php echo $coach?></a>
 							<?php echo $coachAsign?>
 						</div>
 					</div>
@@ -23,20 +23,6 @@
 				<div class="teamList">
 					<small>Integrantes del equipo</small>
 					<?php echo $groupMenbers ?>
-				</div>
-
-				<div class="report">
-					<div class="dataGroup">
-						<small>Diagnostico Grupal</small>
-						<div class="pdf">
-							<div class="pdfIcon">
-								<a href="#">
-									<img src="img/pdf.svg" alt="PDF">
-								</a>
-							</div>
-							<?php echo $pdfG?>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>

@@ -14,10 +14,10 @@
 					</div>
 
 					<div class="title">
-						<a href="." class="btn btn-back">
+						<a href="?content=<?php echo $return?>" class="btn btn-back">
 							<i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
 						</a>
-						<h1><?php echo $note!==""?"$name  Nota: $note":$name ?></h1>
+						<h1><?php echo $note!==""?"$name | Nota: $note":$name ?></h1>
 					</div>
 					<div class="dates">
 						<div class="date">

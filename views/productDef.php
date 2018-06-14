@@ -15,7 +15,7 @@
 					<label for="">
 						Nombre del Entregable *
 					</label>
-					<input type="text" name="nombreProduct" id="nombreProduct" class="form-control" placeholder="Ingresa el nombre de la actividad" value="<?php echo $name?>" required>
+					<input type="text" name="nombreProduct" id="nombreProduct" class="form-control" placeholder="Ingresa el nombre del entregable" value="<?php echo $name?>" required>
 				</div>
 				<div class="form-group">
 					<label for="fechaIni">Fecha de entrega *</label>
