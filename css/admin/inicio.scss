@@ -10,11 +10,22 @@
 }
 
 .inicio {
-
+	.flex-row {
+		justify-content: space-between;
+	}
 	.item {
 		width: 30.33%;
 		max-width: 33.33%;
-		margin-right: 2em;
+		margin-bottom: 2em;
+		cursor: pointer;
+		@include prefix(transition, all .3s ease-in-out);
+
+		&:hover {
+			@include prefix(box-shadow, 0px 2px 8px 1px rgba(0,0,0,0.15));
+		}
+		&:hover a {
+			color: $blanco;
+		}
 
 		&Header {
 			background-color: $verdeClaro;
@@ -22,8 +33,29 @@
 
 			a {
 				color: $verdeOscuro2;
-				font-weight: 200;
+				font-weight: 100;
 				font-size: 18px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				@include prefix(transition, all .3s ease-in-out);
+
+				i {
+					color: $blanco;
+				}
+
+				&:hover {
+					color: $blanco;
+				}
+
+				&:active {
+					text-decoration: none;
+					color: $blanco;
+				}
+				&:focus {
+					text-decoration: none;
+					color: $blanco;
+				}
 			}
 		}
 
@@ -32,6 +64,11 @@
 			padding-top: 4em;
 			display: flex;
 			justify-content: center;
+			@include prefix(transition, all .3s ease-in-out);
+
+			&:hover {
+				background-color: darken($verdeClaro, 5%);
+			}
 		}
 	}
 }
@@ -70,11 +107,13 @@
 					opacity: 1;
 					border: 0;
 					box-shadow: none;
+					outline: 0;
 				}
 				&:active {
 					opacity: 1;
 					border: 0;
 					box-shadow: none;
+					outline: 0;
 				}
 			}
 		}

@@ -1,23 +1,26 @@
 <?php if(!defined('directAccess')){ header('location: ../?content=404');}?>
 <section class="agregar-usuario">
-	<div class="container-flex u-color-contraste">
-		<div class="item colum-80">
+	<div class="container-flex flex-center u-color-contraste u-mount-back">
+		<div class="item colum-60">
 			<div class="content-wrapper">
 				<div class="title">
+					<a href="." class="btn btn-back">
+						<i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+					</a>
 					<h1 class="animated fadeInLeft">Agregar nuevo usuario</h1>
 				</div>
 				<div class="formContainer animated fadeInUp">
 					<form method="post">
 						<div class="inputs">
-							<div class="form-group">
+							<div class="form-group col-md-6">
 								<label for="nombre">Nombre</label>
 								<input type="text" name="nombre" value="<?php echo $name?>" class="form-control" placeholder="Ingrese el nombre del usuario">
 							</div>
-							<div class="form-group">
+							<div class="form-group col-md-6">
 								<label for="apellido">Apellido</label>
 								<input type="text" name="apellido"  value="<?php echo $lastname?>" class="form-control" placeholder="Ingrese el apellido del usuario">
 							</div>
-							<div class="form-group">
+							<div class="form-group col-md-6">
 								<label for="">Tipo de Documento</label>
 								<div class="u-selectWraper">
 									<select name="idType" class="form-control">
@@ -25,7 +28,7 @@
 									</select>
 								</div>
 							</div>
-							<div class="form-group">
+							<div class="form-group col-md-6">
 								<label for="cc">Número de Documento</label>
 								<input type="text" name="cc"  value="<?php echo $idN?>" class="form-control" placeholder="Ingresa el número de cédula">
 							</div>
@@ -34,7 +37,7 @@
 								<input type="text" name="email"  value="<?php echo $email?>" class="form-control" placeholder="Ingresa el correo electrónico ">
 							</div>
 
-							<div class="form-group">
+							<div class="form-group col-md-4">
 								<label for="">Rol</label>
 								<div class="u-selectWraper">
 									<select name="rol" class="form-control" onchange="displayGroupList(this);">
@@ -43,7 +46,7 @@
 								</div>
 							</div>
 							
-							<div class="form-group" id="divG" <?php echo $displayG?>>
+							<div class="form-group col-md-8" id="divG" <?php echo $displayG?>>
 								<label for="">Grupo</label>
 								<div class="u-selectWraper">
 									<select name="groupId" class="form-control">
@@ -63,7 +66,7 @@
 							<h4><?php echo $message;?></h4>
 
 							<div class="form-group">
-								<button class="btn-square" type="submit" name="addUser" value="1">
+								<button class="btn-square btn-full" type="submit" name="addUser" value="1">
 									Agregar Usuario
 								</button>
 							</div>

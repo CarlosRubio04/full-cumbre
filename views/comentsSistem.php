@@ -2,7 +2,7 @@
 <div class="coments">
 	<div class="title">
 		<h1 class="text-center">
-			Sistema se seguimiento
+			Sistema de seguimiento
 		</h1>
 	</div>
 	<div class="coments-container" id="taskMessages">

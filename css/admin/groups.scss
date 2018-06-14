@@ -48,14 +48,22 @@
 
 			&-avatars {
 				display: flex;
-				justify-content: space-between;
 				width: 100%;
 				.avatar {
-
+					margin-right: 4px;
+					margin-top: 8px;
+					margin-bottom: 12px;
+					.circle3030 {
+						border: 1px solid $verdeClaro;
+					}
 					img {
 						border-radius: 50%;
 					}
 				}
+			}
+
+			&-cta {
+				
 			}
 		}
 	}
