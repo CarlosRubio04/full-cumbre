@@ -1,13 +1,16 @@
 <?php if(!defined('directAccess')){ header('location: ../?content=404');}?>
 <section class="agregar-curso">
-	<div class="container-flex u-color-contraste u-mount-back">
-		<div class="item colum-80">
+	<div class="container-flex flex-center u-color-contraste u-mount-back">
+		<div class="item colum-60">
 			<div class="content-wrapper">
 				<div class="title">
 					<a href="?content=<?php echo $return?>" class="btn btn-back">
 						<i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
 					</a>
 					<h1 class="animated fadeInLeft">Agregar nuevo curso</h1>
+					<a href="?content=sesionList" class="btn btn-main">
+						Ver Asistencia
+					</a>
 				</div>
 				<div class="formContainer animated fadeInUp">
 					<form method="post">
@@ -22,31 +25,26 @@
 								<textarea name="descripcion" id="descripcion" cols="30" rows="10" class="form-control" placeholder="Ingresa la descripción del curso"><?php echo $desc?></textarea>
 							</div>
 
-							<div class="form-group">
+							<div class="form-group col-md-6">
 								<label for="fecha">Fecha Inicio</label>
 								<input type="date" name="fechaIni" id="fechaIni" value="<?php echo $dateStart?>" class="form-control">
 							</div>
-							<div class="form-group">
+							<div class="form-group col-md-6">
 								<label for="fecha">Fecha Finalización</label>
 								<input type="date" name="fechaFin" id="fechaFin" value="<?php echo $dateEnd?>" class="form-control">
 							</div>
 
-							<div class="form-group">
+							<div class="form-group col-md-4">
 								<label for="horas">Sesiones</label>
 								<input type="number" step="1" min="1" name="sessions" id="sessions" value="<?php echo $sessions?>" class="form-control" placeholder="Ingresa el número de horas">
 							</div>
 							
-							<div class="form-group">
-								<label for="descripcion">Horario</label>
-								<textarea name="horario" id="horario" cols="30" rows="10" class="form-control" placeholder="Ingresa la descripción del curso"><?php echo $schedule?></textarea>
-							</div>
-
-							<div class="form-group">
+							<div class="form-group col-md-4">
 								<label for="lugar">Lugar</label>
 								<input type="text" name="lugar" id="lugar" class="form-control" value="<?php echo $place?>" placeholder="Ingresa el lugar donde se realizará el curso">
 							</div>
 
-							<div class="form-group">
+							<div class="form-group col-md-4">
 								<label for="coach">Coach Asignado</label>
 								<div class="u-selectWraper">
 									<select name="coach" class="form-control">
@@ -54,9 +52,14 @@
 									</select>
 								</div>
 							</div>
+							<div class="form-group">
+								<label for="descripcion">Horario</label>
+								<textarea name="horario" id="horario" cols="30" rows="10" class="form-control" placeholder="Ingresa la descripción del curso"><?php echo $schedule?></textarea>
+							</div>
+
 							<?php echo $message?>
 							<div class="form-group">
-								<button class="btn-square" name="editCourse" value="1" type="submit">Modificar Curso</button>
+								<button class="btn-square btn-full" name="editCourse" value="1" type="submit">Modificar Curso</button>
 							</div>
 						</div>
 					</form>

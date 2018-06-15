@@ -10,8 +10,8 @@
 					</h1>
 				</div>
 				<hr>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, ipsam non deleniti quae est. In consectetur voluptate exercitationem. Quibusdam culpa omnis voluptatibus non, eligendi quas possimus, ratione deserunt ducimus impedit.
+				<p class="text-center">
+					Acá verás el estado de las actividades del este grupo, En rojo están las actividades que no cumplieron con la fecha de entrega, en amarillo estarán las actividades que se acerca la fecha de entrega y aun no hay evidencia y en verde verás las actividades que ya cumplieron con la evidencia.
 				</p>
 				<div class="activityFeed">
 					<div class="activityFeedContainer">

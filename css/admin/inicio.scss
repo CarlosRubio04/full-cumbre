@@ -144,6 +144,31 @@
 	justify-content: space-between;
 }
 
+.sesionContainer {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 1em;
+	.sesion {
+		width: 30%;
+		margin-right: 8px;
+		margin-top: 8px;
+
+		a {
+			color: $blanco;
+			background-color: $verdeClaro;
+			border: 2px solid $verdeOscuro2;
+			border-radius: 30px;
+			font-size: 18px;
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+			font-weight: 100;
+			align-items: center;
+			padding: .5em 1em;
+		}
+
+	}
+}
 
 .createTest {
 

@@ -44,9 +44,14 @@
 			}
 		}
 		&-name {
-			color: $verdoso;
+			color: $gris;
 			font-weight: 200;
-			font-size: 18px;
+			font-size: 14px;
+
+			h4 {
+				color: $verdeOscuro2;
+				font-size: 16px;
+			}
 		}
 		&-link {
 			direction: block;
@@ -98,12 +103,22 @@
 	h4 {
 		color: $verdeClaro;
 		line-height: 2;
+		font-size: 16px;
 	}
 	p {
 		color: $verdoso;
+		font-weight: 100;
+		font-size: 22px;
 	}
 	div {
-		margin-top: 2em;
+		margin: 2em 0;
+
+		&:after{
+			content: "";
+			display: block;
+			width: 100%;
+			border-top: 1px solid $verdeClaro;
+		}
 	}
 }
 

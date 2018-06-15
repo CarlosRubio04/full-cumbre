@@ -5,21 +5,40 @@
 				<small>Lista de sesiones BPM</small>
 				<hr>
 				<div class="title">
-					<a href="." class="btn btn-back">
+					<a href="?content=<?php echo $return?>" class="btn btn-back">
 						<i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
 					</a>
-					<h1 class="animated fadeInDown">
+					<h1 class="animated fadeIn">
 						Sesiones
 					</h1>
 				</div>
 				<hr>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit et, fuga sed temporibus, commodi nostrum mollitia deleniti sit non eveniet nihil necessitatibus, hic aperiam magni iusto quis excepturi provident beatae?
+				<p class="text-center">
+					Este es el listado de sesiones del curso, entra por sesiones a calificar la <br/>asistencia de los estudiantes inscritos a este curso.
 				</p>
-				<div class="fasesContainer notif">
-					<div class="fase animated zoomIn">
-						<a href="#">
-							Sesión 1
+				<hr>
+				<div class="sesionContainer">
+					<div class="sesion animated fadeIn">
+						<a href="?content=checkAsist">
+							Sesión 1 <i class="fa fa-chevron-right fa-1x" aria-hidden="true"></i>
+						</a>
+					</div>
+
+					<div class="sesion animated fadeIn">
+						<a href="?content=checkAsist">
+							Sesión 1 <i class="fa fa-chevron-right fa-1x" aria-hidden="true"></i>
+						</a>
+					</div>
+
+					<div class="sesion animated fadeIn">
+						<a href="?content=checkAsist">
+							Sesión 1 <i class="fa fa-chevron-right fa-1x" aria-hidden="true"></i>
+						</a>
+					</div>
+
+					<div class="sesion animated fadeIn">
+						<a href="?content=checkAsist">
+							Sesión 1 <i class="fa fa-chevron-right fa-1x" aria-hidden="true"></i>
 						</a>
 					</div>
 				</div>

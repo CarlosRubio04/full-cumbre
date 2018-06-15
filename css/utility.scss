@@ -235,6 +235,24 @@ section {
 	}
 }
 
+.btn-del {
+	color: $verdeClaro;
+	font-size: 10px;
+	font-weight: 100;
+}
+
+// .btn-del {
+// 	color: $verdeClaro;
+// 	font-size: 10px;
+// 	font-weight: 100;
+// 	position: absolute;
+// 	top: 16px;
+// 	right: 16px;
+// 	border: 1px solid $verdeClaro;
+// 	border-radius: 20px;
+// 	padding: .4em .8em;
+// }
+
 .btn-main {
 	background-color: $verdeClaro;
 	display: block;
@@ -631,4 +649,40 @@ label {
 .u-selectWraper {
 	margin-top: 10px;
 	border: 1px solid $verdeClaro;
+}
+
+
+// Notificaciones
+
+.notifications {
+	position: relative;
+
+	.notif {
+		background-color: $blanco;
+		padding: 1em 1.5em;
+		color: $verdeOscuro2;
+		font-weight: 100;
+		margin-top: 8px;
+		display: flex;
+		align-items: center;
+		@include prefix(transition, all .5s ease-in-out);
+
+		&:hover {
+			@include prefix (box-shadow, -4px 0px 4px 0px rgba(0,0,0,0.17));
+		}
+
+		i {
+			margin-right: 8px;
+		}
+		a {
+			font-size: 12px;
+			font-weight: 100;
+			width: 100%;
+			@include prefix(transition, all .5s ease-in-out);
+			
+			&:hover {
+				color: $verdeOscuro;
+			}
+		}
+	}
 }
