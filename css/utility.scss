@@ -92,6 +92,9 @@ section {
 	@include for-phone-only {
 		flex-direction: column;
 	}
+	@include for-tablet-portrait-up {
+		flex-direction: column;
+	}
 }
 
 .wrap {
@@ -106,6 +109,14 @@ section {
 .flex-row {
 	display: flex;
 	flex-direction: row;
+
+	@include for-phone-only {
+		flex-direction: column;
+	}
+
+	@include for-tablet-portrait-up {
+		flex-direction: column;
+	}
 }
 
 .space-btw {
@@ -132,10 +143,23 @@ section {
 		width: 100%;
 		max-width: 100%;
 	}
-	// @include for-tablet-portrait-up {
-	// 	width: 100%;
-	// 	max-width: 100%;
-	// }
+	@include for-tablet-portrait-up {
+		width: 100%;
+		max-width: 100%;
+	}
+}
+
+.grupos-grid  {
+	@include for-tablet-portrait-up {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.colum-30 {
+		@include for-tablet-portrait-up {
+			width: 47%;
+			max-width: 100%;
+		}
+	}
 }
 
 .colum-40 {
@@ -145,10 +169,10 @@ section {
 		width: 100%;
 		max-width: 100%;
 	}
-	// @include for-tablet-portrait-up {
-	// 	width: 100%;
-	// 	max-width: 100%;
-	// }
+	@include for-tablet-portrait-up {
+		width: 100%;
+		max-width: 100%;
+	}
 }
 
 .colum-60 {
@@ -158,10 +182,10 @@ section {
 		width: 100%;
 		max-width: 100%;
 	}
-	// @include for-tablet-portrait-up {
-	// 	width: 100%;
-	// 	max-width: 100%;
-	// }
+	@include for-tablet-portrait-up {
+		width: 100%;
+		max-width: 100%;
+	}
 }
 
 .colum-80 {
@@ -171,10 +195,10 @@ section {
 		width: 100%;
 		max-width: 100%;
 	}
-	// @include for-tablet-portrait-up {
-	// 	width: 100%;
-	// 	max-width: 100%;
-	// }
+	@include for-tablet-portrait-up {
+		width: 100%;
+		max-width: 100%;
+	}
 }
 
 .self-bottom {
@@ -242,244 +266,127 @@ section {
 }
 
 // .btn-del {
-// 	color: $verdeClaro;
-// 	font-size: 10px;
-// 	font-weight: 100;
-// 	position: absolute;
-// 	top: 16px;
-// 	right: 16px;
-// 	border: 1px solid $verdeClaro;
-// 	border-radius: 20px;
-// 	padding: .4em .8em;
-// }
-
-.btn-main {
-	background-color: $verdeClaro;
-	display: block;
-	color: $blanco;
-	border: 2px solid $verdeOscuro2;
-	border-radius: 20px;
-	text-transform: uppercase;
-	font-weight: 600;
-	letter-spacing: 3px;
-	max-width: 250px;
-	padding: 12px 2em;
-	@include prefix(transition, all .5s ease-in-out);
-	&:hover {
-		background-color: $blanco;
-		color: $verdeOscuro2;
-	}
-	@include for-phone-only {
-		max-width: 100%;
-	}
-}
-.btn-full {
-	width: 100% !important;
-}
-
-// Stilos de componentes de forma
-.content-wrapper {
-	padding: 40px 64px;
-	min-height: calc(100vh - 65px);
-	position: relative;
-	width: 100%;
-	@include for-phone-only {
-		padding: 1em;
-		min-height: auto;
-		height: auto;
-	}
-	// @include for-tablet-portrait-up {
-	// 	padding: 1em;
-	// 	min-height: auto;
-	// 	height: auto;
+	// 	color: $verdeClaro;
+	// 	font-size: 10px;
+	// 	font-weight: 100;
+	// 	position: absolute;
+	// 	top: 16px;
+	// 	right: 16px;
+	// 	border: 1px solid $verdeClaro;
+	// 	border-radius: 20px;
+	// 	padding: .4em .8em;
 	// }
-}
 
-.siguiente-campamento {
-	margin-bottom: 2em;
-	a {
-		margin-left: auto;
-		@include for-phone-only {
-			margin: 0;
-			width: 100%;
-		}
-	}
-}
-
-.campamentoCta {
-	margin-top: 2em;
-}
-
-.data-group {
-	margin-top: 12px;
-	.label {
-		text-align: left;
-		padding: 0;
-		small {
-			color: $verdeOscuro2;
-			font-size: 12px;
-			font-weight: 400;
-		}
-	}
-	.input {
-		padding: .5em 0 .2em 0;
-		border-bottom: 1px solid $verdeClaro;
-		p {
-			color: $verdeOscuro;
-			font-size: 20px;
-			letter-spacing: 2px;
-		}
-	}
-}
-
-// ultimas Notificaciones
-.lastestNotifications {
-	width: 100%;
-	&Container {
-		width: 100%;
-		position: relative;
-		.item {
-			margin-top: 12px;
-			width: 100%;
-			display: flex;
-			justify-content: space-between;
-			background-color: $blanco;
-			.message {
-				padding: 12px;
-				span {
-					color: $verdeClaro;
-					font-weight: 300;
-					font-size: 12px;
-				}
-				a {
-					display: block;
-					color: $gris;
-					font-size: 14px;
-					font-weight: 300;
-					letter-spacing: 2px;
-					margin-top: .5em;
-				}
-			}
-			.date {
-				.month {
-					font-size: 18px;
-					font-weight: 100;
-					color: $gris;
-					border-left: 1px solid $verdeClaro;
-					border-bottom: 1px solid $verdeClaro;
-					padding: 4px 8px;
-				}
-				.day {
-					font-size: 30px;
-					font-weight: 800;
-					color: $gris;
-					text-align: center;
-				}
-			}
-		}
-		.item.rojo {
-			border-bottom: 4px solid $rojo;
-		}
-		.item.amarillo {
-			border-bottom: 4px solid $amarillo;
-		}
-		.item.azul {
-			border-bottom: 4px solid $azulClaro;
-		}
-		.item.gris {
-			border-bottom: 4px solid $gris;
-		}
-		.item.verde {
-			border-bottom: 4px solid $verdeClaro;
-		}
-	}
-}
-
-// Estilos Basicos para campamentos
-.content-text {
-	padding: 1em;
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#68c951+0,00361b+26,00361b+65,68c951+100&0+0,0.49+17,0.49+77,0+100 */
-	background: -moz-linear-gradient(top, rgba(104, 201, 81, 0) 0%, rgba(36, 105, 46, 0.49) 17%, rgba(0, 54, 27, 0.49) 26%, rgba(0, 54, 27, 0.49) 65%, rgba(36, 104, 46, 0.49) 77%, rgba(104, 201, 81, 0) 100%);
-	/* FF3.6-15 */
-	background: -webkit-linear-gradient(top, rgba(104, 201, 81, 0) 0%, rgba(36, 105, 46, 0.49) 17%, rgba(0, 54, 27, 0.49) 26%, rgba(0, 54, 27, 0.49) 65%, rgba(36, 104, 46, 0.49) 77%, rgba(104, 201, 81, 0) 100%);
-	/* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, rgba(104, 201, 81, 0) 0%, rgba(36, 105, 46, 0.49) 17%, rgba(0, 54, 27, 0.49) 26%, rgba(0, 54, 27, 0.49) 65%, rgba(36, 104, 46, 0.49) 77%, rgba(104, 201, 81, 0) 100%);
-	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0068c951', endColorstr='#0068c951', GradientType=0);
-	/* IE6-9 */
-}
-
-.campamentoIntro {
-	font-size: 16px;
-	font-weight: 200;
-	letter-spacing: 2px;
-	margin-top: 40px;
-	color: $blanco;
-	a {
-		color: $blanco;
-		font-size: 16px;
-		font-weight: 600;
-		letter-spacing: 2px;
-		text-transform: uppercase;
-		margin: 1em 0;
+	.btn-main {
+		background-color: $verdeClaro;
 		display: block;
+		color: $blanco;
+		border: 2px solid $verdeOscuro2;
+		border-radius: 20px;
+		text-transform: uppercase;
+		font-weight: 600;
+		letter-spacing: 3px;
+		max-width: 250px;
+		padding: 12px 2em;
+		@include prefix(transition, all .5s ease-in-out);
+		&:hover {
+			background-color: $blanco;
+			color: $verdeOscuro2;
+		}
+		@include for-phone-only {
+			max-width: 100%;
+		}
 	}
-}
+	.btn-full {
+		width: 100% !important;
+	}
 
-// Activity Feed
-.activityFeed {
-	position: relative;
-	width: 100%;
-	&Fase {
+	// Stilos de componentes de forma
+	.content-wrapper {
+		padding: 40px 64px;
+		min-height: calc(100vh - 65px);
 		position: relative;
 		width: 100%;
-		margin-bottom: 1em;
-		.state {
-			width: 150px;
-			padding: .5em;
-			color: $blanco;
-			font-size: 14px;
-			font-weight: 700;
-			text-transform: uppercase;
-			text-align: center;
-			margin-left: auto;
+		@include for-phone-only {
+			padding: 1em;
+			min-height: auto;
+			height: auto;
 		}
-		.state.verde {
-			background-color: $verdeClaro;
+		@include for-tablet-portrait-up {
+			padding: 1em;
+			min-height: auto;
+			height: auto;
 		}
-		.state.rojo {
-			background-color: $rojo;
+	}
+
+		.siguiente-campamento {
+			margin-bottom: 2em;
+			a {
+				margin-left: auto;
+				@include for-phone-only {
+					margin: 0;
+					width: 100%;
+				}
+			}
 		}
-		.state.amarillo {
-			background-color: $amarillo;
-			color: $verdeOscuro;
+
+		.campamentoCta {
+			margin-top: 2em;
 		}
-		.state.azul {
-			background-color: $azulClaro;
+
+		.data-group {
+			margin-top: 12px;
+			.label {
+				text-align: left;
+				padding: 0;
+				small {
+					color: $verdeOscuro2;
+					font-size: 12px;
+					font-weight: 400;
+				}
+			}
+			.input {
+				padding: .5em 0 .2em 0;
+				border-bottom: 1px solid $verdeClaro;
+				p {
+					color: $verdeOscuro;
+					font-size: 20px;
+					letter-spacing: 2px;
+				}
+			}
 		}
-		.state.gris {
-			background-color: $gris;
-		}
-		&Container {
-			border-top: 1px solid $grisClaro;
-			display: flex;
-			flex-wrap: wrap;
-			.item {
-				width: 30%;
-				margin-bottom: 2em;
-				margin-right: 1.5em;
-				height: 200px;
-				/*&:last-child {
-										margin-bottom: 0;
-										}*/
-				.activity {
-					margin-top: 20px;
+
+		// ultimas Notificaciones
+		.lastestNotifications {
+			width: 100%;
+			&Container {
+				width: 100%;
+				position: relative;
+				.item {
+					margin-top: 12px;
 					width: 100%;
 					display: flex;
 					justify-content: space-between;
+					background-color: $blanco;
+					.message {
+						padding: 12px;
+						span {
+							color: $verdeClaro;
+							font-weight: 300;
+							font-size: 12px;
+						}
+						a {
+							display: block;
+							color: $gris;
+							font-size: 14px;
+							font-weight: 300;
+							letter-spacing: 2px;
+							margin-top: .5em;
+						}
+					}
 					.date {
 						.month {
-							font-size: 14px;
+							font-size: 18px;
 							font-weight: 100;
 							color: $gris;
 							border-left: 1px solid $verdeClaro;
@@ -487,202 +394,330 @@ section {
 							padding: 4px 8px;
 						}
 						.day {
-							font-size: 20px;
+							font-size: 30px;
 							font-weight: 800;
 							color: $gris;
 							text-align: center;
 						}
 					}
-					.data {
-						span {
-							color: $verdeClaro;
-							font-size: 16px;
-							letter-spacing: 2px;
-							font-weight: 300;
-							margin-bottom: 20px;
+				}
+				.item.rojo {
+					border-bottom: 4px solid $rojo;
+				}
+				.item.amarillo {
+					border-bottom: 4px solid $amarillo;
+				}
+				.item.azul {
+					border-bottom: 4px solid $azulClaro;
+				}
+				.item.gris {
+					border-bottom: 4px solid $gris;
+				}
+				.item.verde {
+					border-bottom: 4px solid $verdeClaro;
+				}
+			}
+		}
+
+		// Estilos Basicos para campamentos
+		.content-text {
+			padding: 1em;
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#68c951+0,00361b+32,00361b+61,68c951+100&0+0,0.69+21,0.69+76,0+100 */
+			background: -moz-linear-gradient(top, rgba(104,201,81,0) 0%, rgba(36,105,46,0.69) 21%, rgba(0,54,27,0.69) 32%, rgba(0,54,27,0.69) 61%, rgba(40,111,48,0.69) 76%, rgba(104,201,81,0) 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top, rgba(104,201,81,0) 0%,rgba(36,105,46,0.69) 21%,rgba(0,54,27,0.69) 32%,rgba(0,54,27,0.69) 61%,rgba(40,111,48,0.69) 76%,rgba(104,201,81,0) 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom, rgba(104,201,81,0) 0%,rgba(36,105,46,0.69) 21%,rgba(0,54,27,0.69) 32%,rgba(0,54,27,0.69) 61%,rgba(40,111,48,0.69) 76%,rgba(104,201,81,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0068c951', endColorstr='#0068c951',GradientType=0 ); /* IE6-9 */
+		}
+
+		.campamentoIntro {
+			font-size: 16px;
+			font-weight: 200;
+			letter-spacing: 2px;
+			margin-top: 40px;
+			color: $blanco;
+			a {
+				color: $blanco;
+				font-size: 16px;
+				font-weight: 600;
+				letter-spacing: 2px;
+				text-transform: uppercase;
+				margin: 1em 0;
+				display: block;
+			}
+		}
+
+		// Activity Feed
+		.activityFeed {
+			position: relative;
+			width: 100%;
+			&Fase {
+				position: relative;
+				width: 100%;
+				margin-bottom: 1em;
+				.state {
+					width: 150px;
+					padding: .5em;
+					color: $blanco;
+					font-size: 14px;
+					font-weight: 700;
+					text-transform: uppercase;
+					text-align: center;
+					margin-left: auto;
+				}
+				.state.verde {
+					background-color: $verdeClaro;
+				}
+				.state.rojo {
+					background-color: $rojo;
+				}
+				.state.amarillo {
+					background-color: $amarillo;
+					color: $verdeOscuro;
+				}
+				.state.azul {
+					background-color: $azulClaro;
+				}
+				.state.gris {
+					background-color: $gris;
+				}
+				&Container {
+					border-top: 1px solid $grisClaro;
+					display: flex;
+					flex-wrap: wrap;
+					@include for-phone-only {
+						flex-direction: column;
+					}
+					.item {
+						width: 30%;
+						margin-bottom: 2em;
+						margin-right: 1.5em;
+						height: 200px;
+
+						@include for-phone-only {
+							width: 100%;
+							height: auto;
 						}
-						p {
-							color: $verdeOscuro2;
-							font-size: 18px;
-							letter-spacing: 1px;
-							font-weight: 300;
-							margin-bottom: 10px;
+
+						.activity {
+							margin-top: 20px;
+							width: 100%;
+							display: flex;
+							justify-content: space-between;
+							.date {
+								.month {
+									font-size: 14px;
+									font-weight: 100;
+									color: $gris;
+									border-left: 1px solid $verdeClaro;
+									border-bottom: 1px solid $verdeClaro;
+									padding: 4px 8px;
+								}
+								.day {
+									font-size: 20px;
+									font-weight: 800;
+									color: $gris;
+									text-align: center;
+								}
+							}
+							.data {
+								span {
+									color: $verdeClaro;
+									font-size: 16px;
+									letter-spacing: 2px;
+									font-weight: 300;
+									margin-bottom: 20px;
+								}
+								p {
+									color: $verdeOscuro2;
+									font-size: 18px;
+									letter-spacing: 1px;
+									font-weight: 300;
+									margin-bottom: 10px;
+								}
+								small {
+									color: $verdeOscuro2;
+									font-weight: 400;
+									font-size: 10px;
+									letter-spacing: 1px;
+									display: block;
+								}
+								a {
+									color: $gris;
+									font-weight: 400;
+									font-size: 10px;
+									letter-spacing: 1px;
+								}
+							}
 						}
-						small {
-							color: $verdeOscuro2;
-							font-weight: 400;
-							font-size: 10px;
-							letter-spacing: 1px;
+						.cta {
+							margin-top: 16px;
+							position: relative;
 							display: block;
-						}
-						a {
-							color: $gris;
-							font-weight: 400;
-							font-size: 10px;
-							letter-spacing: 1px;
 						}
 					}
 				}
-				.cta {
-					margin-top: 16px;
-					position: relative;
-					display: block;
+			}
+		}
+
+		// Color clases
+		.u-color-contraste {
+			background-color: $blancusco;
+		}
+
+		.u-mount-back {
+			background-image: url(../img/back-mount.png);
+			background-position: right bottom;
+			background-repeat: no-repeat;
+			background-size: 700px;
+			background-attachment: fixed;
+			background-blend-mode: multiply;
+		}
+
+		.u-bg {
+			background-color: rgba($verdeOscuro, .50);
+		}
+
+		// Estilos de Texto
+		.title {
+			font-size: 48px;
+			color: $verdeOscuro;
+			display: flex;
+			h1 {
+				width: 100%;
+				text-align: center;
+				@include for-phone-only {
+					font-size: 24px;
+				}
+			}
+			@include for-phone-only {
+				font-size: 24px;
+			}
+		}
+
+		.subTitle {
+			font-size: 20px;
+			color: $verdeOscuro;
+			letter-spacing: 2px;
+			h1 {
+				font-size: 20px;
+				@include for-phone-only {
+					font-size: 18px;
+				}
+			}
+			@include for-phone-only {
+				font-size: 18px;
+			}
+		}
+
+		//  Forms Styles
+		label {
+			color: $verdeOscuro2 !important;
+			font-size: 14px;
+			font-weight: 400;
+		}
+
+		.form-group {
+			margin-top: 35px;
+			padding-right: 4px !important;
+			padding-left: 0 !important;
+		}
+
+		.form-group input,
+		.form-group textarea {
+			background-color: transparent;
+			border: 1px solid $verdeClaro;
+			border-radius: 0;
+			height: 45px;
+			margin-top: 10px;
+			color: $verdeOscuro;
+			font-size: 14px;
+			font-weight: 600;
+			box-shadow: none;
+			&:focus {
+				border: 1px solid $verdeOscuro2;
+				box-shadow: none;
+				outline: 0;
+			}
+			&:active {
+				border: 1px solid $verdeOscuro2;
+				box-shadow: none;
+				outline: 0;
+			}
+		}
+
+		::-webkit-input-placeholder {
+			/* Chrome/Opera/Safari */
+			color: $gris !important;
+			font-weight: 100;
+		}
+
+		::-moz-placeholder {
+			/* Firefox 19+ */
+			color: $gris !important;
+			font-weight: 100;
+		}
+
+		:-ms-input-placeholder {
+			/* IE 10+ */
+			color: $gris !important;
+			font-weight: 100;
+		}
+
+		:-moz-placeholder {
+			/* Firefox 18- */
+			color: $gris !important;
+			font-weight: 100;
+		}
+
+		.form-group textarea {
+			height: 100px;
+			padding-top: 2em;
+		}
+
+		.form-group select {
+			border: 0;
+			box-shadow: none;
+			background-color: transparent;
+			height: 43px;
+		}
+
+		.u-selectWraper {
+			margin-top: 10px;
+			border: 1px solid $verdeClaro;
+		}
+
+
+		// Notificaciones
+
+		.notifications {
+			position: relative;
+
+			.notif {
+				background-color: $blanco;
+				padding: 1em 1.5em;
+				color: $verdeOscuro2;
+				font-weight: 100;
+				margin-top: 8px;
+				display: flex;
+				align-items: center;
+				@include prefix(transition, all .5s ease-in-out);
+
+				&:hover {
+					@include prefix (box-shadow, -4px 0px 4px 0px rgba(0,0,0,0.17));
+				}
+
+				i {
+					margin-right: 8px;
+				}
+				a {
+					font-size: 12px;
+					font-weight: 100;
+					width: 100%;
+					@include prefix(transition, all .5s ease-in-out);
+
+					&:hover {
+						color: $verdeOscuro;
+					}
 				}
 			}
 		}
-	}
-}
-
-// Color clases
-.u-color-contraste {
-	background-color: $blancusco;
-}
-
-.u-mount-back {
-	background-image: url(../img/back-mount.png);
-	background-position: right bottom;
-	background-repeat: no-repeat;
-	background-size: 700px;
-	background-attachment: fixed;
-	background-blend-mode: multiply;
-}
-
-.u-bg {
-	background-color: rgba($verdeOscuro, .50);
-}
-
-// Estilos de Texto
-.title {
-	font-size: 48px;
-	color: $verdeOscuro;
-	display: flex;
-	h1 {
-		width: 100%;
-		text-align: center;
-	}
-	@include for-phone-only {
-		font-size: 24px;
-	}
-}
-
-.subTitle {
-	font-size: 20px;
-	color: $verdeOscuro;
-	letter-spacing: 2px;
-	@include for-phone-only {
-		font-size: 18px;
-	}
-}
-
-//  Forms Styles
-label {
-	color: $verdeOscuro2 !important;
-	font-size: 14px;
-	font-weight: 400;
-}
-
-.form-group {
-	margin-top: 35px;
-	padding-right: 4px !important;
-	padding-left: 0 !important;
-}
-
-.form-group input,
-.form-group textarea {
-	background-color: transparent;
-	border: 1px solid $verdeClaro;
-	border-radius: 0;
-	height: 45px;
-	margin-top: 10px;
-	color: $verdeOscuro;
-	font-size: 14px;
-	font-weight: 600;
-	box-shadow: none;
-	&:focus {
-		border: 1px solid $verdeOscuro2;
-		box-shadow: none;
-		outline: 0;
-	}
-	&:active {
-		border: 1px solid $verdeOscuro2;
-		box-shadow: none;
-		outline: 0;
-	}
-}
-
-::-webkit-input-placeholder {
-	/* Chrome/Opera/Safari */
-	color: $gris !important;
-	font-weight: 100;
-}
-
-::-moz-placeholder {
-	/* Firefox 19+ */
-	color: $gris !important;
-	font-weight: 100;
-}
-
-:-ms-input-placeholder {
-	/* IE 10+ */
-	color: $gris !important;
-	font-weight: 100;
-}
-
-:-moz-placeholder {
-	/* Firefox 18- */
-	color: $gris !important;
-	font-weight: 100;
-}
-
-.form-group textarea {
-	height: 100px;
-	padding-top: 2em;
-}
-
-.form-group select {
-	border: 0;
-	box-shadow: none;
-	background-color: transparent;
-	height: 43px;
-}
-
-.u-selectWraper {
-	margin-top: 10px;
-	border: 1px solid $verdeClaro;
-}
-
-
-// Notificaciones
-
-.notifications {
-	position: relative;
-
-	.notif {
-		background-color: $blanco;
-		padding: 1em 1.5em;
-		color: $verdeOscuro2;
-		font-weight: 100;
-		margin-top: 8px;
-		display: flex;
-		align-items: center;
-		@include prefix(transition, all .5s ease-in-out);
-
-		&:hover {
-			@include prefix (box-shadow, -4px 0px 4px 0px rgba(0,0,0,0.17));
-		}
-
-		i {
-			margin-right: 8px;
-		}
-		a {
-			font-size: 12px;
-			font-weight: 100;
-			width: 100%;
-			@include prefix(transition, all .5s ease-in-out);
-			
-			&:hover {
-				color: $verdeOscuro;
-			}
-		}
-	}
-}

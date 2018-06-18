@@ -59,6 +59,10 @@
 			display: flex;
 			flex-wrap: wrap;
 			margin-top: 66px;
+
+			@include for-phone-only {
+				flex-direction: column;
+			}
 			small {
 				font-size: 14px;
 				font-weight: 100;
