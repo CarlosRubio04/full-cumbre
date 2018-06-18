@@ -8,6 +8,9 @@
 						<i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
 					</a>
 					<h1 class="animated fadeInLeft">Agregar nuevo curso</h1>
+					<a href="?content=createTest" class="btn btn-main">
+						Crear Test
+					</a>
 				</div>
 				<div class="formContainer animated fadeInUp">
 					<form method="post">

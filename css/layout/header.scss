@@ -57,6 +57,9 @@ header {
 		@include for-phone-only {
 			margin: 0;
 		}
+		.u-admin, .u-coach {
+			margin-right: 64px !important;
+		}
 		ul {
 			height: 65px;
 			margin-bottom: 0;
@@ -168,8 +171,18 @@ header {
 			width: 64px;
 			margin: 0;
 			text-align: center;
+			position: relative;
 			a {
 				color: $verdeClaro;
+
+				.badge {
+					position: absolute;
+					background-color: $blanco;
+					color: $verdeClaro;
+					font-weight: 100;
+					top: -15px;
+					right: 10px;
+				}
 			}
 		}
 		

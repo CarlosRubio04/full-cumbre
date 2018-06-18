@@ -26,6 +26,49 @@
 				Metros por grupo
 				<?php echo $tablaG?>
 
+				<div class="row">
+					<div class="col-md-6">
+						<hr>
+						<h4>Puntos por integrante de equipo</h4>
+						<hr>
+						<div class="x_content">
+							<canvas id="mybarChart"></canvas>
+						</div>
+					</div>
+
+
+					<div class="col-md-6">
+						<hr>
+						<h4>Consolidado de puntos del equipo</h4>
+						<hr>
+						<div class="x_content">
+							<canvas id="canvasRadar"></canvas>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<hr>
+						<h4>Tus puntos por fases</h4>
+						<hr>
+						<div class="x_content">
+							<canvas id="polarArea"></canvas>
+						</div>
+					</div>
+
+
+					<div class="col-md-6">
+						<hr>
+						<h4>Comparativo de frente otros equipos</h4>
+						<hr>
+						<div class="x_content">
+							<canvas id="canvasDoughnut"></canvas>
+						</div>
+					</div>
+
+
+				</div>
+
+
 			</div>
 		</div>
 	</div>

@@ -9,6 +9,7 @@
 				<div class="formContainer animated fadeInUp">
 					<form method="post">
 						<div class="question">
+							<?php if($message==""){?>
 							<div id="fullSurvey">
 							<div class="question-group">
 								
@@ -42,23 +43,23 @@
 
 									<div class="question-inputs">
 										<div class="item five">
-											<input type="radio" name="one" value="5">
+											<input type="radio" name="one" value="5" required>
 											<span class="checkMark"></span>
 										</div>
 										<div class="item four">
-											<input type="radio" name="one" value="4">
+											<input type="radio" name="one" value="4" required>
 											<span class="checkMark"></span>
 										</div>
 										<div class="item three">
-											<input type="radio" name="one" value="3">
+											<input type="radio" name="one" value="3" required>
 											<span class="checkMark"></span>
 										</div>
 										<div class="item two">
-											<input type="radio" name="one" value="2">
+											<input type="radio" name="one" value="2" required>
 											<span class="checkMark"></span>
 										</div>
 										<div class="item one">
-											<input type="radio" name="one" value="1">
+											<input type="radio" name="one" value="1" required>
 											<span class="checkMark"></span>
 										</div>
 									</div>
@@ -71,23 +72,23 @@
 
 									<div class="question-inputs">
 										<div class="item five">
-											<input type="radio" name="two" value="5">
+											<input type="radio" name="two" value="5" required>
 											<span class="checkMark"></span>
 										</div>
 										<div class="item four">
-											<input type="radio" name="two" value="4">
+											<input type="radio" name="two" value="4" required>
 											<span class="checkMark"></span>
 										</div>
 										<div class="item three">
-											<input type="radio" name="two" value="3">
+											<input type="radio" name="two" value="3" required>
 											<span class="checkMark"></span>
 										</div>
 										<div class="item two">
-											<input type="radio" name="two" value="2">
+											<input type="radio" name="two" value="2" required>
 											<span class="checkMark"></span>
 										</div>
 										<div class="item two">
-											<input type="radio" name="two" value="1">
+											<input type="radio" name="two" value="1" required>
 											<span class="checkMark"></span>
 										</div>
 									</div>
@@ -100,23 +101,23 @@
 
 									<div class="question-inputs">
 										<div class="item five">
-											<input type="radio" name="three" value="5">
+											<input type="radio" name="three" value="5" required>
 											<span class="checkMark"></span>
 										</div>
 										<div class="item four">
-											<input type="radio" name="three" value="4">
+											<input type="radio" name="three" value="4" required>
 											<span class="checkMark"></span>
 										</div>
 										<div class="item three">
-											<input type="radio" name="three" value="3">
+											<input type="radio" name="three" value="3" required>
 											<span class="checkMark"></span>
 										</div>
 										<div class="item three">
-											<input type="radio" name="three" value="2">
+											<input type="radio" name="three" value="2" required>
 											<span class="checkMark"></span>
 										</div>
 										<div class="item three">
-											<input type="radio" name="three" value="1">
+											<input type="radio" name="three" value="1" required>
 											<span class="checkMark"></span>
 										</div>
 									</div>
@@ -157,23 +158,23 @@
 
 									<div class="question-inputs">
 										<div class="item five">
-											<input type="radio" name="four" value="5">
+											<input type="radio" name="four" value="5" required>
 											<span class="checkMark"></span>
 										</div>
 										<div class="item four">
-											<input type="radio" name="four" value="4">
+											<input type="radio" name="four" value="4" required>
 											<span class="checkMark"></span>
 										</div>
 										<div class="item three">
-											<input type="radio" name="four" value="3">
+											<input type="radio" name="four" value="3" required>
 											<span class="checkMark"></span>
 										</div>
 										<div class="item two">
-											<input type="radio" name="four" value="2">
+											<input type="radio" name="four" value="2" required>
 											<span class="checkMark"></span>
 										</div>
 										<div class="item one">
-											<input type="radio" name="four" value="1">
+											<input type="radio" name="four" value="1" required>
 											<span class="checkMark"></span>
 										</div>
 									</div>
@@ -186,23 +187,23 @@
 
 									<div class="question-inputs">
 										<div class="item five">
-											<input type="radio" name="five" value="5">
+											<input type="radio" name="five" value="5" required>
 											<span class="checkMark"></span>
 										</div>
 										<div class="item four">
-											<input type="radio" name="five" value="4">
+											<input type="radio" name="five" value="4" required>
 											<span class="checkMark"></span>
 										</div>
 										<div class="item three">
-											<input type="radio" name="five" value="3">
+											<input type="radio" name="five" value="3" required>
 											<span class="checkMark"></span>
 										</div>
 										<div class="item two">
-											<input type="radio" name="five" value="2">
+											<input type="radio" name="five" value="2" required>
 											<span class="checkMark"></span>
 										</div>
 										<div class="item two">
-											<input type="radio" name="five" value="1">
+											<input type="radio" name="five" value="1" required>
 											<span class="checkMark"></span>
 										</div>
 									</div>
@@ -215,23 +216,23 @@
 
 									<div class="question-inputs">
 										<div class="item five">
-											<input type="radio" name="six" value="5">
+											<input type="radio" name="six" value="5" required>
 											<span class="checkMark"></span>
 										</div>
 										<div class="item four">
-											<input type="radio" name="six" value="4">
+											<input type="radio" name="six" value="4" required>
 											<span class="checkMark"></span>
 										</div>
 										<div class="item three">
-											<input type="radio" name="six" value="3">
+											<input type="radio" name="six" value="3" required>
 											<span class="checkMark"></span>
 										</div>
 										<div class="item three">
-											<input type="radio" name="six" value="2">
+											<input type="radio" name="six" value="2" required>
 											<span class="checkMark"></span>
 										</div>
 										<div class="item three">
-											<input type="radio" name="six" value="1">
+											<input type="radio" name="six" value="1" required>
 											<span class="checkMark"></span>
 										</div>
 									</div>
@@ -272,23 +273,23 @@
 
 									<div class="question-inputs">
 										<div class="item five">
-											<input type="radio" name="seven" value="5">
+											<input type="radio" name="seven" value="5" required>
 											<span class="checkMark"></span>
 										</div>
 										<div class="item four">
-											<input type="radio" name="seven" value="4">
+											<input type="radio" name="seven" value="4" required>
 											<span class="checkMark"></span>
 										</div>
 										<div class="item three">
-											<input type="radio" name="seven" value="3">
+											<input type="radio" name="seven" value="3" required>
 											<span class="checkMark"></span>
 										</div>
 										<div class="item two">
-											<input type="radio" name="seven" value="2">
+											<input type="radio" name="seven" value="2" required>
 											<span class="checkMark"></span>
 										</div>
 										<div class="item one">
-											<input type="radio" name="seven" value="1">
+											<input type="radio" name="seven" value="1" required>
 											<span class="checkMark"></span>
 										</div>
 									</div>
@@ -301,23 +302,23 @@
 
 									<div class="question-inputs">
 										<div class="item five">
-											<input type="radio" name="eight" value="5">
+											<input type="radio" name="eight" value="5" required>
 											<span class="checkMark"></span>
 										</div>
 										<div class="item four">
-											<input type="radio" name="eight" value="4">
+											<input type="radio" name="eight" value="4" required>
 											<span class="checkMark"></span>
 										</div>
 										<div class="item three">
-											<input type="radio" name="eight" value="3">
+											<input type="radio" name="eight" value="3" required>
 											<span class="checkMark"></span>
 										</div>
 										<div class="item two">
-											<input type="radio" name="eight" value="2">
+											<input type="radio" name="eight" value="2" required>
 											<span class="checkMark"></span>
 										</div>
 										<div class="item two">
-											<input type="radio" name="eight" value="1">
+											<input type="radio" name="eight" value="1" required>
 											<span class="checkMark"></span>
 										</div>
 									</div>
@@ -330,23 +331,23 @@
 
 									<div class="question-inputs">
 										<div class="item five">
-											<input type="radio" name="nine" value="5">
+											<input type="radio" name="nine" value="5" required>
 											<span class="checkMark"></span>
 										</div>
 										<div class="item four">
-											<input type="radio" name="nine" value="4">
+											<input type="radio" name="nine" value="4" required>
 											<span class="checkMark"></span>
 										</div>
 										<div class="item three">
-											<input type="radio" name="nine" value="3">
+											<input type="radio" name="nine" value="3" required>
 											<span class="checkMark"></span>
 										</div>
 										<div class="item three">
-											<input type="radio" name="nine" value="2">
+											<input type="radio" name="nine" value="2" required>
 											<span class="checkMark"></span>
 										</div>
 										<div class="item three">
-											<input type="radio" name="nine" value="1">
+											<input type="radio" name="nine" value="1" required>
 											<span class="checkMark"></span>
 										</div>
 									</div>
@@ -386,23 +387,23 @@
 
 									<div class="question-inputs">
 										<div class="item five">
-											<input type="radio" name="ten" value="5">
+											<input type="radio" name="ten" value="5" required>
 											<span class="checkMark"></span>
 										</div>
 										<div class="item four">
-											<input type="radio" name="ten" value="4">
+											<input type="radio" name="ten" value="4" required>
 											<span class="checkMark"></span>
 										</div>
 										<div class="item three">
-											<input type="radio" name="ten" value="3">
+											<input type="radio" name="ten" value="3" required>
 											<span class="checkMark"></span>
 										</div>
 										<div class="item two">
-											<input type="radio" name="ten" value="2">
+											<input type="radio" name="ten" value="2" required>
 											<span class="checkMark"></span>
 										</div>
 										<div class="item one">
-											<input type="radio" name="ten" value="1">
+											<input type="radio" name="ten" value="1" required>
 											<span class="checkMark"></span>
 										</div>
 									</div>
@@ -415,23 +416,23 @@
 
 									<div class="question-inputs">
 										<div class="item five">
-											<input type="radio" name="eleven" value="5">
+											<input type="radio" name="eleven" value="5" required>
 											<span class="checkMark"></span>
 										</div>
 										<div class="item four">
-											<input type="radio" name="eleven" value="4">
+											<input type="radio" name="eleven" value="4" required>
 											<span class="checkMark"></span>
 										</div>
 										<div class="item three">
-											<input type="radio" name="eleven" value="3">
+											<input type="radio" name="eleven" value="3" required>
 											<span class="checkMark"></span>
 										</div>
 										<div class="item two">
-											<input type="radio" name="eleven" value="2">
+											<input type="radio" name="eleven" value="2" required>
 											<span class="checkMark"></span>
 										</div>
 										<div class="item two">
-											<input type="radio" name="eleven" value="1">
+											<input type="radio" name="eleven" value="1" required>
 											<span class="checkMark"></span>
 										</div>
 									</div>
@@ -456,7 +457,7 @@
 
 									<div class="question-inputs">
 										<div class="item five big">
-											<input type="radio" name="twelve" value="5">
+											<input type="radio" name="twelve" value="5" required>
 											<span class="checkMark"></span>
 										</div>
 									</div>
@@ -468,7 +469,7 @@
 
 									<div class="question-inputs">
 										<div class="item five big">
-											<input type="radio" name="twelve" value="5">
+											<input type="radio" name="twelve" value="3" required>
 											<span class="checkMark"></span>
 										</div>
 									</div>
@@ -480,7 +481,7 @@
 
 									<div class="question-inputs">
 										<div class="item five big">
-											<input type="radio" name="twelve" value="5">
+											<input type="radio" name="twelve" value="1" required>
 											<span class="checkMark"></span>
 										</div>
 									</div>
@@ -505,8 +506,9 @@
 								<button class="btn-square" value="1" type="submit"  name="saveSurvey">Guardar</button>
 							</div>
 						</div>
+							<?php }?>
 							<div class="form-group">
-								<?php echo $message?>
+								<h2><?php echo $message?></h2>
 							</div>
 
 						</div>
@@ -515,11 +517,6 @@
 			</div>
 		</div>
 		<input type="hidden" id="mess" value="<?php echo $message?>">
-<script>
-	if(document.getElementById('mess').value==="<h2>codigo de curso no valido</h2>" || document.getElementById('mess').value==="<h2>Ya llenaste esta encuensta, Gracias</h2>"){
-		document.getElementById('fullSurvey').style.visibility = "hidden"
-	}
-</script>
 		<div class="conventions">
 			<p>
 				Marque con una X donde corresponda:

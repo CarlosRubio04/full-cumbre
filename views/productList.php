@@ -1,10 +1,10 @@
 <?php if(!defined('directAccess')){ header('location: ../?content=404');}?>
-<section class="grupos u-color-contraste">
+<section class="u-color-contraste u-mount-back">
 	<div class="content-wrapper">
 		<div class="title">
-			<h1 class="animated fadeInLeft">Entregables Proyecto</h1>
+			<h1 class="animated fadeInLeft">Lista de entregables del grupo</h1>
 		</div>
-		<div class="grupos-grid flex-row wrap">
+		<div class="grupos-grid entregables flex-row wrap">
 			<?php require_once 'Libs/Lproducts.php';?>
 		</div>
 	</div>

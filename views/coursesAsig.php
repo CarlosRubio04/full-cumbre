@@ -4,6 +4,9 @@
 		<div class="item colum-80">
 			<div class="content-wrapper">
 				<div class="title">
+					<a href="?content=profile" class="btn btn-back">
+						<i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+					</a>
 					<h1 class="animated fadeInLeft">Cursos Asignados</h1>
 				</div>
 				<div class="courses-grid">

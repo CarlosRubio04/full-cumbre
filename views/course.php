@@ -10,7 +10,7 @@
 					<h1 class="animated fadeInLeft"><?php echo $name?></h1>
 
 					<!-- Este boton solo lo ve el Coach -->
-					<a href="?content=sesionList" class="btn btn-main">
+					<a href="?content=sessionList<?php echo $linkAssis?>" class="btn btn-main">
 						Mirar asistencia
 					</a>
 					<!-- Este boton solo lo ve el Coach -->

@@ -7,10 +7,7 @@
 					<a href="?content=<?php echo $return?>" class="btn btn-back">
 						<i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
 					</a>
-					<h1 class="animated fadeInLeft">Agregar nuevo curso</h1>
-					<a href="?content=sesionList" class="btn btn-main">
-						Ver Asistencia
-					</a>
+					<h1 class="animated fadeInLeft">Modificar curso</h1>
 				</div>
 				<div class="formContainer animated fadeInUp">
 					<form method="post">
@@ -58,6 +55,17 @@
 							</div>
 
 							<?php echo $message?>
+							<div class="form-group flex-row space-btw">
+								<a href="?content=sessionList&id=<?php echo $id."&return=$return"?>" class="btn-square">
+									Calificar Asistencia <i class="fa fa-check" aria-hidden="true"></i>
+								</a>
+								<a href="?content=surveys&id=<?php echo $id."&return=$return"?>" class="btn-square">
+									Resultados de encuestas <i class="fa fa-line-chart" aria-hidden="true"></i>
+								</a>
+								<a href="?content=>" class="btn-square">
+									Ver Test <i class="fa fa-pencil" aria-hidden="true"></i>
+								</a>
+							</div>
 							<div class="form-group">
 								<button class="btn-square btn-full" name="editCourse" value="1" type="submit">Modificar Curso</button>
 							</div>

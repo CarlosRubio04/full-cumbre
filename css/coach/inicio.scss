@@ -1,4 +1,4 @@
-// Imports 
+ // Imports 
 @import '../variables';
 @import '../mixins';
 
@@ -6,5 +6,16 @@
 .dashboard {
 	.lastestNotifications {
 		margin-top: 100px;
+	}
+}
+
+.entregables {
+	.grupo {
+		cursor: pointer;
+		@include prefix(transition, all .3s ease-in-out);
+
+		&:hover {
+			@include prefix(box-shadow, 0px 2px 8px 1px rgba(0,0,0,0.15));
+		}
 	}
 }
