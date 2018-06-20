@@ -3,9 +3,14 @@
 	<div class="container-flex">
 		<div class="profile item colum-40 u-color-contraste">
 			<div class="content-wrapper">
-				<h1 class="title">
-					Perfil de Usuario 
-				</h1>
+				<div class="title">
+					<h1 class="title">
+						Perfil de Usuario 
+					</h1>
+					<a href="?content=editUser&id=<?php echo $id?>" class="btn-edit" value="1" type="submit"  name="editUser" data-toggle="tooltip" data-placement="right" title="Editar">
+						<i class="fa fa-pencil" aria-hidden="true"></i>
+					</a>
+				</div>
 				<div class="avatar">
 					<div class="avatarItems">
 						<button>
@@ -22,9 +27,6 @@
 						</div>
 						<div class="input input-flex">
 							<p><?php echo $name?></p>
-							<a href="?content=editUser&id=<?php echo $id?>" class="btn-edit" value="1" type="submit"  name="editUser" data-toggle="tooltip" data-placement="right" title="Editar">
-								<i class="fa fa-pencil" aria-hidden="true"></i>
-							</a>
 						</div>
 					</div>
 
@@ -34,9 +36,6 @@
 						</div>
 						<div class="input input-flex">
 							<p><?php echo $lastname?></p>
-							<a href="?content=editUser&id=<?php echo $id?>" class="btn-edit" value="1" type="submit"  name="editUser" data-toggle="tooltip" data-placement="right" title="Editar">
-								<i class="fa fa-pencil" aria-hidden="true"></i>
-							</a>
 						</div>
 					</div>
 
@@ -46,9 +45,6 @@
 						</div>
 						<div class="input input-flex">
 							<p><?php echo $email?></p>
-							<a href="?content=editUser&id=<?php echo $id?>" class="btn-edit" value="1" type="submit"  name="editUser" data-toggle="tooltip" data-placement="right" title="Editar">
-								<i class="fa fa-pencil" aria-hidden="true"></i>
-							</a>
 						</div>
 					</div>
 					
@@ -58,9 +54,6 @@
 						</div>
 						<div class="input input-flex">
 							<p><?php echo $idType." ".$idnum?></p>
-							<a href="?content=editUser&id=<?php echo $id?>" class="btn-edit" value="1" type="submit"  name="editUser" data-toggle="tooltip" data-placement="right" title="Editar">
-								<i class="fa fa-pencil" aria-hidden="true"></i>
-							</a>
 						</div>
 					</div>
 					
@@ -70,9 +63,6 @@
 						</div>
 						<div class="input input-flex">
 							<p><?php echo $username?></p>
-							<a href="?content=editUser&id=<?php echo $id?>" class="btn-edit" value="1" type="submit"  name="editUser" data-toggle="tooltip" data-placement="right" title="Editar">
-								<i class="fa fa-pencil" aria-hidden="true"></i>
-							</a>
 						</div>
 					</div>
 					
@@ -82,9 +72,6 @@
 						</div>
 						<div class="input input-flex">
 							<p><?php echo $role?></p>
-							<a href="?content=editUser&id=<?php echo $id?>" class="btn-edit" value="1" type="submit"  name="editUser" data-toggle="tooltip" data-placement="right" title="Editar">
-								<i class="fa fa-pencil" aria-hidden="true"></i>
-							</a>
 						</div>
 					</div>
 					
@@ -112,18 +99,17 @@
 					<h1>Estadisticas del usuario</h1>
 				</div>
 				<hr/>
+				<h5>Metros recorridos por fase</h5>
+				<div class="x_content">
+					<canvas id="DoughnutMyMetersChart"></canvas>
+				</div>
+				<hr/>
+				<div class="title">
+					<h1>Acciones del Usuario</h1>
+				</div>
+				<hr/>
 				<div class="fasesContainer logs">
 					<?php echo $usersHmtl?>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<hr>
-						<h4>Mis Metros por Campamento</h4>
-						<hr>
-						<div class="x_content">
-							<canvas id="DoughnutMyMetersChart"></canvas>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>
