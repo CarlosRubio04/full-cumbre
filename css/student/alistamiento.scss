@@ -5,16 +5,28 @@
 // Alistamiento Campamento
 
 .campamento-alistamiento {
-	background-image: url(../img/alistamiento.png);
-	background-size: cover;
-	background-position: left bottom;
-
-	// .campamentoIntro {
-	// 	color: $blanco;
-	// 	@include prefix(text-shadow, 1px 1px 1px $gris);
-	// }
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#70bce8+0,ffffff+44,ffffff+100 */
+	background: #70bce8; /* Old browsers */
+	background: -moz-linear-gradient(top, #70bce8 0%, #ffffff 44%, #ffffff 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #70bce8 0%,#ffffff 44%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #70bce8 0%,#ffffff 44%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#70bce8', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+	
 	.title {
 		color: $blanco;
+	}
+
+	.container-flex {
+		position:absolute;
+		z-index: 2;
+	}
+	.rutaVirtualBack {
+		.falda {
+
+			img {
+				height: auto;
+			}
+		}
 	}
 }
 

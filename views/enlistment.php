@@ -77,10 +77,20 @@
 			<div class="content-wrapper">
 				<div class="siguiente-campamento animated fadeIn">
 					<a href="?content=basecamp" class="btn btn-main">
-						Campamento Base
+						Campamento Base  <i class="fa fa-arrow-right" aria-hidden="true"></i>
 					</a>
 				</div>
 			</div>
+		</div>
+	</div>
+	
+
+	<div class="rutaVirtualBack">
+		<div class="cumbre animated fadeInUp">
+			<img src="img/mountain.png" alt="Montaña">
+		</div>
+		<div class="falda">
+			<img src="img/alistamiento.png" alt="Falda">
 		</div>
 	</div>
 </section>

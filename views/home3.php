@@ -36,7 +36,15 @@
 	</div>
 
 	<div class="rutaVirtualBack">
-		<img src="img/ruta-virtual.png" alt="Ruta Virtual">
+		<div class="cumbre animated fadeInUp">
+			<img src="img/mountain.png" alt="Montaña">
+		</div>
+		<div class="rio">
+			<img src="img/rio.png" alt="Rio">
+		</div>
+		<div class="falda">
+			<img src="img/falda.png" alt="Falda">
+		</div>
 	</div>
 </section>
 

@@ -20,16 +20,6 @@
 					<form method="post" id="form">
 						<div class="inputs">
 							<!-- Fechas para el curso -->
-
-							<div class="form-group col-md-6">
-								<label for="fechaDis">Fecha de publicación del Test</label>
-								<input placeholder="Seleccione una fecha" title="" name="fechaIniTask" type="text" id="" class="form-control datepicker" value="" required>
-							</div>
-							<div class="form-group col-md-6">
-								<label for="fechaDis">Fecha limite de responder el Test</label>
-								<input placeholder="Seleccione una fecha" title="" name="fechaIniTask" type="text" id="" class="form-control datepicker" value="" required>
-							</div>
-
 							<!-- // Fechas para el curso -->
 							<!-- Agregar Pregunta -->
 							<div class="form-group">
@@ -95,6 +85,14 @@
 							<div class="form-group">
 								<button class="btn-square" id="createTest" value="1" name="createTest" onclick="saveQuestion();">
 									Agregar pregunta <i class="fa fa-plus" aria-hidden="true"></i>
+								</button>
+							</div>
+							<div class="form-group">
+									<label for="fecha">Fecha limite de responder el Test</label>
+									<input placeholder="Seleccione una fecha" title="" name="fecha" type="date" class="form-control" value="<?php echo $tomorrow?>" required>
+									<input placeholder="Seleccione una hora" title="" name="hora" type="time" class="form-control" value="15:00:00" required>
+								<button class="btn-square" id="publishTest" value="1" name="publishTest" >
+									Publicar Test <i class="fa fa-book" aria-hidden="true"></i>
 								</button>
 							</div>
 							<input type="hidden" id="id" value="<?php echo $id?>" >

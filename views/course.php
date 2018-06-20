@@ -8,12 +8,6 @@
 						<i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
 					</a>
 					<h1 class="animated fadeInLeft"><?php echo $name?></h1>
-
-					<!-- Este boton solo lo ve el Coach -->
-					<a href="?content=sessionList<?php echo $linkAssis?>" class="btn btn-main">
-						Mirar asistencia
-					</a>
-					<!-- Este boton solo lo ve el Coach -->
 				</div>
 				<hr>
 				<form method="post">
@@ -52,6 +46,14 @@
 
 						<h2><?php echo $message?></h2>
 						<?php echo $button?>
+					</div>
+					<div class="form-group flex-row space-btw">
+						<a href="?content=sessionList&id=<?php echo $id."&return=$return"?>" class="btn-square">
+							Calificar Asistencia <i class="fa fa-check" aria-hidden="true"></i>
+						</a>
+						<a href="?content=createTest&id=<?php echo $id."&return=$return"?>" class="btn-square">
+							Crear/editar Test <i class="fa fa-pencil" aria-hidden="true"></i>
+						</a>
 					</div>
 				</form>
 			</div>

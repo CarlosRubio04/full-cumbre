@@ -260,6 +260,11 @@
  		flex-direction: column;
  		justify-content: center;
 
+ 		@include for-phone-only {
+ 			padding: 2em;
+ 			height: 95vh;
+ 		}
+
  		.close {
  			position: absolute;
  			top: 4em;

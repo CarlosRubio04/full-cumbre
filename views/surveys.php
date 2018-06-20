@@ -157,7 +157,7 @@
 								<div class="question-body">
 									<div class="question-label">
 										Orden y aseo del salón
-									</div>	
+									</div>
 
 									<div class="question-inputs">
 										<div class="item five">

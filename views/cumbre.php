@@ -1,75 +1,118 @@
 <section class="cumbre">
-	<div class="container-flex flex-center u-color-contraste u-mount-back">
-		<div class="item">
-			<div class="content-wrapper">
-				<div class="title">
-					<a href="." class="btn btn-back">
-						<i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
-					</a>
-					<h1 class="animated fadeInDown">
-						Cumbre
-					</h1>
+	<div class="content-wrapper u-mount-back">
+		<div class="title">
+			<a href="." class="btn btn-back">
+				<i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+			</a>
+			<h1 class="animated fadeInDown">
+				Cumbre
+			</h1>
+		</div>
+		<p class="text-center">
+			Esta es la cumbre de tu proyecto, acá verás las estadisticas de tu rendimiento personal y las de tu equipo.
+		</p>
+
+		<div class="container-flex">
+			<div class="item colum-60">
+				<h4 class="text-center">Estadisticas Personales</h4>
+
+				<div class="User">
+					<div class="UserMts">
+						<h5>En total recorriste</h5>
+						
+					</div>
+
+					<div class="item">
+
+						<h5>Metros recorridos por campamento</h5>
+
+						<div class="x_content">
+							<canvas id="DoughnutMyMetersChart"></canvas>
+						</div>
+					</div>
+					<div class="UserGoals">
+						<h5>Estos son los item que lograste</h5>
+						<div class="excelencia">
+							<h3>Items logrados por excelencia</h3>
+							<div class="itemContainer">
+								<div class="item">
+									<img src="img/svg/mapa.svg" alt="mapa">
+									<h4>Mapa</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati aliquam doloribus quibusdam, reprehenderit</p>
+								</div>
+								<div class="item">
+									<img src="img/svg/botas.svg" alt="mapa">
+									<h4>Botas</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque consequatur nostrum doloremque </p>
+								</div>
+								<div class="item">
+									<img src="img/svg/brujula.svg" alt="mapa">
+									<h4>Brujula</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea vero, at sit ipsum et accusamus culpa </p>
+								</div>
+							</div>
+						</div>
+						<div class="logros">
+							<h3>Items por cumplimiento</h3>
+							<div class="itemContainer">
+								<div class="item">
+									<img src="img/svg/mapa.svg" alt="mapa">
+									<h4>Mapa</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati aliquam doloribus quibusdam.</p>
+								</div>
+								<div class="item">
+									<img src="img/svg/botas.svg" alt="mapa">
+									<h4>Botas</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque consequatur nostrum doloremque </p>
+								</div>
+								<div class="item">
+									<img src="img/svg/brujula.svg" alt="mapa">
+									<h4>Brujula</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea vero, at sit ipsum et accusamus culpa </p>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
-				<hr>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit et, fuga sed temporibus, commodi nostrum mollitia deleniti sit non eveniet nihil necessitatibus, hic aperiam magni iusto quis excepturi provident beatae?. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus ipsa sint quibusdam tenetur, quidem voluptates neque minima deserunt facere. Aut eius, fugiat dolores repellendus fugit itaque quidem, mollitia cum perferendis.
-				</p>
-				Metros por usuario
-				<?php echo $tabla?>
-
-				<br>
-				<br>
-				Metros Usuario por Campamento
-				<?php echo $tablaUC?>
-				<br>
-				<br>
-				Metros por grupo
-				<?php echo $tablaG?>
-
-				<div class="row">
-					<div class="col-md-6">
-						<hr>
-						<h4>Puntos por integrante de equipo</h4>
-						<hr>
-						<div class="x_content">
-							<canvas id="mybarChart"></canvas>
-						</div>
-					</div>
-
-
-					<div class="col-md-6">
-						<hr>
-						<h4>Consolidado de puntos del equipo</h4>
-						<hr>
-						<div class="x_content">
-							<canvas id="canvasRadar"></canvas>
-						</div>
-					</div>
-
-					<div class="col-md-6">
-						<hr>
-						<h4>Tus puntos por fases</h4>
-						<hr>
-						<div class="x_content">
-							<canvas id="polarArea"></canvas>
-						</div>
-					</div>
-
-
-					<div class="col-md-6">
-						<hr>
-						<h4>Comparativo de frente otros equipos</h4>
-						<hr>
-						<div class="x_content">
-							<canvas id="canvasDoughnut"></canvas>
-						</div>
-					</div>
-
-
+			</div>
+			<div class="item colum-60">
+				<h4 class="text-center">Estadisticas Grupales</h4>
+				
+				<div class="item">
+					<h5></h5>
 				</div>
 
+				<div class="item">
 
+					<h5>Metros por integrante del equipo</h5>
+
+					<div class="x_content">
+						<canvas id="DoughnutGroupMembersChart"></canvas>
+					</div>
+				</div>
+
+				<div class="item">
+
+					<h5>Ranking de equipos en Cumbre</h5>
+
+					<div class="x_content">
+						<canvas id="barGroupsChart"></canvas>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 </section>
+
+<script src="js/vendors/Chart.min.js"></script>
+<script src="./js/cumbreCharts.js"></script>
+
+<script>
+	//Bar chart with users meters datails in this group
+	groupMembersMeters(<?php echo $labelsChartU.",".$dataChartU?>);
+	
+	//Doughnut chart with total meters for each group
+	groupsChart(<?php echo $labelsChartG.",".$dataChartG?>);
+	//Doughnut chart with my meters
+	userCampMeters(<?php echo $dataChartC?>);
+</script>

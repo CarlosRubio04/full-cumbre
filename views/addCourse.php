@@ -8,9 +8,6 @@
 						<i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
 					</a>
 					<h1 class="animated fadeInLeft">Agregar nuevo curso</h1>
-					<a href="?content=createTest" class="btn btn-main">
-						Crear Test
-					</a>
 				</div>
 				<div class="formContainer animated fadeInUp">
 					<form method="post">
@@ -28,12 +25,12 @@
 							<div class="form-group col-md-6">
 								<label for="fecha">Fecha Inicio</label>
 								<!-- <input type="date" name="fechaIni" id="fechaIni" value="<?php echo $dateStart?>" class="form-control"> -->
-								<input placeholder="Seleccione una fecha" title="Fecha Inicio" name="fechaIni" id="fechaIni" value="<?php echo $dateStart?>" class="form-control datepicker"  required>
+								<input type="date" placeholder="Seleccione una fecha" title="Fecha Inicio" name="fechaIni" id="fechaIni" value="<?php echo $dateStart?>" class="form-control"  required>
 							</div>
 							<div class="form-group col-md-6">
 								<label for="fecha">Fecha Finalización</label>
 								<!-- <input type="date" name="fechaFin" id="fechaFin" value="<?php echo $dateEnd?>" class="form-control"> -->
-								<input placeholder="Seleccione una fecha" title="Fecha Inicio" name="fechaFin" id="fechaFin" value="<?php echo $dateEnd?>" class="form-control datepicker"  required>
+								<input type="date" placeholder="Seleccione una fecha" title="Fecha Inicio" name="fechaFin" id="fechaFin" value="<?php echo $dateEnd?>" class="form-control"  required>
 							</div>
 							
 							<div class="form-group col-md-8">
