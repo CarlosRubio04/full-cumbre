@@ -78,7 +78,7 @@
 					
 					<div class="data-group">
 						<div class="label">
-							<small>Role</small>
+							<small>Rol</small>
 						</div>
 						<div class="input input-flex">
 							<p><?php echo $role?></p>
@@ -106,11 +106,24 @@
 		<div class="item colum-60">
 			<div class="content-wrapper">
 				<div class="title">
+					<a href="?content=userList" class="btn btn-back">
+						<i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+					</a>
 					<h1>Estadisticas del usuario</h1>
 				</div>
 				<hr/>
 				<div class="fasesContainer logs">
 					<?php echo $usersHmtl?>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<hr>
+						<h4>Mis Metros por Campamento</h4>
+						<hr>
+						<div class="x_content">
+							<canvas id="DoughnutMyMetersChart"></canvas>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -118,3 +131,10 @@
 
 	</div>
 </section>
+<script src="js/vendors/Chart.min.js"></script>
+<script src="./js/cumbreCharts.js"></script>
+
+<script>
+	//Doughnut chart with my meters
+	userCampMeters(<?php echo $dataChartC?>);
+</script>

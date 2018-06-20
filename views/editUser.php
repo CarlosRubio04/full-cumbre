@@ -4,6 +4,9 @@
 		<div class="item colum-80">
 			<div class="content-wrapper">
 				<div class="title">
+					<a href="?content=userProfile&id=<?php echo $id?>" class="btn btn-back">
+						<i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+					</a>
 					<h1 class="animated fadeInLeft">Modificar usuario</h1>
 				</div>
 				<div class="formContainer animated fadeInUp">

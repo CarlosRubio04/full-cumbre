@@ -122,6 +122,9 @@
 			dataPost+="&answer=3";
 		}else if(document.getElementById('answer4').checked){
 			dataPost+="&answer=4";
+		}else{
+			alert("No se ha seleccionado la respuesta a la pregunta");
+			return false;
 		}
 		
 		var regex = /^[a-zA-Z0-9._%:()+-;, áéíóúÁÉÍÓÚ]+$/;
