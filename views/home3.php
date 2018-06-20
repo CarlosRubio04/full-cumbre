@@ -1,6 +1,8 @@
 <?php if(!defined('directAccess')){ header('location: ../?content=404');}?>
-<!-- <section class="ruta u-color-contraste">
-	<div class="content-wrapper">
+
+<section class="rutaVirtual">
+
+	<div class="welcome">
 		<div class="title">
 			<h1 class="text-center animated fadeInDown">Bienvenidos</h1>
 		</div>
@@ -10,9 +12,6 @@
 			Por ello, bienvenidos y disfruten el proceso.
 		</p>
 	</div>
-</section> -->
-
-<section class="rutaVirtual">
 
 	<div class="rutaVirtualElementos">
 		<?php echo $itemsG?>

@@ -55,10 +55,22 @@
 			<div class="content-wrapper">
 				<div class="siguiente-campamento animated fadeIn">
 					<a href="?content=campTwo" class="btn btn-main">
-						Campamento Dos
+						Campamento Dos <i class="fa fa-arrow-right" aria-hidden="true"></i>
 					</a>
 				</div>
 			</div>
+		</div>
+	</div>
+
+	<div class="rutaVirtualBack">
+		<div class="rutaVirtualClouds">
+			<?php  require_once('views/clouds.php'); ?>
+		</div>
+		<div class="cumbre animated fadeInUp">
+			<img src="img/mountain.png" alt="Montaña">
+		</div>
+		<div class="falda">
+			<img src="img/camp-1.png" alt="Falda">
 		</div>
 	</div>
 </section>

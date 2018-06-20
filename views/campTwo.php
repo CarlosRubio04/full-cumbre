@@ -54,10 +54,19 @@
 			<div class="content-wrapper">
 				<div class="siguiente-campamento">
 					<a href="?content=cumbre" class="btn btn-main">
-						Cumbre
+						Cumbre <i class="fa fa-arrow-right" aria-hidden="true"></i>
 					</a>
 				</div>
 			</div>
+		</div>
+	</div>
+
+	<div class="rutaVirtualBack">
+		<div class="rutaVirtualClouds">
+			<?php  require_once('views/clouds.php'); ?>
+		</div>
+		<div class="falda">
+			<img src="img/camp-2.png" alt="Falda">
 		</div>
 	</div>
 </section>
