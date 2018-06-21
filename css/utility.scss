@@ -708,7 +708,7 @@ section {
 				color: $verdeOscuro2;
 				font-weight: 100;
 				margin-top: 8px;
-				display: flex;
+				display: block;
 				align-items: center;
 				@include prefix(transition, all .5s ease-in-out);
 

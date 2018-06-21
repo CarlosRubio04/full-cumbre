@@ -9,6 +9,7 @@ function createProduct(){
 	$fecha=filter_input(INPUT_POST, "fecha",FILTER_SANITIZE_STRING);
 	$desc=filter_input(INPUT_POST, "desc",FILTER_SANITIZE_STRING);
 	$assignedId=[];
+	$objT=new TaskModel();
 	$tasksId=[];
 	$assignedSTR=$tasksSTR="";
 	foreach (filter_input_array(INPUT_POST) as $key => $value) {
@@ -17,11 +18,12 @@ function createProduct(){
 			$assignedSTR.="$value,";
 		}elseif(substr($key,0,8)=="listTask"){
 			$tasksId[]=substr($key,8);
-			$tasksSTR.="$value,";
+			$taskI=$objT->get($value);
+			$tasksSTR.=$taskI->getName().",";
 		}
 	}
-	if(count($assignedId)<4 && filter_input(INPUT_POST, 'assignedTaskPGroup',FILTER_SANITIZE_STRING)!='Group'){
-		$message="Un entregable debe tener por lo menos 4 participantes asignados";
+	if(count($assignedId)<1 && filter_input(INPUT_POST, 'assignedTaskPGroup',FILTER_SANITIZE_STRING)!='Group'){
+		$message="Un entregable debe tener por lo menos un participante asignado";
 		Common::logg("Creación de Entregable",$message);
 		return $message;
 	}

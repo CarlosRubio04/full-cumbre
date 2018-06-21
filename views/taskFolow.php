@@ -48,7 +48,7 @@
 						<?php echo $filesHtml?> 
 					</div>
 					<h4><?php echo $message;?></h4>
-					<?php if($_SESSION['loginRoleCumbre']==3){?>
+					<?php if($_SESSION['loginRoleCumbre']==3 && !$locked){?>
 					<div class="file">
 						<div class="file-input">
 							<input type="file" name="fileUpload" class="form-control">

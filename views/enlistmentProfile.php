@@ -55,11 +55,40 @@
 					</div>
 					<h4 class="subTitle">
 						Tu Equipo
+						<img src="img/escudos/<?php echo $avatar?>.svg" alt="Avatar" height="40px">
 					</h4>
 
 					<div class="teamName">
 							<input type="text"  pattern="[a-zA-Z0-9._%:()+-;, ]+$" name="groupName" style="text-transform:uppercase" class="form-control" value="<?php echo $groupNick?>">
 							<button type="submit" class="btn" name="changeName">cambiar</button>
+					</div>
+					<div class="avatar">
+						<h2 class="subTitle">
+							Selecciona el avatar del equipo
+						</h2>
+					</div>
+					<div class="avatarItems">
+						<button name="b1">
+							<img src="img/escudos/001.svg" alt="Avatar" height="40px">
+						</button>
+						<button name="b2">
+							<img src="img/escudos/002.svg" alt="Avatar" height="40px">
+						</button>
+						<button name="b3">
+							<img src="img/escudos/003.svg" alt="Avatar" height="40px">
+						</button>
+						<button name="b4">
+							<img src="img/escudos/004.svg" alt="Avatar" height="40px">
+						</button>
+						<button name="b5">
+							<img src="img/escudos/005.svg" alt="Avatar" height="40px">
+						</button>
+						<button name="b6">
+							<img src="img/escudos/006.svg" alt="Avatar" height="40px">
+						</button>
+						<button name="b7">
+							<img src="img/escudos/007.svg" alt="Avatar" height="40px">
+						</button>
 					</div>
 					<hr/>
 					<small><?php echo $message;?></small>

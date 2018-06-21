@@ -47,6 +47,7 @@
 						<h2><?php echo $message?></h2>
 						<?php echo $button?>
 					</div>
+					<?php if($_SESSION['loginRoleCumbre']!==3){?>
 					<div class="form-group flex-row space-btw">
 						<a href="?content=sessionList&id=<?php echo $id."&return=$return"?>" class="btn-square">
 							Calificar Asistencia <i class="fa fa-check" aria-hidden="true"></i>
@@ -55,6 +56,7 @@
 							Crear/editar Test <i class="fa fa-pencil" aria-hidden="true"></i>
 						</a>
 					</div>
+					<?php }?>
 				</form>
 			</div>
 		</div>	

@@ -203,7 +203,7 @@
 				flex-direction: column;
 				width: 50px;
 				height: auto;
-				margin-right: 1em;
+				margin-right: 2em;
 				padding: 1em 0;
 				min-height: 100px;
 				cursor: pointer;
@@ -215,10 +215,10 @@
 
 				&Bar {
 					/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,91e842+100&0.7+0,0.8+100 */
-background: -moz-linear-gradient(top, rgba(255,255,255,0.7) 0%, rgba(145,232,66,0.8) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(255,255,255,0.7) 0%,rgba(145,232,66,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(255,255,255,0.7) 0%,rgba(145,232,66,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3ffffff', endColorstr='#cc91e842',GradientType=0 ); /* IE6-9 */
+					background: -moz-linear-gradient(top, rgba(255,255,255,0.7) 0%, rgba(145,232,66,0.8) 100%); /* FF3.6-15 */
+					background: -webkit-linear-gradient(top, rgba(255,255,255,0.7) 0%,rgba(145,232,66,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
+					background: linear-gradient(to bottom, rgba(255,255,255,0.7) 0%,rgba(145,232,66,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3ffffff', endColorstr='#cc91e842',GradientType=0 ); /* IE6-9 */
 					width: 100%;
 					min-height: 100px;
 					display: flex;
@@ -242,17 +242,27 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3ffffff', e
 					align-items: center;
 					justify-content: center;
 					margin-bottom: 8px;
-					img {
-						width: 40px;
-						height: auto;
-						margin-bottom: 4px;
+
+					div {
+						background-color: $blanco;
+						border-radius: 10%;
+						padding: .5em;
+						margin-bottom: .5em;
+
+						img {
+							width: 40px;
+							height: auto;
+							margin-bottom: 4px;
+						}
 					}
+					
 					span {
 						color: $blanco;
-						font-size: 10px;
-						line-height: 11px;
+						font-size: 9px;
+						line-height: 10px;
 						text-align: center;
 						display: block;
+						word-break: break-all;
 					}
 				}
 			}

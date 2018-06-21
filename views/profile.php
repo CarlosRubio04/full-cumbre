@@ -6,29 +6,6 @@
 				<h1 class="title">
 					Mi perfil
 				</h1>
-				<div class="avatar">
-					<h2 class="subTitle">
-						Selecciona tu avatar
-					</h2>
-					<div class="avatarItems">
-						<button>
-							<img src="http://placehold.it/40x40" alt="Avatar">
-						</button>
-						<button>
-							<img src="http://placehold.it/40x40" alt="Avatar">
-						</button>
-						<button>
-							<img src="http://placehold.it/40x40" alt="Avatar">
-						</button>
-						<button>
-							<img src="http://placehold.it/40x40" alt="Avatar">
-						</button>
-						<button>
-							<img src="http://placehold.it/40x40" alt="Avatar">
-						</button>
-					</div>
-				</div>
-
 				<!-- Datos del usuario -->
 				<div class="data-user">
 					<div class="data-group">

@@ -11,14 +11,14 @@
 		<p class="text-center">
 			Esta es la cumbre de tu proyecto, acá verás las estadisticas de tu rendimiento personal y las de tu equipo.
 		</p>
-
 		<div class="container-flex">
+			<?php if($_SESSION['loginRoleCumbre']==3){?>
 			<div class="item colum-60">
 				<h4 class="text-center">Estadisticas Personales</h4>
 
 				<div class="User">
 					<div class="UserMts">
-						<h5>En total recorriste</h5>
+						<h5>En total recorriste <?php echo number_format($totalUser,2)?> Metros</h5>
 						
 					</div>
 
@@ -35,53 +35,26 @@
 						<div class="excelencia">
 							<h3>Items logrados por excelencia</h3>
 							<div class="itemContainer">
-								<div class="item">
-									<img src="img/svg/mapa.svg" alt="mapa">
-									<h4>Mapa</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati aliquam doloribus quibusdam, reprehenderit</p>
-								</div>
-								<div class="item">
-									<img src="img/svg/botas.svg" alt="mapa">
-									<h4>Botas</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque consequatur nostrum doloremque </p>
-								</div>
-								<div class="item">
-									<img src="img/svg/brujula.svg" alt="mapa">
-									<h4>Brujula</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea vero, at sit ipsum et accusamus culpa </p>
-								</div>
+								<?php echo $excelItems?>
 							</div>
 						</div>
 						<div class="logros">
 							<h3>Items por cumplimiento</h3>
 							<div class="itemContainer">
-								<div class="item">
-									<img src="img/svg/mapa.svg" alt="mapa">
-									<h4>Mapa</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati aliquam doloribus quibusdam.</p>
-								</div>
-								<div class="item">
-									<img src="img/svg/botas.svg" alt="mapa">
-									<h4>Botas</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque consequatur nostrum doloremque </p>
-								</div>
-								<div class="item">
-									<img src="img/svg/brujula.svg" alt="mapa">
-									<h4>Brujula</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea vero, at sit ipsum et accusamus culpa </p>
-								</div>
+								<?php echo $goalItems?>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			<?php }?>
 			<div class="item colum-60">
 				<h4 class="text-center">Estadisticas Grupales</h4>
 				
 				<div class="item">
 					<h5></h5>
 				</div>
-
+<?php if($_SESSION['loginRoleCumbre']==3){?>
 				<div class="item">
 
 					<h5>Metros por integrante del equipo</h5>
@@ -90,7 +63,7 @@
 						<canvas id="DoughnutGroupMembersChart"></canvas>
 					</div>
 				</div>
-
+<?php }?>
 				<div class="item">
 
 					<h5>Ranking de equipos en Cumbre</h5>
@@ -106,13 +79,15 @@
 
 <script src="js/vendors/Chart.min.js"></script>
 <script src="./js/cumbreCharts.js"></script>
-
+<?php if($_SESSION['loginRoleCumbre']==3){?>
 <script>
 	//Bar chart with users meters datails in this group
 	groupMembersMeters(<?php echo $labelsChartU.",".$dataChartU?>);
-	
-	//Doughnut chart with total meters for each group
-	groupsChart(<?php echo $labelsChartG.",".$dataChartG?>);
 	//Doughnut chart with my meters
 	userCampMeters(<?php echo $dataChartC?>);
+</script>
+<?php }?>
+<script>
+	//Doughnut chart with total meters for each group
+	groupsChart(<?php echo $labelsChartG.",".$dataChartG?>);
 </script>

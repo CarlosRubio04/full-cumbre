@@ -33,7 +33,7 @@
 
 									<div class="question-inputs">
 										<div class="item five">
-											<p><?php echo (int)$t1?></p>
+											<p><?php echo number_format($t1,1)?></p>
 										</div>
 									</div>
 								</div>
@@ -45,7 +45,7 @@
 
 									<div class="question-inputs">
 										<div class="item five">
-											<p><?php echo (int)$t2?></p>
+											<p><?php echo number_format($t2,1)?></p>
 										</div>
 									</div>
 								</div>
@@ -57,7 +57,7 @@
 
 									<div class="question-inputs">
 										<div class="item five">
-											<p><?php echo (int)$t3?></p>
+											<p><?php echo number_format($t3,1)?></p>
 										</div>
 									</div>
 								</div>
@@ -85,7 +85,7 @@
 
 									<div class="question-inputs">
 										<div class="item five">
-											<p><?php echo (int)$th1?></p>
+											<p><?php echo number_format($th1,1)?></p>
 										</div>
 									</div>
 								</div>
@@ -97,7 +97,7 @@
 
 									<div class="question-inputs">
 										<div class="item five">
-											<p><?php echo (int)$th2?></p>
+											<p><?php echo number_format($th2,1)?></p>
 										</div>
 									</div>
 								</div>
@@ -109,7 +109,7 @@
 
 									<div class="question-inputs">
 										<div class="item five">
-											<p><?php echo (int)$th3?></p>
+											<p><?php echo number_format($th3,1)?></p>
 										</div>
 									</div>
 								</div>
@@ -137,7 +137,7 @@
 
 									<div class="question-inputs">
 										<div class="item five">
-											<p><?php echo (int)$l1?></p>
+											<p><?php echo number_format($l1,1)?></p>
 										</div>
 									</div>
 								</div>
@@ -149,7 +149,7 @@
 
 									<div class="question-inputs">
 										<div class="item five">
-											<p><?php echo (int)$l2?></p>
+											<p><?php echo number_format($l2,1)?></p>
 										</div>
 									</div>
 								</div>
@@ -161,7 +161,7 @@
 
 									<div class="question-inputs">
 										<div class="item five">
-											<p><?php echo (int)$l3?></p>
+											<p><?php echo number_format($l3,1)?></p>
 										</div>
 									</div>
 								</div>
@@ -188,7 +188,7 @@
 
 									<div class="question-inputs">
 										<div class="item five">
-											<p><?php echo (int)$m1?></p>
+											<p><?php echo number_format($m1,1)?></p>
 										</div>
 									</div>
 								</div>
@@ -200,7 +200,7 @@
 
 									<div class="question-inputs">
 										<div class="item five">
-											<p><?php echo (int)$m2?></p>
+											<p><?php echo number_format($m2,1)?></p>
 										</div>
 									</div>
 								</div>

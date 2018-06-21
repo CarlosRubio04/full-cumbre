@@ -8,7 +8,7 @@ function groupsChart(labelsChart,dataChart){
 		data: {
 		labels: labelsChart,
 		datasets: [{
-			label: 'Meters',
+			label: 'Metros',
 			backgroundColor: "#03586A",
 			data: dataChart
 		}]

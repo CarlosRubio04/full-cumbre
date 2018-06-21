@@ -32,10 +32,12 @@ if(isset($_SESSION['projectINFO']) && !empty($_SESSION['projectINFO']) && $_SESS
 
 	$msg=compareInfo($_SESSION['projectINFO'],$projectInfo);
 	$_SESSION['projectINFO']=$projectInfo;
+	$objG=new GroupModel();
+	$groupI=$objG->get($id);
 	//create modification Msg 
 	Common::logg("Proyecto Modificado",$message."id:$id,nombre:$name,resumen:$summary,introduccion:$introduction,definicion:$definition,megas:$megas,justificacion:$justification,descripcion:$description,Obj General:$objective,Obj especificos:$objectiveOthers,fecha Inicio:$startDate,fecha terminacion:$endDate,metodologia:$methodology,resultados esperados:$expectedResults,ejecucion:$execution,resultados:$results,analisis:$analysis,entregables:$products,concluciones:$conclutions,bibliografia:$bibliography");
 	$MSGdata=['USER'=>$_SESSION['loginNameCumbre'],'NAME'=>$name,'ID'=>''];
-	Notify::send('EDITPROJECT', null, $MSGdata);
+	Notify::send('EDITPROJECT', $groupI->getCoachId(), $MSGdata);
 	//create MSg project
 	$objPmsg->create(new ProjectMessage(null,"Modifico los siguientes campos:".$msg,$_SESSION['loginIdCumbre'],$id,date("Y-m-d H:i:s")));
 	echo "datos guardados";
@@ -54,9 +56,11 @@ if(isset($_SESSION['projectINFO']) && !empty($_SESSION['projectINFO']) && $_SESS
 	Common::logg("Definición del Proyecto","Proyecto Creado:".$projectInfo->projectInfo());
 	$message="Proyecto creado";
 	
+	$groupI=$objG->get($id);
+	
 	Common::logg("Nuevo Proyecto",$message."id:$id,nombre:$name,resumen:$summary,introduccion:$introduction,definicion:$definition,megas:$megas,justificacion:$justification,descripcion:$description,Obj General:$objective,Obj especificos:$objectiveOthers,fecha Inicio:$startDate,fecha terminacion:$endDate,metodologia:$methodology,resultados esperados:$expectedResults,ejecucion:$execution,resultados:$results,analisis:$analysis,entregables:$products,concluciones:$conclutions,bibliografia:$bibliography");
 	$MSGdata=['USER'=>$_SESSION['loginNameCumbre'],'NAME'=>$name,'ID'=>''];
-	Notify::send('NEWPROJECT', null, $MSGdata);
+	Notify::send('NEWPROJECT', $groupI->getCoachId(), $MSGdata);
 	//create MSg project
 	echo $objPmsg->create(new ProjectMessage(null,$message."=> id:$id,nombre:$name,resumen:$summary,introduccion:$introduction,definicion:$definition,megas:$megas,justificacion:$justification,descripcion:$description,Obj General:$objective,Obj especificos:$objectiveOthers,fecha Inicio:$startDate,fecha terminacion:$endDate,metodologia:$methodology,resultados esperados:$expectedResults,ejecucion:$execution,resultados:$results,analisis:$analysis,entregables:$products,concluciones:$conclutions,bibliografia:$bibliography",$_SESSION['loginIdCumbre'],$id,date("Y-m-d H:i:s")));
 }
