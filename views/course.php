@@ -52,6 +52,9 @@
 						<a href="?content=sessionList&id=<?php echo $id."&return=$return"?>" class="btn-square">
 							Calificar Asistencia <i class="fa fa-check" aria-hidden="true"></i>
 						</a>
+						<a href="?content=tests&id=<?php echo $id."&return=$return"?>" class="btn-square">
+							Resultados Test <i class="fa fa-check" aria-hidden="true"></i>
+						</a>
 						<a href="?content=createTest&id=<?php echo $id."&return=$return"?>" class="btn-square">
 							Crear/editar Test <i class="fa fa-pencil" aria-hidden="true"></i>
 						</a>

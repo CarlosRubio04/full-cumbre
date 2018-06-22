@@ -2,7 +2,7 @@
 	<div class="container-flex flex-center u-color-contraste u-mount-back">
 		<div class="item colum-60">
 			<div class="content-wrapper">
-				<small>Nombre del curso al que pertenece la prueba</small>
+				<small><?php echo $courseName?></small>
 				<hr>
 				<div class="title">
 					<a href="." class="btn btn-back">
@@ -14,7 +14,7 @@
 				</div>
 				<hr>
 				<p>
-					Crea el test de conocimiento para el curso, las preguntas deben contar con un enunciado y 4 opciones de respuesta, recuerda dejar marcado con la X la respuesta correcta de cada pregunta, despues habilita la fecha en la que el test estará disponible y hasta que fecha se podrá responder.
+					Crea el test de conocimiento para el curso, las preguntas deben contar con un enunciado y 4 opciones de respuesta, recuerda dejar marcado con la X la respuesta correcta de cada pregunta, despues habilita hasta que fecha se podrá responder.
 				</p>
 				<div class="formContainer animated fadeInUp">
 					<form method="post" id="form">
@@ -34,7 +34,7 @@
 
 									<div class="question-inputs">
 										<div class="item five big">
-											<input type="radio" name="answer" id="answer1" value="">
+											<input type="radio" name="answer" id="answer1" value="" required>
 											<span class="checkMark"></span>
 										</div>
 									</div>
@@ -47,7 +47,7 @@
 
 									<div class="question-inputs">
 										<div class="item five big">
-											<input type="radio" name="answer" id="answer2" value="">
+											<input type="radio" name="answer" id="answer2" value="" required>
 											<span class="checkMark"></span>
 										</div>
 									</div>
@@ -60,7 +60,7 @@
 
 									<div class="question-inputs">
 										<div class="item five big">
-											<input type="radio" name="answer" id="answer3" value="">
+											<input type="radio" name="answer" id="answer3" value="" required>
 											<span class="checkMark"></span>
 										</div>
 									</div>
@@ -73,7 +73,7 @@
 
 									<div class="question-inputs">
 										<div class="item five big">
-											<input type="radio" name="answer" id="answer4" value="">
+											<input type="radio" name="answer" id="answer4" value="" required>
 											<span class="checkMark"></span>
 										</div>
 									</div>
@@ -136,7 +136,7 @@
 			return false;
 		}
 		
-		var regex = /^[a-zA-Z0-9._%:()+-;, áéíóúÁÉÍÓÚ]+$/;
+		var regex = /^[a-zA-Z0-9._%:()+-;, áéíóúñÁÉÍÓÚÑ]+$/;
 		if (document.getElementById('question').value==='' || !regex.test(document.getElementById('question').value)) {
 			alert("Caracter no valido en campo pregunta");
 			return false;

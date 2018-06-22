@@ -185,7 +185,7 @@
 		//postData+='&products='+document.getElementById('productos').value;
 		//postData+='&conclutions='+document.getElementById('concluciones').value;
 		//postData+='&bibliography='+document.getElementById('bibliografia').value;
-		var regex = /^[a-zA-Z0-9._%:()+-;, áéíóúÁÉÍÓÚ]+$/;
+		var regex = /^[a-zA-Z0-9._%:()+-;, áéíóúñÁÉÍÓÚÑ]+$/;
 		if (document.getElementById('nombre').value!=='' && !regex.test(document.getElementById('nombre').value)) {
 			if(manual===1){
 				alert("Caracter no valido en campo nombre");

@@ -62,6 +62,9 @@
 								<a href="?content=surveys&id=<?php echo $id."&return=$return"?>" class="btn-square">
 									Resultados de encuestas <i class="fa fa-line-chart" aria-hidden="true"></i>
 								</a>
+								<a href="?content=tests&id=<?php echo $id."&return=$return"?>" class="btn-square">
+									Resultados tests <i class="fa fa-line-chart" aria-hidden="true"></i>
+								</a>
 								<a href="?content=createTest&id=<?php echo $id."&return=$return"?>" class="btn-square">
 									Crear/Editar Test <i class="fa fa-pencil" aria-hidden="true"></i>
 								</a>
