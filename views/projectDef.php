@@ -32,21 +32,10 @@
 								<textarea name="definicion" <?php echo $enable?> id="definicion" rows="5" maxlength="400" class="form-control" placeholder="Definición de problemática"><?php echo $definition;?></textarea>
 							</div>
 							<div class="form-group">
-								<label for="">objetivos estratégicos que impactan la organización</label>
+								<label for="">Objetivos estratégicos que impactan la organización</label>
 								<div class="u-selectWraper">
 									<select name="impacto" <?php echo $enable?> id="impacto" class="form-control">
-										<option value="Reconciliación del país" <?php echo $sel1;?>>
-											Reconciliación del país
-										</option>
-										<option value="Interculturalidad, internacionalización y cuidado de la casa común" <?php echo $sel2;?>>
-											Interculturalidad, internacionalización y cuidado de la casa común
-										</option>
-										<option value="Desarrollo sostenible integral" <?php echo $sel3;?>>
-											Desarrollo sostenible integral
-										</option>
-										<option value="Transformar el sistema de toma de decisiones" <?php echo $sel4;?>>
-											Transformar el sistema de toma de decisiones
-										</option>
+										<?php echo $htmlMegas?>
 									</select>
 								</div>
 							</div>

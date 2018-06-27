@@ -26,6 +26,11 @@ function createTask(){
 		$userI=$objU->get($_SESSION['loginIdCumbre']);
 		$assignedIdS="|Group|".$userI->getGroupId()."|";
 	}
+	if($startDate<date("Y-m-d") || $endDate<date("Y-m-d")){
+		$message="La fecha no puede ser en el pasado";
+		Common::logg("Creación de Tarea",$message);
+		return $message;
+	}
 	if(empty($name) ||empty($task) ||empty($startDate) ||empty($endDate) ||empty($assignedIdS) || $assignedIdS=='||' ||empty($phaseId)){
 		$message="Datos de actividad no validos, debe llenar todos los campos";
 		Common::logg("Creación de Tarea",$message);

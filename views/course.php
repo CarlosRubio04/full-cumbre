@@ -49,13 +49,13 @@
 					</div>
 					<?php if($_SESSION['loginRoleCumbre']!==3){?>
 					<div class="form-group flex-row space-btw">
-						<a href="?content=sessionList&id=<?php echo $id."&return=$return"?>" class="btn-square">
+						<a href="?content=sessionList&id=<?php echo $id."&return=course|id=$id|return=coursesAsig"?>" class="btn-square">
 							Calificar Asistencia <i class="fa fa-check" aria-hidden="true"></i>
 						</a>
-						<a href="?content=tests&id=<?php echo $id."&return=$return"?>" class="btn-square">
+						<a href="?content=tests&id=<?php echo $id."&return=course|id=$id|return=coursesAsig"?>" class="btn-square">
 							Resultados Test <i class="fa fa-check" aria-hidden="true"></i>
 						</a>
-						<a href="?content=createTest&id=<?php echo $id."&return=$return"?>" class="btn-square">
+						<a href="?content=createTest&id=<?php echo $id."&return=course|id=$id|return=coursesAsig "?>" class="btn-square">
 							Crear/editar Test <i class="fa fa-pencil" aria-hidden="true"></i>
 						</a>
 					</div>

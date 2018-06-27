@@ -9,7 +9,20 @@ function groupsChart(labelsChart,dataChart){
 		labels: labelsChart,
 		datasets: [{
 			label: 'Metros',
-			backgroundColor: "#03586A",
+			backgroundColor: [
+			"#455C73",
+			"#9B59B6",
+			"#BDC3C7",
+			"#26B99A",
+			"#3498DB",
+			"#ff00ff",
+			"#03586a",
+			"#ff557f",
+			"#455C73",
+			"#9B59B6",
+			"#BDC3C7",
+			"#26B99A"
+		],
 			data: dataChart
 		}]
 		},

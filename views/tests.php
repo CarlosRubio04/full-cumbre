@@ -5,7 +5,7 @@
 				<small><?php echo $courseName?></small>
 				<hr>
 				<div class="title">
-					<a href="." class="btn btn-back">
+					<a href="?content=<?php echo $return?>" class="btn btn-back">
 						<i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
 					</a>
 					<h1 class="animated fadeInLeft">

@@ -56,16 +56,16 @@
 
 							<?php echo $message?>
 							<div class="form-group flex-row space-btw">
-								<a href="?content=sessionList&id=<?php echo $id."&return=$return"?>" class="btn-square">
+								<a href="?content=sessionList&id=<?php echo $id."&return=editCourse|id=$id|return=coursesList"?>" class="btn-square">
 									Calificar Asistencia <i class="fa fa-check" aria-hidden="true"></i>
 								</a>
-								<a href="?content=surveys&id=<?php echo $id."&return=$return"?>" class="btn-square">
+								<a href="?content=surveys&id=<?php echo $id."&return=editCourse|id=$id|return=coursesList"?>" class="btn-square">
 									Resultados de encuestas <i class="fa fa-line-chart" aria-hidden="true"></i>
 								</a>
-								<a href="?content=tests&id=<?php echo $id."&return=$return"?>" class="btn-square">
+								<a href="?content=tests&id=<?php echo $id."&return=editCourse|id=$id|return=coursesList"?>" class="btn-square">
 									Resultados tests <i class="fa fa-line-chart" aria-hidden="true"></i>
 								</a>
-								<a href="?content=createTest&id=<?php echo $id."&return=$return"?>" class="btn-square">
+								<a href="?content=createTest&id=<?php echo $id."&return=editCourse|id=$id|return=coursesList"?>" class="btn-square">
 									Crear/Editar Test <i class="fa fa-pencil" aria-hidden="true"></i>
 								</a>
 							</div>
