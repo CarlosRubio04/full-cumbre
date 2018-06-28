@@ -50,7 +50,10 @@
 			<?php }?>
 			<div class="item colum-60">
 				<h4 class="text-center">Estadisticas Grupales</h4>
-				
+				<div class="UserMts">
+					<h5>En total El grupo recorrió <?php echo number_format($metersGroup,2)?> Metros</h5>
+
+				</div>
 				<div class="item">
 					<h5></h5>
 				</div>

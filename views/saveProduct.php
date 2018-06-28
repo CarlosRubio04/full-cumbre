@@ -22,6 +22,11 @@ function createProduct(){
 			$tasksSTR.=$taskI->getName().",";
 		}
 	}
+	if($fecha<date("Y-m-d")){
+		$message="La fecha no puede ser en el pasado";
+		Common::logg("Creación de Entregable",$message);
+		return $message;
+	}
 	if(count($assignedId)<1 && filter_input(INPUT_POST, 'assignedTaskPGroup',FILTER_SANITIZE_STRING)!='Group'){
 		$message="Un entregable debe tener por lo menos un participante asignado";
 		Common::logg("Creación de Entregable",$message);

@@ -14,7 +14,7 @@
 	</div>
 
 	<div class="rutaVirtualElementos">
-		<?php echo $itemsG?>
+		<a href="?content=cumbre"><?php echo $itemsG?></a>
 	</div>
 
 

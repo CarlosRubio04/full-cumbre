@@ -59,7 +59,7 @@
 					</h4>
 
 					<div class="teamName">
-							<input type="text"  pattern="[a-zA-Z0-9._%:()+-;, ]+$" name="groupName" style="text-transform:uppercase" class="form-control" value="<?php echo $groupNick?>">
+							<input type="text"  pattern="[a-zA-Z0-9._%:()+-;, áéíóúñÁÉÍÓÚÑ&]+$" name="groupName" style="text-transform:uppercase" class="form-control" value="<?php echo $groupNick?>">
 							<button type="submit" class="btn" name="changeName">cambiar</button>
 					</div>
 					<div class="avatar">

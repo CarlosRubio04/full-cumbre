@@ -13,7 +13,7 @@
 				<div class="file">
 					<p class="text-center">
 						Acá puedes cargar un archivo Excel con todos los grupos que deseas cargar. <br/> 
-						Si no tienes el archivo base para cargar usuarios pedes descargarlo aquí 
+						Si no tienes el archivo base para cargar usuarios puedes descargarlo aquí 
 						<br/><a href="files/templateLoad.xlsx" class="link">Descargar Archivo</a>
 					</p>
 					<div class="file-input">
