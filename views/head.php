@@ -32,6 +32,9 @@
       <!-- Data picker -->
       <link href="css/vendors/bootstrap-datetimepicker.css" rel="stylesheet">
 
+
+      <link rel="stylesheet" href="css/vendors/jquery.parallax.css" />
+
       <!-- Custom Theme Style 
       <link href="css/vendors/custom.css" rel="stylesheet"> -->
 
@@ -44,4 +47,5 @@
     <!-- Custom CSS -->
     <!--  <link href="css/app.css" rel="stylesheet"> -->
     <link href="css/main.min.css" rel="stylesheet">
+
   </head>
