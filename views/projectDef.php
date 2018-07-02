@@ -174,7 +174,7 @@
 		//postData+='&products='+document.getElementById('productos').value;
 		//postData+='&conclutions='+document.getElementById('concluciones').value;
 		//postData+='&bibliography='+document.getElementById('bibliografia').value;
-		var regex = /^[a-zA-Z0-9._%:()+-;, áéíóúñÁÉÍÓÚÑ]+$/;
+		var regex = /^[a-zA-Z0-9._%:()+-;, áéíóúñÁÉÍÓÚÑ\n]+$/;
 		if (document.getElementById('nombre').value!=='' && !regex.test(document.getElementById('nombre').value)) {
 			if(manual===1){
 				alert("Caracter no valido en campo nombre");
@@ -278,6 +278,7 @@
 					document.getElementById('fechaFin').readOnly=true;
 					document.getElementById('resultados').readOnly=true;
 					document.getElementById('analisis').readOnly=true;
+					alert('Datos guardados');
 				}else if(xmlhttp1.responseText==='datos guardados'){
 					var d = new Date();
 					document.getElementById('saveText').innerHTML  = "Autoguardado a las "+(d.getHours()<10?'0':'')+ d.getHours()+":"+(d.getMinutes()<10?'0':'')+d.getMinutes()+":"+(d.getSeconds()<10?'0':'')+d.getSeconds();

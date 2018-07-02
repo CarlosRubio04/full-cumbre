@@ -187,7 +187,9 @@ section {
 		max-width: 100%;
 	}
 }
-
+.colum-100 {
+	width: 100%;
+}
 .colum-80 {
 	width: 80%;
 	max-width: 80%;
@@ -263,6 +265,29 @@ section {
 	color: $verdeClaro;
 	font-size: 10px;
 	font-weight: 100;
+}
+
+.error-callback {
+	color: $verdeOscuro2;
+	margin-bottom: 8px;
+	display: block;
+	font-weight: 200;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.changes-history {
+	position: relative;
+	width: 100%;
+
+	p {
+		color: $verdeClaro;
+		font-size: 12px;
+		font-weight: 100;
+		background-color: $blanco;
+		padding: .5em;
+		margin-bottom: 8px;
+	}
 }
 
 // .btn-del {

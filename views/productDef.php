@@ -74,7 +74,7 @@
 		dataPost+="&nombre="+document.getElementById('nombreProduct').value;
 		dataPost+="&fecha="+document.getElementById('fechaProduct').value;
 		
-		var regex = /^[a-zA-Z0-9._%:()+-;, áéíóúñÁÉÍÓÚÑ]+$/;
+		var regex = /^[a-zA-Z0-9._%:()+-;, áéíóúñÁÉÍÓÚÑ\n]+$/;
 		if (document.getElementById('nombreProduct').value!=='' && !regex.test(document.getElementById('nombreProduct').value)) {
 			alert("Caracter no valido en campo nombre");
 			return false;

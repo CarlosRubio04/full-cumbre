@@ -13,40 +13,40 @@
 		</p>
 		<div class="container-flex">
 			<?php if($_SESSION['loginRoleCumbre']==3){?>
-			<div class="item colum-60">
-				<h4 class="text-center">Estadisticas Personales</h4>
+				<div class="item colum-60">
+					<h4 class="text-center">Estadisticas Personales</h4>
 
-				<div class="User">
-					<div class="UserMts">
-						<h5>En total recorriste <?php echo number_format($totalUser,2)?> Metros</h5>
-						
-					</div>
-
-					<div class="item">
-
-						<h5>Metros recorridos por campamento</h5>
-
-						<div class="x_content">
-							<canvas id="DoughnutMyMetersChart"></canvas>
+					<div class="User">
+						<div class="UserMts">
+							<h5>En total recorriste <?php echo number_format($totalUser,2)?> Metros</h5>
+							
 						</div>
-					</div>
-					<div class="UserGoals">
-						<h5>Estos son los item que lograste</h5>
-						<div class="excelencia">
-							<h3>Items logrados por excelencia</h3>
-							<div class="itemContainer">
-								<?php echo $excelItems?>
+
+						<div class="item">
+
+							<h5>Metros recorridos por campamento</h5>
+
+							<div class="x_content">
+								<canvas id="DoughnutMyMetersChart"></canvas>
 							</div>
 						</div>
-						<div class="logros">
-							<h3>Items por cumplimiento</h3>
-							<div class="itemContainer">
-								<?php echo $goalItems?>
+						<div class="UserGoals">
+							<h5>Estos son los item que lograste</h5>
+							<div class="excelencia">
+								<h3>Items logrados por excelencia</h3>
+								<div class="itemContainer">
+									<?php echo $excelItems?>
+								</div>
+							</div>
+							<div class="logros">
+								<h3>Items por cumplimiento</h3>
+								<div class="itemContainer">
+									<?php echo $goalItems?>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
 			<?php }?>
 			<div class="item colum-60">
 				<h4 class="text-center">Estadisticas Grupales</h4>
@@ -57,16 +57,16 @@
 				<div class="item">
 					<h5></h5>
 				</div>
-<?php if($_SESSION['loginRoleCumbre']==3){?>
-				<div class="item">
+				<?php if($_SESSION['loginRoleCumbre']==3){?>
+					<div class="item">
 
-					<h5>Metros por integrante del equipo</h5>
+						<h5>Metros por integrante del equipo</h5>
 
-					<div class="x_content">
-						<canvas id="DoughnutGroupMembersChart"></canvas>
+						<div class="x_content">
+							<canvas id="DoughnutGroupMembersChart"></canvas>
+						</div>
 					</div>
-				</div>
-<?php }?>
+				<?php }?>
 				<div class="item">
 
 					<h5>Ranking de equipos en Cumbre</h5>
@@ -77,13 +77,33 @@
 				</div>
 			</div>
 		</div>
+		<div class="container-flex flex-center">
+			<div class="item colum-100">
+
+				<h5>Detalle de metros ganados</h5>
+
+				<div class="x_content">
+					<?php echo $htmlTableUser?>
+				</div>
+			</div>
+		</div>
+		<div class="container-flex flex-center">
+			<div class="item colum-100">
+
+				<h5>Detalle Metros todos los usuarios</h5>
+
+				<div class="x_content">
+					<?php echo $htmlTableRanking?>
+				</div>
+			</div>
+		</div>
 	</div>
 </section>
 
 <script src="js/vendors/Chart.min.js"></script>
 <script src="./js/cumbreCharts.js"></script>
 <?php if($_SESSION['loginRoleCumbre']==3){?>
-<script>
+	<script>
 	//Bar chart with users meters datails in this group
 	groupMembersMeters(<?php echo $labelsChartU.",".$dataChartU?>);
 	//Doughnut chart with my meters
