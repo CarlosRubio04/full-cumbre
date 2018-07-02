@@ -31,7 +31,7 @@
 						<label for="">
 							Descripción del Entregable
 						</label>
-						<textarea name="tarea" rows="5" class="form-control" placeholder="Descripción" readonly><?php echo $task?></textarea>
+						<textarea name="tarea" rows="5" class="form-control" placeholder="Descripción" readonly><?php echo $taskDesc?></textarea>
 					</div>
 
 					<div class="form-group">
