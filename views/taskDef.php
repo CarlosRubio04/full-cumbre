@@ -85,7 +85,7 @@
 		dataPost+="&fechaFin="+document.getElementById('fechaFinTask').value;
 		dataPost+="&tarea="+document.getElementById('tareaTask').value;
 		
-		var regex = /^[a-zA-Z0-9._%:()+-;, áéíóúñÁÉÍÓÚÑ]+$/;
+		var regex = /^[a-zA-Z0-9._%:()+-;, áéíóúñÁÉÍÓÚÑ\n]+$/;
 		if (document.getElementById('nombreTask').value!=='' && !regex.test(document.getElementById('nombreTask').value)) {
 			alert("Caracter no valido en campo nombre");
 			return false;

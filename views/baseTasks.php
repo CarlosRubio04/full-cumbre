@@ -6,7 +6,7 @@
 				<a href="?content=phaseDef" class="btn btn-back">
 					<i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
 				</a>
-				<h1>Cronograma de entregables</h1>
+				<h1>Cronograma de actividades</h1>
 				<a href="?content=campOne" class="btn btn-main">
 					Campamento Uno
 				</a>

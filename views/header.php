@@ -18,7 +18,7 @@
 		<button class="close" onclick="closeMenu()">
 			<i class="fa fa-times" aria-hidden="true"></i>
 		</button>
-		<h4>MENÚ</h4>
+		<h4>MENU</h4>
 		<?php echo $menu?>
 	</div>
 </div>

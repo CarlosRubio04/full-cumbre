@@ -69,3 +69,26 @@
 <?php if($message!=""){
 	echo "<script>window.scrollTo(0,document.body.scrollHeight);</script>";
 }
+?>
+<script>
+	function updateSel(){
+		var all = document.getElementsByTagName("input");
+		var sel='Ninguno seleccionado';
+		var cc=0;
+		for (var i=0, max=all.length; i < max; i++) {
+			if(all[i].type==='checkbox' && all[i].checked && all[i].name.substr(0,8)==='assigned' && all[i].name.substr(0,13)!=='assignedTaskP'){
+				cc++;
+				if(all[i].value==='Group'){
+					sel='Todo el Grupo';
+					break;
+				}else if (cc>1){
+					sel='Varios Usuarios';
+				}else{
+					var name=document.getElementById('assignedTaskL'+all[i].value).innerHTML;
+					sel=name;
+				}
+			}
+		}
+		document.getElementById('dropdownMenu1').innerHTML=sel;
+	}
+</script>

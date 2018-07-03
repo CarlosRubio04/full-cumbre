@@ -12,28 +12,29 @@
 					<form method="post" id="form2">
 						<div class="form-group">
 							<div class="input">
-								<label for="pass">Contraseña Actual *</label>
+								<label for="pass">Contraseña Actual</label>
 								<input type="password" name="pass0" id="pass0" class="form-control" placeholder="contraseña Actual">
 							</div>
 						</div>
 						<div class="form-group">
 							<div class="input">
-								<label for="pass">Nueva Contraseña *</label>
+								<label for="pass">Nueva Contraseña</label>
 								<input type="password" name="pass" id="pass" class="form-control" placeholder="nueva contraseña">
 							</div>
 						</div>
 						<div class="form-group">
 							<div class="input">
-								<label for="pass1">Confirmar Contraseña *</label>
+								<label for="pass1">Confirmar Contraseña</label>
 								<input type="password" name="pass1" id="pass1" class="form-control" placeholder="Confirmar contraseña">
 							</div>
 						</div>
 						<div class="form-group">
-							<samll class="error-callback"><?php echo $message;?></samll>
 							<div class="buton">
 								<button class="btn-square" value="1" type="submit"  name="updatePass">Cambiar Contraseña</button>
 							</div>
 						</div>
+						<hr>
+						<samll><?php echo $message;?></samll>
 					</form>
 				</div>
 			</div>
@@ -55,11 +56,12 @@
 					<form method="post">
 						<div class="inputs">
 							<div class="form-group">
-								<samll class="error-callback"><?php echo $message;?></samll>
 								<div class="buton">
 									<button class="btn-square" value="1" type="submit"  name="notif"><?php echo $btnText?></button>
 								</div>
 							</div>
+							<hr>
+							<samll><?php echo $message;?></samll>
 						</div>
 					</form>
 				</div>

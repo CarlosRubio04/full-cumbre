@@ -1,7 +1,7 @@
 <?php if(!defined('directAccess')){ header('location: ../?content=404');}?>
 <section class="formulacion-de-proyecto">
 	<div class="container-flex u-color-contraste u-mount-back">
-		<div class="item colum-80">
+		<div class="item colum-60">
 			<div class="content-wrapper">
 				<div class="title">
 					<a href="?content=basecamp" class="btn btn-back">
@@ -12,8 +12,6 @@
 				<div class="formContainer animated fadeInUp">
 					<form method="post">
 						<div class="inputs">
-							<hr/>
-							<h4 class="subTitle">Generalidades</h4>
 							<div class="form-group">
 								<label for="nombre">Nombre del proyecto *</label>
 								<input type="text" name="nombre" <?php echo $enable?> maxlength="100" id="nombre" value="<?php echo $name;?>" class="form-control" placeholder="Nombre">
@@ -80,9 +78,7 @@
 
 							<div class="form-group">
 								<label for="">Resultados esperados</label>
-								<!-- <input type="text" <?php echo $enable?> name="resultados" maxlength="960" id="resultados" value="<?php echo $expectedResults;?>" class="form-control" placeholder="Resultados esperados"> -->
-
-								<textarea <?php echo $enable?> name="resultados" maxlength="960" id="resultados" class="form-control" placeholder="Resultados esperados" rows="5" maxlength="250"><?php echo $expectedResults;?></textarea>
+								<input type="text" <?php echo $enable?> name="resultados" maxlength="960" id="resultados" value="<?php echo $expectedResults;?>" class="form-control" placeholder="Resultados esperados">
 							</div>
 
 							<!-- <div class="form-group">
@@ -118,21 +114,22 @@
 							<div class="form-group">
 								<button class="btn-square" type="submit" onclick="autoSave(<?php echo $infoUser->getGroupId()?>,1);return false;" name="saveProject" id="saveProject" value="<?php echo $btnText?>"> <?php echo $btnText?></button>
 							</div>
+							<div >
+								<?php echo $htmlMsgP?>
+							</div>
 						</div>
 					</form>
 				</div>
 			</div>
 		</div>
 
-		<div class="item colum-40">
+
+		<div class="item colum-60">
 			<div class="content-wrapper">
 				<div class="siguiente-campamento animated fadeIn">
 					<a href="?content=phaseDef" class="btn btn-main">
 						Fases del proyecto
 					</a>
-				</div>
-				<div class="changes-history">
-						<?php echo $htmlMsgP?>
 				</div>
 			</div>
 		</div>
@@ -177,7 +174,7 @@
 		//postData+='&products='+document.getElementById('productos').value;
 		//postData+='&conclutions='+document.getElementById('concluciones').value;
 		//postData+='&bibliography='+document.getElementById('bibliografia').value;
-		var regex = /^[a-zA-Z0-9._%:()+-;, áéíóúñÁÉÍÓÚÑ]+$/;
+		var regex = /^[a-zA-Z0-9._%:()+-;, áéíóúñÁÉÍÓÚÑ\n]+$/;
 		if (document.getElementById('nombre').value!=='' && !regex.test(document.getElementById('nombre').value)) {
 			if(manual===1){
 				alert("Caracter no valido en campo nombre");
@@ -281,6 +278,7 @@
 					document.getElementById('fechaFin').readOnly=true;
 					document.getElementById('resultados').readOnly=true;
 					document.getElementById('analisis').readOnly=true;
+					alert('Datos guardados');
 				}else if(xmlhttp1.responseText==='datos guardados'){
 					var d = new Date();
 					document.getElementById('saveText').innerHTML  = "Autoguardado a las "+(d.getHours()<10?'0':'')+ d.getHours()+":"+(d.getMinutes()<10?'0':'')+d.getMinutes()+":"+(d.getSeconds()<10?'0':'')+d.getSeconds();
