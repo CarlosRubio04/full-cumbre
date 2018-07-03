@@ -24,7 +24,18 @@ a {
 		text-decoration: none;
 	}
 }
+.parallax-viewport {
+	width: 100vw;
+	height: 90vh;
+	.parallax-layer {
+		width: 100%;
 
+		img {
+			width: 100vw;
+			height: auto;
+		}
+	}
+}
 .loader {
 	position: fixed;
 	top: 0;
@@ -445,6 +456,7 @@ section {
 
 		// Estilos Basicos para campamentos
 		.content-text {
+			max-width: 45%;
 			padding: 1em;
 			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#68c951+0,00361b+32,00361b+61,68c951+100&0+0,0.69+21,0.69+76,0+100 */
 			background: -moz-linear-gradient(top, rgba(104,201,81,0) 0%, rgba(36,105,46,0.69) 21%, rgba(0,54,27,0.69) 32%, rgba(0,54,27,0.69) 61%, rgba(40,111,48,0.69) 76%, rgba(104,201,81,0) 100%); /* FF3.6-15 */

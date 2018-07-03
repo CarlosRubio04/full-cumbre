@@ -1,6 +1,24 @@
 @import '../variables';
 
+.container-base {
+	position: absolute;
+	top: 65px;
+	z-index: 1;
+	padding: 2em;
+	height: 0;
+
+	.title {
+		justify-content: space-between;
+
+		h1 {
+			width: auto;
+		}
+	}
+
+}
+
 .campamento-base {
+	margin: 65px 0 0px 0 !important;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#70bce8+0,ffffff+44,ffffff+100 */
 	background: #70bce8; /* Old browsers */
 	background: -moz-linear-gradient(top, #70bce8 0%, #ffffff 44%, #ffffff 100%); /* FF3.6-15 */
