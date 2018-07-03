@@ -1,7 +1,7 @@
 <?php if(!defined('directAccess')){ header('location: ../?content=404');}?>
 <section class="formulacion-de-proyecto">
 	<div class="container-flex u-color-contraste u-mount-back">
-		<div class="item colum-60">
+		<div class="item colum-80">
 			<div class="content-wrapper">
 				<div class="title">
 					<a href="?content=basecamp" class="btn btn-back">
@@ -12,6 +12,8 @@
 				<div class="formContainer animated fadeInUp">
 					<form method="post">
 						<div class="inputs">
+							<hr/>
+							<h4 class="subTitle">Generalidades</h4>
 							<div class="form-group">
 								<label for="nombre">Nombre del proyecto *</label>
 								<input type="text" name="nombre" <?php echo $enable?> maxlength="100" id="nombre" value="<?php echo $name;?>" class="form-control" placeholder="Nombre">
@@ -78,7 +80,9 @@
 
 							<div class="form-group">
 								<label for="">Resultados esperados</label>
-								<input type="text" <?php echo $enable?> name="resultados" maxlength="960" id="resultados" value="<?php echo $expectedResults;?>" class="form-control" placeholder="Resultados esperados">
+								<!-- <input type="text" <?php echo $enable?> name="resultados" maxlength="960" id="resultados" value="<?php echo $expectedResults;?>" class="form-control" placeholder="Resultados esperados"> -->
+
+								<textarea <?php echo $enable?> name="resultados" maxlength="960" id="resultados" class="form-control" placeholder="Resultados esperados" rows="5" maxlength="250"><?php echo $expectedResults;?></textarea>
 							</div>
 
 							<!-- <div class="form-group">
@@ -114,22 +118,21 @@
 							<div class="form-group">
 								<button class="btn-square" type="submit" onclick="autoSave(<?php echo $infoUser->getGroupId()?>,1);return false;" name="saveProject" id="saveProject" value="<?php echo $btnText?>"> <?php echo $btnText?></button>
 							</div>
-							<div >
-								<?php echo $htmlMsgP?>
-							</div>
 						</div>
 					</form>
 				</div>
 			</div>
 		</div>
 
-
-		<div class="item colum-60">
+		<div class="item colum-40">
 			<div class="content-wrapper">
 				<div class="siguiente-campamento animated fadeIn">
 					<a href="?content=phaseDef" class="btn btn-main">
 						Fases del proyecto
 					</a>
+				</div>
+				<div class="changes-history">
+						<?php echo $htmlMsgP?>
 				</div>
 			</div>
 		</div>
