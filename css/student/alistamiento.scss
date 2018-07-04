@@ -32,6 +32,10 @@
 // Parte interna de Alistamiento
 .alistamiento {
 
+	.data-group .input {
+		border-bottom: 0;
+	}
+
 	.profile {
 		display: flex;
 		flex-direction: column;
@@ -85,6 +89,10 @@
 				flex-wrap: nowrap;
 				align-items: center;
 
+				@include for-phone-only {
+					width: 100%;
+				}
+
 				.avatar {
 					margin-right: 1em;
 					margin-top: 0;
@@ -124,7 +132,7 @@
 		width: 100%;
 		margin-top: 34px;
 		button{
-			background-color: none;
+			background-color: transparent;
 			border: 0;
 			padding: 0;
 			margin-right: 1em;

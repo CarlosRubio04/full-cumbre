@@ -7,6 +7,10 @@
 	padding: 2em;
 	height: 0;
 
+	@include for-phone-only {
+		top: 80px;
+	}
+
 	.title {
 		justify-content: space-between;
 
@@ -68,7 +72,12 @@
 		max-width: 800px;
 		width: 800px;
 		padding-bottom: 6em;
-		margin-top: 2em
+		margin-top: 2em;
+
+		@include for-phone-only {
+			max-width: 100%;
+			width: 100vw;
+		}
 	}
 	.form-group {
 		margin-top: 2em;

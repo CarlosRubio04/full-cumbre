@@ -58,21 +58,17 @@
 
 	<div class="rutaVirtualBack">
 		<div class="parallax-viewport" id="parallax">
-			<div class="parallax-layer" style="width:100vw; height:90vh;">
+			<div class="parallax-layer ruta-nubes">
 				<?php  require_once('views/clouds.php'); ?>
 			</div>
-			<!-- parallax layers -->
-	<!-- 		<div class="parallax-layer" style="width:100vw; height:60vh;">
-				<img src="img/parallax/04-cumbre.png" alt="" style="position:absolute; left:0px; bottom: -0px"/>
-			</div> -->
-			<div class="parallax-layer" style="width:85vw; height:60vh;">
-				<img src="img/parallax/07-cumbre.png" alt="" style="position:absolute; left:0; bottom:0px; width: 90vw;"/>
+			<div class="parallax-layer base-cumbre">
+				<img src="img/parallax/07-cumbre.png"/>
 			</div>
-			<div class="parallax-layer" style="width:100vw; height:90vh;">
-				<img src="img/parallax/05-carpa.png" alt="" style="position:absolute; bottom:-50px; right:0;" />
+			<div class="parallax-layer base-carpa">
+				<img src="img/parallax/05-carpa.png"/>
 			</div>
-			<div class="parallax-layer" style="width:100vw; height:90vh;">
-				<img src="img/parallax/06-mesa.png" alt="" style="position:absolute; bottom: -100px; left:0;"/>
+			<div class="parallax-layer base-mesa">
+				<img src="img/parallax/06-mesa.png"/>
 			</div>
 		</div>
 	</div>

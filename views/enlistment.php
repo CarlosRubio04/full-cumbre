@@ -79,21 +79,21 @@
 
 	<div class="rutaVirtualBack">
 		<div class="parallax-viewport" id="parallax">
-			<div class="parallax-layer" style="width:100vw; height:90vh;">
+			<div class="parallax-layer ruta-nubes" style="width:100vw; height:90vh;">
 				<?php  require_once('views/clouds.php'); ?>
 			</div>
 			<!-- parallax layers -->
 	<!-- 		<div class="parallax-layer" style="width:100vw; height:60vh;">
 				<img src="img/parallax/04-cumbre.png" alt="" style="position:absolute; left:0px; bottom: -0px"/>
 			</div> -->
-			<div class="parallax-layer" style="width:100vw; height:50vh;">
-				<img src="img/parallax/04-cumbre.png" alt="" style="position:absolute; right:0; bottom: 100px;"/>
+			<div class="parallax-layer alis-cumbre">
+				<img src="img/parallax/04-cumbre.png"/>
 			</div>
-			<div class="parallax-layer" style="width:100vw; height:70vh;">
-				<img src="img/parallax/08-falda.png" alt="" style="position:absolute; bottom:-50px; right:0;" />
+			<div class="parallax-layer alis-mounts">
+				<img src="img/parallax/08-falda.png" />
 			</div>
-			<div class="parallax-layer" style="width:100vw; height:80vh;">
-				<img src="img/parallax/09-alistamiento.png" alt="" style="position:absolute; bottom: -50px; left:0;"/>
+			<div class="parallax-layer alis-falda">
+				<img src="img/parallax/09-alistamiento.png"/>
 			</div>
 		</div>
 	</div>

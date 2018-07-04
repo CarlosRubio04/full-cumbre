@@ -58,14 +58,14 @@
 
 	<div class="rutaVirtualBack">
 		<div class="parallax-viewport" id="parallax">
-			<div class="parallax-layer" style="width:100vw; height:80vh;">
+			<div class="parallax-layer ruta-nubes">
 				<?php  require_once('views/clouds.php'); ?>
 			</div>
-			<div class="parallax-layer" style="width:97vw; height:80vh;">
-				<img src="img/parallax/04-cumbre.png" alt="" style="position:absolute; bottom: -50px; right: -50px; width: 100%" />
+			<div class="parallax-layer uno-cumbre">
+				<img src="img/parallax/04-cumbre.png"/>
 			</div>
-			<div class="parallax-layer" style="width:100vw; height:90vh;">
-				<img src="img/parallax/08-cam-uno.png" alt="" style="position:absolute; bottom: 0px; left:0;"/>
+			<div class="parallax-layer uno-camp">
+				<img src="img/parallax/08-cam-uno.png"/>
 			</div>
 		</div>
 	</div>

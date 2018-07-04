@@ -92,6 +92,10 @@ a {
 section {
 	min-height: calc(100vh - 65px);
 	margin: 65px 0 26px 0;
+
+	@include for-phone-only {
+		margin: 65px 0 56px 0;
+	}
 }
 
 // Flex containers clasess
@@ -330,7 +334,9 @@ section {
 			color: $verdeOscuro2;
 		}
 		@include for-phone-only {
-			max-width: 100%;
+			padding: 8px 8px;
+			letter-spacing: 1px;
+			font-size: 12px;
 		}
 	}
 	.btn-full {
@@ -359,8 +365,9 @@ section {
 			margin-bottom: 2em;
 			a {
 				margin-left: auto;
+
 				@include for-phone-only {
-					display: none;
+					margin-top: 1em;
 				}
 			}
 		}
@@ -463,6 +470,10 @@ section {
 			background: -webkit-linear-gradient(top, rgba(104,201,81,0) 0%,rgba(36,105,46,0.69) 21%,rgba(0,54,27,0.69) 32%,rgba(0,54,27,0.69) 61%,rgba(40,111,48,0.69) 76%,rgba(104,201,81,0) 100%); /* Chrome10-25,Safari5.1-6 */
 			background: linear-gradient(to bottom, rgba(104,201,81,0) 0%,rgba(36,105,46,0.69) 21%,rgba(0,54,27,0.69) 32%,rgba(0,54,27,0.69) 61%,rgba(40,111,48,0.69) 76%,rgba(104,201,81,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0068c951', endColorstr='#0068c951',GradientType=0 ); /* IE6-9 */
+			@include for-phone-only {
+				width: 100%;
+				max-width: 100%;
+			}
 		}
 
 		.campamentoIntro {
@@ -481,7 +492,7 @@ section {
 				display: block;
 
 				@include for-phone-only {
-					font-size: 14px;
+					font-size: 11px;
 					font-weight: 400;
 				}
 			}
@@ -629,6 +640,11 @@ section {
 			font-size: 48px;
 			color: $verdeOscuro;
 			display: flex;
+
+			@include for-phone-only {
+				flex-direction: column;
+				align-items: center;	
+			}
 			h1 {
 				width: 100%;
 				text-align: center;
@@ -638,6 +654,11 @@ section {
 			}
 			@include for-phone-only {
 				font-size: 24px;
+			}
+			a {
+				@include for-phone-only {
+					margin-top: 1em;
+				}
 			}
 		}
 

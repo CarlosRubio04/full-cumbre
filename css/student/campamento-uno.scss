@@ -146,8 +146,17 @@
 
 // Survey 
 
+.formContainer {
+	max-width: 100%;
+	overflow-x: scroll;
+}
+
 .question {
 	margin-top: 2em;
+	@include for-phone-only {
+		min-width: 600px;
+	}
+
 	&-group {
 		position: relative;
 		margin-top: 2em;
@@ -168,6 +177,14 @@
 		height: 63px;
 		line-height: 63px;
 		margin-right: 4px;
+
+		@include for-phone-only {
+			font-size: 15px;
+			text-align: left;
+			padding-left: 8px;
+			height: 43px;
+			line-height: 43px;
+		}
 	}
 	.question-title.big {
 		width: 100%;
@@ -180,6 +197,10 @@
 		height: auto;
 		line-height: 1.5;
 		margin-right: 0;
+
+		@include for-phone-only {
+			font-size: 12px;
+		}
 	}
 	&-values {
 		display: flex;
@@ -193,6 +214,12 @@
 			font-weight: 700;
 			text-align: center;
 			margin: 0 4px;
+
+			@include for-phone-only {
+				font-size: 20px;
+				height: 43px;
+				line-height: 43px;
+			}
 		}
 		.five {
 			color: $five;
@@ -225,6 +252,10 @@
 		height: 40px;
 		line-height: 40px;
 		margin-right: 4px;
+
+		@include for-phone-only {
+			font-size: 10px;
+		}
 
 		.form-control {
 			height: 40px !important;
@@ -328,6 +359,10 @@
 	position: fixed;
 	top: 170px;
 	right: 0;
+
+	@include for-phone-only { 
+		position: relative;
+	}
 
 	p {
 		font-size: 12px;

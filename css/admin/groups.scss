@@ -77,7 +77,11 @@
 		width: 100%;
 
 		.person {
-			width: 33.33% !important;
+			width: 50% !important;
+
+			@include for-phone-only {
+				width: 100% !important;
+			}
 		}
 	}
 }

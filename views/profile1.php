@@ -41,22 +41,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
-
-				<div class="lastestNotifications">
-					<div class="subTitle">
-						<h2>Últimas notificaciones</h2>
-					</div>
-					
-					<!-- Contenedor de las ultimas notificaciones -->
-					<div class="lastestNotificationsContainer">
-
-						<?php echo $newsHtml?>
-
-					</div>
-
-				</div>
-				
+				</div>				
 			</div>
 		</div>
 	</div>

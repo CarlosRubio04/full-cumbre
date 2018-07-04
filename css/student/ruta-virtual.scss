@@ -4,9 +4,9 @@
 
 .rutaVirtual {
 	position: relative;
-    height: auto !important;
-    margin-top: 65px !important;
-    margin-bottom: 0;
+	height: auto !important;
+	margin-top: 65px !important;
+	margin-bottom: 0;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#70bce8+0,ffffff+44,ffffff+100 */
 	background: #70bce8; /* Old browsers */
 	background: -moz-linear-gradient(top, #70bce8 0%, #ffffff 44%, #ffffff 100%); /* FF3.6-15 */
@@ -50,6 +50,7 @@
 		@include for-phone-only {
 			padding-top: 0;
 			height: auto;
+			position: fixed;
 		}
 
 		.cumbre {
@@ -106,6 +107,12 @@
 		display: flex;
 		flex-direction: column;
 		padding: 8px;
+
+		@include for-phone-only {
+			width: 52px;
+			bottom: auto;
+			top: 20%;
+		}
 		
 		p {
 			color: $blanco;
@@ -114,10 +121,9 @@
 			font-weight: 100;
 			letter-spacing: 2px;
 			margin-top: 8px;
-		}
-
-		@include for-phone-only {
-			width: 52px;
+			@include for-phone-only {
+				display: none;
+			}
 		}
 
 		.item {
@@ -173,6 +179,10 @@
 					font-weight: 100;
 					display: block;
 				}
+
+				@include for-phone-only {
+					display: none;
+				}
 			}
 
 		}
@@ -188,11 +198,10 @@
 		padding: 0 1em;
 		display: flex;
 		align-items: flex-end;
-
+		
 		@include for-phone-only {
 			display: none;
 		}
-
 		.rule {
 			position: relative;
 
@@ -224,9 +233,9 @@
 
 				&Bar {
 					/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,52b5ea+100&0.7+0,0.8+100 */
-				background: -webkit-linear-gradient(rgba(255,255,255,0.7) 0%, rgba(82,181,234,0.8) 100%);
-				background: -o-linear-gradient(rgba(255,255,255,0.7) 0%, rgba(82,181,234,0.8) 100%);
-				background: linear-gradient(rgba(255,255,255,0.7) 0%, rgba(82,181,234,0.8) 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+					background: -webkit-linear-gradient(rgba(255,255,255,0.7) 0%, rgba(82,181,234,0.8) 100%);
+					background: -o-linear-gradient(rgba(255,255,255,0.7) 0%, rgba(82,181,234,0.8) 100%);
+					background: linear-gradient(rgba(255,255,255,0.7) 0%, rgba(82,181,234,0.8) 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3ffffff', endColorstr='#cc52b5ea',GradientType=0 ); /* IE6-9 */
 					width: 100%;
 					min-height: 100px;
@@ -235,10 +244,11 @@
 					justify-content: center;
 					position: relative;
 
+
 					&:hover p {
 						opacity: 1;
 					}
-				
+
 					p {
 						color: $blanco;
 						font-size: 12px;
@@ -272,10 +282,10 @@
 
 				.MyteamBar {
 					/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,5ae8de+100&0.9+0,0.9+100 */
-				background: -webkit-linear-gradient(rgba(255,255,255,0.9) 0%, rgba(90,232,222,0.9) 100%);
-				background: -o-linear-gradient(rgba(255,255,255,0.9) 0%, rgba(90,232,222,0.9) 100%);
-				background: linear-gradient(rgba(255,255,255,0.9) 0%, rgba(90,232,222,0.9) 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6ffffff', endColorstr='#e65ae8de',GradientType=0 ); /* IE6-9 */
+					background: -webkit-linear-gradient(rgba(255,255,255,0.9) 0%, rgba(90,232,222,0.9) 100%);
+					background: -o-linear-gradient(rgba(255,255,255,0.9) 0%, rgba(90,232,222,0.9) 100%);
+					background: linear-gradient(rgba(255,255,255,0.9) 0%, rgba(90,232,222,0.9) 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6ffffff', endColorstr='#e65ae8de',GradientType=0 ); /* IE6-9 */
 					width: 100%;
 					min-height: 100px;
 					display: flex;
@@ -286,7 +296,7 @@
 					&:hover p {
 						opacity: 1;
 					}
-				
+
 					p {
 						color: $blanco;
 						font-size: 12px;
@@ -344,3 +354,249 @@
 		}
 	}
 }
+
+
+
+// Elementos Ruta virtual ! 
+.ruta-falda {
+	width:100vw;
+	height:90vh;
+	img {
+		position:absolute;
+		bottom: 0px;
+		left:0;
+
+		@include for-phone-only { 
+			bottom: 60px;
+		}
+	}
+}
+
+.ruta-rio {
+	width:100vw;
+	height:80vh;
+
+	img {
+		position:absolute;
+		bottom:-50px;
+		right:0;
+
+		@include for-phone-only { 
+			bottom: 0px;
+		}
+	}
+}
+
+.ruta-mounts {
+	width:100vw;
+	height:70vh;
+
+	img {
+		position:absolute;
+		left:0px;
+		bottom:-50px;	
+	}
+}
+
+.ruta-cumbre {
+	width:100vw;
+	height:60vh;
+
+	@include for-phone-only { 
+		height: 90vh;
+	}
+
+	img {
+		position:absolute;
+		left:0px;
+		@include for-phone-only { 
+			bottom: 160px;
+		}
+	}
+}
+
+.ruta-nubes {
+	width:100vw; height:90vh;
+	@include for-phone-only { 
+		padding-top: 3em;
+	}
+}
+
+
+// elementos en alistamiento
+
+.alis-falda {
+	width:100vw;
+	height:80vh;
+	img {
+		position:absolute;
+		bottom: -50px;
+		left:0;
+
+		@include for-phone-only { 
+			bottom: -5px;
+		}
+	}
+}
+
+.alis-mounts {
+	width:100vw;
+	height:70vh;
+	@include for-phone-only {
+		height: 75vh;
+	}
+
+	img {
+		position:absolute;
+		bottom:-50px;
+		right:0;
+
+		@include for-phone-only { 
+			bottom: 0px;
+		}
+	}
+}
+
+.alis-cumbre {
+	width:100vw;
+	height:50vh;
+	@include for-phone-only {
+		height: 65vh;
+	}
+
+	img {
+		position:absolute;
+		bottom: 100px;
+		right:0;
+
+		@include for-phone-only { 
+			bottom: 0px;
+		}
+	}
+}
+
+// Elementos Base
+
+
+.base-mesa {
+	width:100vw;
+	height:90vh;
+
+	img {
+		position:absolute;
+		bottom: -100px;
+		left:0;
+
+		@include for-phone-only {
+			bottom: 20px;
+		}	
+	}
+}
+
+.base-carpa {
+	width:100vw;
+	height:90vh;
+
+	img {
+		position:absolute;
+		bottom:-50px;
+		right:0;
+
+		@include for-phone-only {
+			bottom: 55px;
+		}
+	}
+}
+
+.base-cumbre {
+	width:85vw;
+	height:60vh;
+	@include for-phone-only {
+		height: 75vh;
+	}
+
+	img {
+		position:absolute; 
+		left:0; 
+		bottom:0px; 
+		width: 90vw;
+	}
+}
+
+// Elementos campamento uno
+
+.uno-camp {
+	width:100vw;
+	height:90vh;
+	
+	@include for-phone-only {
+		height: 81vh;
+	}
+
+	img {
+		position:absolute;
+		bottom: 0px;
+		left:0;
+	}
+}
+
+.uno-cumbre {
+	width:97vw;
+	height:80vh;
+
+	@include for-phone-only {
+		height: 75vh;
+	}
+
+	img {
+		position:absolute; 
+		bottom: -50px; 
+		right: -50px; 
+		width: 100%;
+	}
+}
+
+
+// Elementos campamento 2 
+
+.dos-camp {
+	width:100vw; 
+	height:80vh;
+
+	@include for-phone-only {
+		height: 73vh;
+	}
+
+	img {
+		position:absolute; 
+		bottom: -50px; 
+		left:0;
+	}
+}
+
+.dos-cumbre {
+	width:100vw;
+	height:70vh;
+
+	@include for-phone-only {
+		height: 75vh;
+	}
+
+	img {
+		position:absolute;
+		bottom: 0px;
+		right: 0px;
+	}
+}
+
+.dos-arboles {
+	width:100vw;
+	height:60vh;
+
+	img {
+		position:absolute; 
+		bottom: -50px; 
+		right: 0px;
+	}
+}
+
