@@ -57,6 +57,9 @@
 		@include for-phone-only {
 			display: none !important;
 		}
+		@include for-tablet-portrait-up  {
+			display: none !important;
+		}
 
 		img {
 			width: 250px;

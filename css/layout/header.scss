@@ -50,6 +50,10 @@
  			@include for-tablet-portrait-up  {
  				display: none;
  			}
+
+ 			@include for-tablet-landscape-up {
+ 				display: none;
+ 			}
  		}
 
 
@@ -105,6 +109,9 @@
  				align-items: center;
 
  				@include for-tablet-portrait-up  {
+ 					display: none;
+ 				}
+ 				@include for-tablet-landscape-up {
  					display: none;
  				}
  			}

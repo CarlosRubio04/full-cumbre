@@ -483,6 +483,9 @@ section {
 				width: 100%;
 				max-width: 100%;
 			}
+			@include for-tablet-portrait-up {
+				max-width: 60%;
+			}
 		}
 
 		.campamentoIntro {
@@ -798,3 +801,31 @@ section {
 				}
 			}
 		}
+
+
+
+// Cumbre
+
+
+.cumbre {
+	background-image: url(../img/parallax/10-cumbre.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-attachment: fixed;
+
+	.content-wrapper {
+		background-color: rgba($blanco, .8);
+	}
+}
+
+.table-striped{
+	background-color: $blanco;
+	border: 1px solid $verdeClaro;
+	font-weight: 100;
+	font-size: 14px;
+}
+.table-striped>tbody>tr:nth-of-type(odd) {
+	background-color: $verdeClaro;
+	color: $blanco;
+}

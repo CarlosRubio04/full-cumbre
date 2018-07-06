@@ -216,6 +216,16 @@
 			align-items: flex-end;
 			margin-right: 1em;
 
+			@include for-tablet-portrait-up {
+				width: 550px;
+				overflow: hidden;
+			}
+
+			@include for-tablet-landscape-up {
+				width: 800px;
+				overflow: hidden;
+			}
+
 			.team {
 				display: flex;
 				flex-direction: column;
@@ -233,10 +243,10 @@
 
 				&Bar {
 					/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6836db+0,52b5ea+100&0.9+0,0.95+100 */
-background: -moz-linear-gradient(top, rgba(104,54,219,0.9) 0%, rgba(82,181,234,0.95) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(104,54,219,0.9) 0%,rgba(82,181,234,0.95) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(104,54,219,0.9) 0%,rgba(82,181,234,0.95) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e66836db', endColorstr='#f252b5ea',GradientType=0 ); /* IE6-9 */
+					background: -moz-linear-gradient(top, rgba(104,54,219,0.9) 0%, rgba(82,181,234,0.95) 100%); /* FF3.6-15 */
+					background: -webkit-linear-gradient(top, rgba(104,54,219,0.9) 0%,rgba(82,181,234,0.95) 100%); /* Chrome10-25,Safari5.1-6 */
+					background: linear-gradient(to bottom, rgba(104,54,219,0.9) 0%,rgba(82,181,234,0.95) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e66836db', endColorstr='#f252b5ea',GradientType=0 ); /* IE6-9 */
 					width: 100%;
 					min-height: 100px;
 					display: flex;
@@ -282,10 +292,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e66836db', e
 
 				.MyteamBar {
 					/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4485ed+0,5ae8de+100&0.9+0,0.95+100 */
-background: -moz-linear-gradient(top, rgba(68,133,237,0.9) 0%, rgba(90,232,222,0.95) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(68,133,237,0.9) 0%,rgba(90,232,222,0.95) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(68,133,237,0.9) 0%,rgba(90,232,222,0.95) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e64485ed', endColorstr='#f25ae8de',GradientType=0 ); /* IE6-9 */
+					background: -moz-linear-gradient(top, rgba(68,133,237,0.9) 0%, rgba(90,232,222,0.95) 100%); /* FF3.6-15 */
+					background: -webkit-linear-gradient(top, rgba(68,133,237,0.9) 0%,rgba(90,232,222,0.95) 100%); /* Chrome10-25,Safari5.1-6 */
+					background: linear-gradient(to bottom, rgba(68,133,237,0.9) 0%,rgba(90,232,222,0.95) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e64485ed', endColorstr='#f25ae8de',GradientType=0 ); /* IE6-9 */
 					width: 100%;
 					min-height: 100px;
 					display: flex;
@@ -335,16 +345,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e64485ed', e
 					margin-bottom: 4px;
 
 					/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+70,0+100 */
-					background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 70%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
-					background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 70%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
-					background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 70%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-					border-radius: 50%;
+					
 					padding: .5em;
 					margin-bottom: .5em;
-					width: 60px;
-					height: 60px;
-
+					width: 50px;
 
 					&:hover .teamBar p {
 						opacity: 1;
@@ -415,7 +419,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e64485ed', e
 
 	img {
 		position:absolute;
-		left:0px;
+		left:0;
+		bottom: 0;
 		@include for-phone-only { 
 			bottom: 160px;
 		}
@@ -427,6 +432,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e64485ed', e
 	@include for-phone-only { 
 		padding-top: 3em;
 	}
+	@include for-tablet-portrait-up {
+		padding-top: 3em;
+	}
 }
 
 
@@ -434,7 +442,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e64485ed', e
 
 .alis-falda {
 	width:100vw;
-	height:80vh;
+	height:83vh;
+	@include for-tablet-portrait-up {
+		height: 83vh;
+	}
 	img {
 		position:absolute;
 		bottom: -50px;
@@ -452,7 +463,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e64485ed', e
 	@include for-phone-only {
 		height: 75vh;
 	}
-
+	@include for-tablet-portrait-up {
+		height: 76vh;
+	}
 	img {
 		position:absolute;
 		bottom:-50px;
@@ -461,13 +474,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e64485ed', e
 		@include for-phone-only { 
 			bottom: 0px;
 		}
+		@include for-tablet-portrait-up { 
+			bottom: 0px;
+		}
 	}
 }
 
 .alis-cumbre {
 	width:100vw;
-	height:50vh;
+	height:65vh;
 	@include for-phone-only {
+		height: 65vh;
+	}
+	@include for-tablet-portrait-up {
 		height: 65vh;
 	}
 
@@ -477,6 +496,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e64485ed', e
 		right:0;
 
 		@include for-phone-only { 
+			bottom: 0px;
+		}
+		@include for-tablet-portrait-up {
 			bottom: 0px;
 		}
 	}
@@ -517,11 +539,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e64485ed', e
 
 .base-cumbre {
 	width:85vw;
-	height:60vh;
+	height:80vh;
 	@include for-phone-only {
 		height: 75vh;
 	}
-
+	@include for-tablet-portrait-up {
+		height: 85vh;
+	}
 	img {
 		position:absolute; 
 		left:0; 
@@ -568,12 +592,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e64485ed', e
 
 .dos-camp {
 	width:100vw; 
-	height:80vh;
+	height:83vh;
 
 	@include for-phone-only {
 		height: 73vh;
 	}
-
+	@include for-tablet-portrait-up {
+		height: 83vh;
+	}
 	img {
 		position:absolute; 
 		bottom: -50px; 
@@ -586,6 +612,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e64485ed', e
 	height:70vh;
 
 	@include for-phone-only {
+		height: 75vh;
+	}
+	@include for-tablet-portrait-up {
 		height: 75vh;
 	}
 
