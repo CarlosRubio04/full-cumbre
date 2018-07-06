@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Bienvenidos a Cumbre</title>
+	<meta name="author" content="" />
+	<meta name="description" content="" />
+	<meta name="keywords"  content="" />
+
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easings.min.js"></script>
+
+	<script type="text/javascript" src="js/fullpage.continuousHorizontal.limited.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fullpage.extensions.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#myContainer').fullpage({
+				sectionsColor: ['#006131'],
+				anchors: [''],
+				menu: '#menu',
+				continuousHorizontal: true,
+				continuousHorizontalKey: 'YWx2YXJvdHJpZ28uY29tX00zVVkyOXVkR2x1ZFc5MWMwaHZjbWw2YjI1MFlXdz12Nk0=',
+
+				slidesNavigation: true,
+				afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){
+					console.log("slideLoad--" + "anchorLink: " + anchorLink + " index: " + index + " slideAnchor: " + slideAnchor + " slideIndex: " + slideIndex);
+
+				},
+				onSlideLeave: function(anchorLink, index, slideIndex, direction){
+					console.log("----------------");
+					console.log("onSlideLeave--" + "anchorLink: " + anchorLink + " index: " + index + " slideIndex: " + slideIndex + " direction: " + direction);
+				}
+			});
+		});
+	</script>
+
+</head>
+<body>
+
+
+	<div id="myContainer">
+		<div class="section">
+			<div class="slide">
+				<div class="mainContainer flex-colum">
+					<h1 class="welcome">Bienvenidos a</h1>
+					<div class="logo">
+						<img src="img/logo-blanco.svg" alt="CUMBRE">
+					</div>
+					<div class="text">
+						<p>
+							El proyecto cumbre es una estrategia de desarrollo de equipos, mediante un modelo denominado R2, en la cual cada R es una dimensión de equipo.
+							<br/>
+							Resultados: hace referencia a los logros, objetivos y metas que el equipo debe obtener. Relaciones: hace referencia al proceso, interacción, dinámica interna y el clima del equipo que se desarrolla para el logro de resultados.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="mainContainer">
+					<!-- <h1>Alistamiento</h1>
+					<p>
+						El alistamiento requiere que cada miembro del equipo de respuesta a una encuesta que permitirá identificar las fortalezas y áreas de mejora del equipo y de sus integrantes. Los invitamos a dar respuesta de manera sincera y objetiva a la misma para prepararnos a esta aventura
+					</p> -->
+
+					<a href="http://bitacorateam.co/CUMBRE/" class="btn">
+						EMPEZAR YÁ
+					</a>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="mainContainer">
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

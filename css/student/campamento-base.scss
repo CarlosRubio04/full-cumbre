@@ -178,7 +178,25 @@
 			font-size: 16px;
 			font-weight: 100;
 			align-items: center;
+			text-transform: uppercase;
 		}
 
+	}
+}
+
+
+.history {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+
+	p {
+		width: 100%;
+		margin-top: 8px;
+		padding: .5em;
+		background-color: $blanco;
+		color: $verdeClaro;
+		font-size: 13px;
+		letter-spacing: 2px;
 	}
 }

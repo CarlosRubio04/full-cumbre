@@ -4,7 +4,13 @@
 		<div class="item colum-80">
 			<div class="content-wrapper">
 				<div class="title">
+					<a href="?content=campOne" class="btn btn-back">
+						<i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+					</a>
 					<h1 class="animated fadeInLeft">Cursos de tu interés</h1>
+					<a href="?content=campTwo" class="btn btn-main">
+						Campamento Dos <i class="fa fa-arrow-right" aria-hidden="true"></i>
+					</a>
 				</div>
 				<div class="courses-grid">
 					<?php require_once('Libs/Lcourses.php');?>

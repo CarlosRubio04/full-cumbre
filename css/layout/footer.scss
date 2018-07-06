@@ -30,6 +30,22 @@
 				@include for-phone-only {
 					margin: 0 .8em;
 				}
+
+				a {
+					display: block;
+					width: 39px;
+					height: 39px;
+					border-radius: 50%;
+					background-color: transparent;
+					@include prefix(transition, all .4s ease-in-out);
+
+					&:hover {
+						background-color: $verdeClaro;
+					}
+				}
+				.activeLink {
+					background-color: $verdeClaro;
+				}
 			}
 		}
 	}

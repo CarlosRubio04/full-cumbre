@@ -140,6 +140,11 @@
 			width: 100%;
 			border-top: 1px solid $verdeClaro;
 		}
+		&:last-child {
+			&:after {
+				border: 0;
+			}
+		}
 	}
 }
 

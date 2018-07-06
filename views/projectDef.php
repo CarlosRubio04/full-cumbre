@@ -12,6 +12,8 @@
 				<div class="formContainer animated fadeInUp">
 					<form method="post">
 						<div class="inputs">
+							<hr>
+							<h4 class="subTitle">Generalidades</h4>
 							<div class="form-group">
 								<label for="nombre">Nombre del proyecto *</label>
 								<input type="text" name="nombre" <?php echo $enable?> maxlength="100" id="nombre" value="<?php echo $name;?>" class="form-control" placeholder="Nombre">
@@ -55,7 +57,7 @@
 								<textarea name="objetivo" <?php echo $enable?> id="objetivo" rows="5" maxlength="250" class="form-control" placeholder="Objetivo general"><?php echo $objective;?></textarea>
 							</div>
 							<div class="form-group">
-								<label for="">Objetivos especificos</label>
+								<label for="">Objetivos específicos</label>
 								<textarea name="objetivos" <?php echo $enable?> id="objetivos" maxlength="250" rows="5" class="form-control" placeholder="Objetivos especificos"><?php echo $objectiveOthers;?></textarea>
 							</div>
 
@@ -78,7 +80,9 @@
 
 							<div class="form-group">
 								<label for="">Resultados esperados</label>
-								<input type="text" <?php echo $enable?> name="resultados" maxlength="960" id="resultados" value="<?php echo $expectedResults;?>" class="form-control" placeholder="Resultados esperados">
+								<!-- <input type="text" <?php echo $enable?> name="resultados" maxlength="960" id="resultados" value="<?php echo $expectedResults;?>" class="form-control" placeholder="Resultados esperados"> -->
+								<textarea name="objetivos" <?php echo $enable?> name="resultados" maxlength="960" id="resultados" class="form-control"><?php echo $expectedResults;?></textarea>
+
 							</div>
 
 							<!-- <div class="form-group">
@@ -114,9 +118,6 @@
 							<div class="form-group">
 								<button class="btn-square" type="submit" onclick="autoSave(<?php echo $infoUser->getGroupId()?>,1);return false;" name="saveProject" id="saveProject" value="<?php echo $btnText?>"> <?php echo $btnText?></button>
 							</div>
-							<div >
-								<?php echo $htmlMsgP?>
-							</div>
 						</div>
 					</form>
 				</div>
@@ -130,6 +131,13 @@
 					<a href="?content=phaseDef" class="btn btn-main">
 						Fases del proyecto
 					</a>
+				</div>
+				<hr>
+				<div class="history">
+					<h4 class="subTitle">
+						Historial de cambios
+					</h4>
+					<?php echo $htmlMsgP?>
 				</div>
 			</div>
 		</div>
